@@ -3,71 +3,76 @@
 $color-darck: #353535;
 $color-green: #68aa40;
 $color-white: #d9d9d9;
+$color-white-op: rgba(255, 255, 255, 0.3);
 $color-border: rgba(114, 114, 114, 0.3);
 $color-grey: rgba(53, 53, 53, 0.7);
 $color-grey-bg: rgba(114, 114, 114, 0.3);
+$color-orange:#FD8D25;
+
+input[type="text"],
+input[type="email"],
+input[type="tel"]{
+  background-color: $color-darck;
+  width: 100%;
+  height: rem(35);
+  margin-bottom: rem(1);
+  padding: 10px 0px;
+  border-radius: 0px;
+  border-bottom: 1px dashed $color-white-op;
+  color: #ffffff; /* изменяем цвет текста на серый */
+  transition: border-bottom 0.3s ease-in-out 0s;
+  &::placeholder {
+    outline: none;
+    color: #ffffff; /* изменяем цвет текста на серый */
+    background-color:#353535;
+  }
+  
+  &:active,
+  &:focus,
+  &:hover {
+    outline: none; /* убрать стандартный обводку */
+    border-bottom: 1px dashed $color-green; /* установить цвет границы */
+  }
+
+  // &:invalid {
+  //   border: 2px solid rgba(82, 20, 20, 0.915);
+  // }
+}
+
+textarea {
+  background-color: $color-darck;
+  width: rem(397);
+  height: rem(71);
+  padding: 10px 0px;
+  border-radius: 0;
+  border-bottom: 1px dashed #ffffff;
+  overflow-y:auto;
+  color: #ffffff; /* изменяем цвет текста на серый */
+  &::placeholder {
+    color: #ffffff; /* изменяем цвет текста на серый */
+    background-color:#353535;
+  }
+  &:active,
+  &:focus,
+  &:hover {
+   outline: none; /* убрать стандартный обводку */
+   border-bottom: 1px dashed $color-green; /* установить цвет границы */
+  }
+  
+
+}
 
 .wrap-container {
-  max-width: 1440px;
+  // max-width: 1440px;
+  max-width: 1530px;
   margin: 0 auto;
 }
+
+//==================================================================================================== TITLE START
+
 .all-sections {
   margin-bottom: rem(70);
 }
-
-//====================================================================================================
-// ._icon-arrow
-
-._icon-arrow {
-  color: $color-green;
-  font-size: 1rem;
-}
-._icon-arrow-angle {
-  color: $color-darck;
-  // top:0;
-  font-size: 10.6px;
-  display: inline-block;
-  margin-left: auto;
-}
-
-// slider-btn
-.slider-btn {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  max-width: 5rem;
-}
-.slider-btn-prev {
-  transform: rotate(180deg);
-}
-
-.slider-btn-prev,
-.slider-btn-next {
-  padding: 0.3125rem;
-  cursor: pointer;
-  &:hover {
-    opacity: 0.7;
-  }
-}
-
-._icon-location {
-  display: inline-block;
-  color: $color-green;
-}
-
-.dark-btn {
-  background-color: $color-darck;
-  color: #fff;
-  font-weight: 800;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out 0s;
-  &:focus,
-  &:hover {
-    background-color: $color-grey;
-  }
-}
-//====================================================================================================
 .main-title {
   font-weight: 600;
   font-size: 48px;
@@ -87,7 +92,81 @@ $color-grey-bg: rgba(114, 114, 114, 0.3);
 .title-info {
   margin-bottom: 40px;
 }
-//====================================================================================================
+
+
+
+//==================================================================================================== TITLE END
+
+
+
+
+//==================================================================================================== BTN START
+// ._icon-arrow
+
+.details-link-arrow {
+  display: flex;
+  align-items: center;
+}
+
+._icon-arrow {
+  color: $color-green;
+  font-size: 1rem;
+}
+
+._icon-arrow-angle {
+  color: $color-darck;
+  // top:0;
+  font-size: 10.6px;
+  display: inline-block;
+  margin-left: auto;
+}
+
+// slider-btn
+.slider-btn {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-bottom: em(12);
+  max-width: 5rem;
+  gap: 1.5rem;
+}
+.slider-btn-prev {
+  transform: rotate(180deg);
+}
+
+.slider-btn-prev,
+.slider-btn-next {
+  padding: 0.3125rem;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+
+// btn dark
+.dark-btn {
+  background-color: $color-darck;
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out 0s;
+  &:focus,
+  &:hover {
+    background-color: $color-grey;
+  }
+}
+
+//==================================================================================================== BTN END
+
+._icon-location {
+  display: inline-block;
+  color: $color-green;
+}
+
+
+
 
 
 .visually-hidden {

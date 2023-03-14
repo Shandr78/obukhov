@@ -29,12 +29,12 @@ $mainColor: #353535; // Колір шрифту за замовчуванням
 // Мінімальна ширина сторінки
 $minWidth: 320;
 // Ширина полотна (макету)
-$maxWidth: 1440;
+$maxWidth: 1920;
 // Ширина обмежуючого контейнера (0 = немає обмеження)
-$maxWidthContainer: 1260;
+$maxWidthContainer: 1500;
 // Загальний відступ у контейнера
 // (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
-$containerPadding: 30;
+$containerPadding: 15;
 
 // Ширина спрацьовування першого брейкпоінту
 $containerWidth: $maxWidthContainer + $containerPadding;
@@ -69,6 +69,7 @@ body {
 	.loaded & {
 	}
 	font-weight: 400;
+	font-size: calc(12px + 0.14vw);
 	line-height: 140%;
 	letter-spacing: -0.01em;
 }
@@ -154,3 +155,7 @@ body {
 
 // Підключення стилів окремих сторінок
 @import "home";
+@import "company";
+@import "documentation";
+@import "contacts";
+@import "news";

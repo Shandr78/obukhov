@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="ua">
 @@include('html/_head.htm',{
-"title":"HomePage"
+"title":"ЖК 'ОБУХІВСЬКИЙ КЛЮЧ' | СУЧАСНИЙ ЖИТЛОВИЙ КОМПЛЕКС"
 })
 
 <body>
 	<div class="wrapper">
 		@@include('html/_header.htm',{})
-		<main class="page">
+		<main class="home-page">
 
 			<section class="promo all-sections">
 				<div class="promo__container">
@@ -25,7 +25,7 @@
 				</div>
 			</section>
 
-<!-- Slider-1 -->
+			<!-- Slider-1 -->
 			<section class="atention all-sections">
 				<div class="atention__container">
 					<h1 class="atention__title main-title">Ми будуємо Сучасний житловий комплекс «ОБУХІВСЬКИЙ КЛЮЧ»</h1>
@@ -35,7 +35,7 @@
 							житловий комплекс «Обухівський Ключ». Прогулюватись по бульвару та променадах, проводити
 							дозвілля в кафе, відпочивати в парковій зоні. Все це передбачено концепцією комплексу.</p>
 						<p class="atention__info-text">«Обухівський Ключ» — це тринадцять житлових будинків, два
-							торгівельних центри, громадська та офісна будівлі. В комплексі розташуються підприємства
+							торгівельних центри, громадська та офісна будівлі.<br>В комплексі розташуються підприємства
 							обслуговування, кафе та розважальні приміщення вздовж пішохідної інфраструктури. Місце в
 							оточенні парково-лісової зони.</p>
 					</div>
@@ -61,6 +61,7 @@
 							<img src="@img/slider-1/1-4.jpg" alt="Слайд №1-4" class="atention__slide-img">
 						</div>
 					</div>
+
 				</div>
 			</section>
 
@@ -185,8 +186,7 @@
 			<section class="characteristics all-sections">
 				<div class="characteristics__container">
 					<h2 class="characteristics__title visually-hidden">Відео презентація житлового комплексу
-						«ОБУХІВСЬКИЙ
-						КЛЮЧ»</h2>
+						«ОБУХІВСЬКИЙ КЛЮЧ»</h2>
 					<div class="characteristics__wrap">
 						<div class="characteristics__video-box">
 							<video class="characteristics__video-poster" poster="@img/poster.jpg">
@@ -221,6 +221,7 @@
 					<h3 class="buildings__info-title info-title">Оберіть квартиру</h3>
 					<p class="buildings__info title-info">Мапа будинків</p>
 				</div>
+				<!-- buildings__wrapper wrap-container -->
 				<div class="buildings__wrapper wrap-container">
 					<div class="buildings__image-box">
 						<img src="@img/home-3d.jpg" alt="3d мапа будинків">
@@ -273,38 +274,38 @@
 				</div>
 			</section>
 
-			<section class="apartment all-sections">
-				<div class="apartment__container">
-					<h3 class="apartment__info-title info-title">Або так</h3>
-					<p class="apartment__info title-info">Площа квартир від 38 м2</p>
-					<form action="" class="apartment__search-form form-search">
-						<div data-spollers class="apartment__spollers-house spollers">
-							<div class="apartment__spollers-item spollers__item">
+			<section class="apartments all-sections">
+				<div class="apartments__container">
+					<h3 class="apartments__info-title info-title">Або так</h3>
+					<p class="apartments__info title-info">Площа квартир від 38 м2</p>
+					<form action="" class="apartments__search-form form-search">
+						<div data-spollers class="apartments__spollers-house spollers">
+							<div class="apartments__spollers-item spollers__item">
 								<button type="button" data-spoller
-									class="apartment__spollers-title spollers__title">Будинок<span
+									class="apartments__spollers-title spollers__title">Будинок<span
 										class="_icon-arrow-angle"></span></button>
-								<div class="apartment__spollers-body spollers__body">
-									<div class="apartment__spollers-element">
+								<div class="apartments__spollers-body spollers__body">
+									<div class="apartments__spollers-element">
 										<input id="turn-9" type="checkbox" name=""><label
 											for='turn-9'><span></span>Черга
 											№9</label>
 									</div>
-									<div class="apartment__spollers-element">
+									<div class="apartments__spollers-element">
 										<input id="turn-10" type="checkbox" name=""><label
 											for='turn-10'><span></span>Черга
 											№10</label>
 									</div>
-									<div class="apartment__spollers-element">
+									<div class="apartments__spollers-element">
 										<input id="turn-11" type="checkbox" name=""><label
 											for='turn-11'><span></span>Черга
 											№11</label>
 									</div>
-									<div class="apartment__spollers-element">
+									<div class="apartments__spollers-element">
 										<input id="turn-12" type="checkbox" name=""><label
 											for='turn-12'><span></span>Черга
 											№12</label>
 									</div>
-									<div class="apartment__spollers-element">
+									<div class="apartments__spollers-element">
 										<input id="turn-13" type="checkbox" name=""><label
 											for='turn-13'><span></span>Черга
 											№13</label>
@@ -313,45 +314,45 @@
 							</div>
 						</div>
 
-						<div data-spollers class="apartment__spollers-quantity spollers">
-							<div class="apartment__spollers-item spollers__item">
+						<div data-spollers class="apartments__spollers-quantity spollers">
+							<div class="apartments__spollers-item spollers__item">
 								<button type="button" data-spoller
-									class="apartment__spollers-title spollers__title">Кількість спален<span
+									class="apartments__spollers-title spollers__title">Кількість спален<span
 										class="_icon-arrow-angle"></span></button>
-								<div class="apartment__spollers-body spollers__body">
-									<div class="apartment__spollers-element">
+								<div class="apartments__spollers-body spollers__body">
+									<div class="apartments__spollers-element">
 										<input id="quantity-1" type="checkbox" name=""><label
 											for='quantity-1'><span></span>1 спальня</label>
 									</div>
-									<div class="apartment__spollers-element">
+									<div class="apartments__spollers-element">
 										<input id="quantity-2" type="checkbox" name=""><label
 											for='quantity-2'><span></span>2 спальні</label>
 									</div>
-									<div class="apartment__spollers-element">
+									<div class="apartments__spollers-element">
 										<input id="quantity-3" type="checkbox" name=""><label
 											for='quantity-3'><span></span>3 спальні</label>
 									</div>
-									<div class="apartment__spollers-element">
+									<div class="apartments__spollers-element">
 										<input id="quantity-all" type="checkbox" name=""><label
 											for='quantity-all'><span></span>всі</label>
 									</div>
 								</div>
 							</div>
 						</div>
-						<button class="apartment__btn-search dark-btn">Пошук</button>
+						<button class="apartments__btn-search dark-btn">Пошук</button>
 					</form>
-					<div class="apartment__slider swiper">
-						<div class="apartment__container">
-							<div class="apartment__slider-btn slider-btn">
-								<div class="apartment__slider-btn-prev slider-btn-prev _icon-arrow"></div>
-								<div class="apartment__slider-btn-next slider-btn-next _icon-arrow"></div>
+					<div class="apartments__slider swiper">
+						<div class="apartments__container">
+							<div class="apartments__slider-btn slider-btn">
+								<div class="apartments__slider-btn-prev slider-btn-prev _icon-arrow"></div>
+								<div class="apartments__slider-btn-next slider-btn-next _icon-arrow"></div>
 							</div>
 						</div>
-						<div class="apartment__wrapper swiper-wrapper">
-							<div class="apartment__card swiper-slide">
+						<div class="apartments__wrapper swiper-wrapper">
+							<div class="apartments__card swiper-slide">
 								<img src="@img/planning/turn-10/10-1-1.jpg" alt="План квартири"
-									class="apartment__card-planning">
-								<table class="apartment__card-info">
+									class="apartments__card-planning">
+								<table class="apartments__card-info">
 									<tr>
 										<td>Будинок: 10</td>
 										<td>№ 1.1.1.1</td>
@@ -367,10 +368,10 @@
 								</table>
 							</div>
 
-							<div class="apartment__card swiper-slide">
+							<div class="apartments__card swiper-slide">
 								<img src="@img/planning/turn-10/10-1-1a.jpg" alt="План квартири"
-									class="apartment__card-planning">
-								<table class="apartment__card-info">
+									class="apartments__card-planning">
+								<table class="apartments__card-info">
 									<tr>
 										<td>Будинок: 10</td>
 										<td>№ 1.2.1.1</td>
@@ -386,10 +387,10 @@
 								</table>
 							</div>
 
-							<div class="apartment__card swiper-slide">
+							<div class="apartments__card swiper-slide">
 								<img src="@img/planning/turn-10/10-1-1b.jpg" alt="План квартири"
-									class="apartment__card-planning">
-								<table class="apartment__card-info">
+									class="apartments__card-planning">
+								<table class="apartments__card-info">
 									<tr>
 										<td>Будинок: 10</td>
 										<td>№ 1.2.2.1</td>
@@ -405,10 +406,10 @@
 								</table>
 							</div>
 
-							<div class="apartment__card swiper-slide">
+							<div class="apartments__card swiper-slide">
 								<img src="@img/planning/turn-10/10-1-1c.jpg" alt="План квартири"
-									class="apartment__card-planning">
-								<table class="apartment__card-info">
+									class="apartments__card-planning">
+								<table class="apartments__card-info">
 									<tr>
 										<td>Будинок: 10</td>
 										<td>№ 1.2.3.1</td>
@@ -424,10 +425,10 @@
 								</table>
 							</div>
 
-							<div class="apartment__card swiper-slide">
+							<div class="apartments__card swiper-slide">
 								<img src="@img/planning/turn-10/10-1-1d.jpg" alt="План квартири"
-									class="apartment__card-planning">
-								<table class="apartment__card-info">
+									class="apartments__card-planning">
+								<table class="apartments__card-info">
 									<tr>
 										<td>Будинок: 10</td>
 										<td>№ 1.3.2.1</td>
@@ -443,10 +444,10 @@
 								</table>
 							</div>
 
-							<div class="apartment__card swiper-slide">
+							<div class="apartments__card swiper-slide">
 								<img src="@img/planning/turn-10/10-1-1e.jpg" alt="План квартири"
-									class="apartment__card-planning">
-								<table class="apartment__card-info">
+									class="apartments__card-planning">
+								<table class="apartments__card-info">
 									<tr>
 										<td>Будинок: 10</td>
 										<td>№ 1.5.2.1</td>
@@ -463,12 +464,12 @@
 							</div>
 						</div>
 					</div>
-					<a class="apartment__btn-link dark-btn">Дивитись більше</a>
+					<a class="apartments__btn-link dark-btn">Дивитись більше</a>
 				</div>
 
 			</section>
 
-<!-- Slider-2 -->
+			<!-- Slider-2 -->
 			<section class="benefits all-sections">
 				<div class="benefits__container">
 					<h2 class="benefits__title main-title">в центральній частині обухова в 30 хвилинах від києва</h2>
@@ -504,27 +505,29 @@
 					<h3 class="location__info-title info-title">Розташування</h3>
 					<p class="location__info title-info">30 км від Києва /до станції метро/</p>
 				</div>
+
 				<div class="location__wrapper wrap-container">
 					<img class="location__map-img" src="@img/location-map.jpg" alt="Локація на мапі">
 				</div>
-				<a class="location__btn-link dark-btn"
-					href="https://www.google.com/maps/d/u/0/edit?mid=1qIxWOApS2lLCp-mmXO7Poow6-33dBH0&usp=sharing"
-					target="_blank" rel="noreferrer">Прокласти маршрут</a>
-
+				<div class="location__container">
+					<a class="location__btn-link dark-btn"
+						href="https://www.google.com/maps/d/u/0/edit?mid=1qIxWOApS2lLCp-mmXO7Poow6-33dBH0&usp=sharing"
+						target="_blank" rel="noreferrer">Прокласти маршрут</a>
+				</div>
 			</section>
 
 			<section class="news all-sections">
 				<div class="news__container">
 					<h3 class="news__info-title info-title">Новини</h3>
 					<p class="news__info title-info">Обухів / Ключ</p>
-				</div>
-				<div class="news__slider swiper">
-					<div class="news__container"></div>
+
+					<div class="news__slider swiper">
+						
 						<div class="news__slider-btn slider-btn">
 							<div class="news__slider-btn-prev slider-btn-prev _icon-arrow"></div>
 							<div class="news__slider-btn-next slider-btn-next _icon-arrow"></div>
 						</div>
-					
+
 						<div class="news__wrapper swiper-wrapper">
 							<div class="news__card swiper-slide">
 								<article class="news__card-info">
@@ -605,13 +608,16 @@
 								</article>
 							</div>
 						</div>
-					
-				</div>
-				<a class="news__btn-link dark-btn">Дивитись більше</a>
 
+					</div>
+
+				</div>
+				<div class="news__container">
+					<a class="news__btn-link dark-btn">Дивитись більше</a>
+				</div>
 			</section>
 
-<!-- Slider-2 -->
+			<!-- Slider-2 -->
 			<section class="interest all-sections">
 				<div class="interest__container">
 					<h3 class="interest__info-title info-title">Побудовано</h3>
@@ -625,27 +631,28 @@
 						<div class="interest__slide swiper-slide">
 							<img src="@img/slider-3/3-1.jpg" alt="Слайд №3-1" class="interest__slide-img">
 						</div>
-						<div class="interest__slide swiper-slide">
+						<!-- <div class="interest__slide swiper-slide">
 							<img src="@img/slider-3/3-2.jpg" alt="Слайд №3-2" class="interest__slide-img">
-						</div>
+						</div> -->
 						<div class="interest__slide swiper-slide">
 							<img src="@img/slider-3/3-3.jpg" alt="Слайд №3-3" class="interest__slide-img">
 						</div>
-						<div class="interest__slide swiper-slide">
+						<!-- <div class="interest__slide swiper-slide">
 							<img src="@img/slider-3/3-4.jpg" alt="Слайд №3-4" class="interest__slide-img">
-						</div>
+						</div> -->
 						<div class="interest__slide swiper-slide">
 							<img src="@img/slider-3/3-5.jpg" alt="Слайд №3-5" class="interest__slide-img">
 						</div>
-						<div class="interest__slide swiper-slide">
+						<!-- <div class="interest__slide swiper-slide">
 							<img src="@img/slider-3/3-6.jpg" alt="Слайд №3-6" class="interest__slide-img">
-						</div>
+						</div> -->
 						<div class="interest__slide swiper-slide">
 							<img src="@img/slider-3/3-7.jpg" alt="Слайд №3-7" class="interest__slide-img">
 						</div>
 					</div>
 				</div>
 			</section>
+			@@include('html/_popup.htm',{})
 		</main>
 		@@include('html/_footer.htm',{})
 	</div>

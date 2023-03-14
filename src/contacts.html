@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ua">
+@@include('html/_head.htm',{
+"title":"ЖК 'Компанія «GOLDSTREAM»' | Контактна інформація"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="contacts-page">
+			<section class="contacts all-sections">
+				<div class="contacts__container">
+					<div class="contacts__info atention__info">
+						<h3 class="contacts__info-title atention__info-title info-title">Контакти</h3>
+						<div class="contacts__info-column atention__info-text">
+							<h1 class="contacts__info-company">goldstream</h1>
+							<p class="contacts__info-ltd">Будівельна компанія</p>
+							<address class="contacts__info-address">м. Київ<br>
+								Вул. Туполєва, 19<br>
+								Офіс 101</address>
+							<a class="contacts__info-phone" href="tel:+380672341082">
+								+38 067 234 10 82
+							</a>
+							<a class="contacts__info-email" href="mailto:goldstreamltd2009@gmail.com">
+								goldstreamltd2009@gmail.com
+							</a>
+						</div>
+						<div class="contacts__info-column atention__info-text">
+							<h1 class="contacts__info-company">ЖК «Обухівський ключ»</h1>
+							<p class="contacts__info-ltd">відділ продажу</p>
+							<address class="contacts__info-address">м. Обухів<br>
+								Київська область<br>
+								Мікрорайон Обухівський Ключ, 1-А</address>
+							<a class="contacts__info-phone" href="tel:+380674634140">
+								+38 067 463 41 40
+							</a>
+							<a class="contacts__info-email" href="mailto:goldstreamltd2009@gmail.com">
+								<span>goldstreamltd2009@gmail.com</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="contacts__google-map">
+					<iframe src="https://www.google.com/maps/d/embed?mid=1qIxWOApS2lLCp-mmXO7Poow6-33dBH0&ehbc=2E312F"
+						width="1500" height="540"></iframe>
+				</div>
+			</section>
+
+			@@include('html/_popup.htm',{})
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

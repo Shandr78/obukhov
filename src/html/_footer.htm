@@ -1,5 +1,62 @@
 <footer class="footer">
 	<div class="footer__container">
-		<div class=""></div>
+		<div class="footer__body">
+			<dl class="footer__contacts">
+				<dt class="visually-hidden">Назва <abbr title="житловий комплекс">ЖК:</abbr></dt>
+				<dd class="footer__contacts-company">житловий комплекс обухівський ключ</dd>
+
+				<dt class="visually-hidden">Контактний номер телефону:</dt>
+				<dd class="footer__contacts-phone"><a href="tel:+380674634140">
+						+38 067 463 41 40
+					</a></dd>
+
+				<dt class="footer__contacts-subtitle">Контакти</dt>
+				<dd>
+					<address class="footer__contacts-address">м. Обухів<br>
+						Київська область<br>
+						Мікрорайон Обухівський Ключ, 1-А</address>
+				</dd>
+				<!-- //////////////////////////////////////////////////////// -->
+				<a class="footer__copyright" href="tel:#">© 2023 zearchitects</a>
+			</dl>
+
+			<div class="callback">
+				<form class="callback__form" action="/submit-form" method="post">
+					<p class="callback__form-title">Форма Зворотного зв'язку</p>
+					<div class="callback__form-name">
+						<label for="name"><span></span></label>
+						<input class="input" type="text" id="name" name="name" data-required  data-error="Введіть ім’я" placeholder="Ім’я" required>
+					</div>
+					<div class="callback__form-email">
+						<label for="email"><span></span></label>
+						<input class="input" type="email" id="email" name="email" data-required="email" data-error="Введено не вірний E-mail" placeholder="E-mail" required>
+					</div>
+					<div class="callback__form-question">
+						<label for="question"></label>
+						<textarea id="question" class="input" name="question" placeholder="Ваше питання" spellcheck="true" required></textarea>
+					</div>
+					<button class="callback__form-btn dark-btn" type="submit">Відправити</button>
+				</form>
+				<p class="callback__info">Натискаючи “Відправити”, Ви даєте згоду на обробку, зберігання та використання
+					персональних даних.</p>
+			</div>
+
+			<div class="footer__social">
+				<div class="footer__social-box">
+					<a class="footer__social-link" href="#" target="_blank">
+						instagram
+					</a>
+					<a class="footer__social-link" href="#" target="_blank">
+						facebook
+					</a>
+					<a class="footer__social-link" href="#" target="_blank">
+						youtube
+					</a>
+				</div>
+				<a class="footer__logo" href="#">
+					<img class="footer__logo-img" src="@img/logo-white.svg" alt="Логотип компанії">
+				</a>
+			</div>
+		</div>
 	</div>
 </footer>

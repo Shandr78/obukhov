@@ -1,15 +1,296 @@
 //====================================================================================================
+.footer {
+  background-color: $color-darck;
+  color: #ffffff;
+  padding-bottom: 70px;
 
+  // .footer__container
 
+  &__container {
+  }
 
+  // .footer__body
 
+  &__body {
+    flex-basis: 397px;
+    display: flex;
+    // flex: 33, 33% 33, 33% 33, 33%;
+    justify-content: space-between;
+    margin-top: 70px;
+  }
 
+  // .footer__contacts
 
+  &__contacts {
+    // flex-shrink: 2;
+    width: 304px;
+    padding-right: 10px;
+  }
 
+  // .footer__contacts-company
 
+  &__contacts-company {
+    text-transform: uppercase;
+    margin-bottom: 56px;
+  }
 
+  // .footer__contacts-phone
 
+  &__contacts-phone {
+    margin-bottom: calc(56px - 10px);
+    padding: 10px 0px;
+  }
 
+  // .footer__contacts-subtitle
 
+  &__contacts-subtitle {
+    text-transform: uppercase;
+    color: $color-white-op;
+    margin-bottom: 10px;
+  }
+
+  // .footer__contacts-address
+
+  &__contacts-address {
+    margin-bottom: 51px;
+  }
+
+  // .footer__copyright
+
+  &__copyright {
+    font-size: 12px;
+    color: $color-white-op;
+    text-transform: lowercase;
+    line-height: 1;
+  }
+
+  // .footer__social
+
+  &__social {
+    flex-basis: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    // flex-shrink: 1;
+  }
+
+  // .footer__social-box
+
+  &__social-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 54px;
+  }
+
+  // .footer__social-link
+
+  &__social-link {
+    font-weight: 500;
+    text-transform: lowercase;
+    cursor: pointer;
+    &:active,
+    &:focus,
+    &:hover {
+      font-weight: 800;
+    }
+  }
+
+  // .footer__logo
+
+  &__logo {
+    padding-bottom: 5px;
+  }
+
+  // .footer__logo-img
+
+  &__logo-img {
+    width: 49px;
+    height: auto;
+  }
+}
+.visually-hidden {
+}
+.callback {
+  flex-basis: 417px;
+  width: rem(397);
+  @include adaptiveValue("margin-right", 124px, 34px);
+  // .callback__form
+
+  &__form {
+    padding: 0px 10px;
+  }
+
+  // .callback__form-title
+
+  &__form-title {
+    color: $color-white-op;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  // .callback__form-name
+
+  &__form-name {
+    position: relative;
+    
+    &::before {
+      content: "*";
+      font-weight: 800;
+      color: #68aa40;
+      position: absolute;
+      right: 0;
+      top: 40%;
+      opacity: 1;
+      transition: opacity 0.6s ease-in-out 0s;
+    }
+    &:active,
+    &:focus,
+    &:hover {
+      &::before {
+        opacity: 0;
+      }
+    }
+  }
+
+  // .callback__form-email
+
+  &__form-email {
+    position: relative;
+    &::before {
+      content: "*";
+      font-weight: 800;
+      color: #68aa40;
+      position: absolute;
+      right: 0;
+      top: 40%;
+      opacity: 1;
+      transition: opacity 0.6s ease-in-out 0s;
+    }
+    &:active,
+    &:focus,
+    &:hover {
+      &::before {
+        opacity: 0;
+      }
+    }
+  }
+
+  // .callback__form-question
+
+  &__form-question {
+    margin-bottom: 35px;
+  }
+
+  // .callback__form-btn
+
+  &__form-btn {
+    width: 100%;
+    display: block;
+    border: 1px solid #ffffff;
+    padding: 8px 0px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    &:focus,
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  // .callback__info
+
+  &__info {
+    font-size: 12px;
+    color: $color-white-op;
+    padding: 0px 10px;
+  }
+}
+
+.footer {
+  // .footer__container
+
+  &__container {
+  }
+
+  // .footer__body
+
+  &__body {
+  }
+
+  // .footer__contacts
+
+  &__contacts {
+  }
+
+  // .footer__contacts-company
+
+  &__contacts-company {
+  }
+
+  // .footer__contacts-phone
+
+  &__contacts-phone {
+  }
+
+  // .footer__contacts-address
+
+  &__contacts-address {
+  }
+
+  // .footer__copyright
+
+  &__copyright {
+  }
+
+  // .footer__box
+
+  &__box {
+  }
+
+  // .footer__social
+
+  &__social {
+  }
+
+  // .footer__social-link
+
+  &__social-link {
+  }
+
+  // .footer__logo
+
+  &__logo {
+  }
+
+  // .footer__logo-img
+
+  &__logo-img {
+  }
+}
+
+.callback {
+  // .callback__info
+
+  &__info {
+  }
+}
+.callback-form {
+  // .callback-form__title
+
+  &__title {
+  }
+
+  // .callback-form__name
+
+  // .callback-form__email
+
+  &__email {
+  }
+
+  // .callback-form__question
+
+  &__question {
+  }
+}
 
 //====================================================================================================

@@ -1,0 +1,75 @@
+.contacts {
+  margin-top: 107px;
+//   margin-bottom: 70px;
+
+  // .contacts__info
+
+  &__info {
+  }
+
+  // .contacts__info-title
+
+  &__info-title {
+  }
+
+  // .contacts__info-column
+
+  &__info-column {
+    max-width: 200px;
+    padding: 5px;
+    & + .contacts__info-column {
+      max-width: rem(311);
+      margin-left: 218px;
+      margin-right: 199px;
+    }
+  }
+
+  // .contacts__info-company
+
+  &__info-company {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 110%;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+  }
+
+  // .contacts__info-ltd
+
+  &__info-ltd {
+    font-weight: 800;
+    margin-bottom: rem(15);
+    text-transform: uppercase;
+  }
+
+  // .contacts__info-address
+
+  &__info-address {
+    margin-bottom: rem(35);
+  }
+
+  // .contacts__info-phone
+
+  &__info-phone {
+    display: block;
+    font-weight: 800;
+    margin-bottom: rem(15);
+  }
+
+  // .contacts__info-email
+
+  &__info-email {
+    border-bottom: 1px solid $color-darck;
+    & span {
+      color: $color-orange;
+      border-bottom: 1px solid $color-orange;
+    }
+  }
+
+  // .contacts__google-map
+
+  &__google-map {
+    
+  }
+}

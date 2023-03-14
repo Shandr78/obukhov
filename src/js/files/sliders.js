@@ -134,10 +134,11 @@ function initSliders() {
       on: {},
     });
   }
-  if (document.querySelector(".apartment__slider")) {
+
+  if (document.querySelector(".apartments__slider")) {
     // Вказуємо склас потрібного слайдера
     // Створюємо слайдер
-    new Swiper(".apartment__slider", {
+    new Swiper(".apartments__slider", {
       // Вказуємо склас потрібного слайдера
       // Підключаємо модулі слайдера
       // для конкретного випадку
@@ -189,8 +190,8 @@ function initSliders() {
 
       // Кнопки "вліво/вправо"
       navigation: {
-        prevEl: ".apartment__slider-btn-prev",
-        nextEl: ".apartment__slider-btn-next",
+        prevEl: ".apartments__slider-btn-prev",
+        nextEl: ".apartments__slider-btn-next",
       },
 
       // Брейкпоінти
@@ -367,7 +368,7 @@ function initSliders() {
       observer: true,
       observeParents: true,
       slidesPerView: 3,
-      slidesPerGroup: 3,
+      slidesPerGroup: 1,
       spaceBetween: 31,
       autoHeight: true,
       speed: 800,
@@ -549,6 +550,226 @@ function initSliders() {
           slidesPerView: 1.55,
           spaceBetween: 5,
         },
+        // 1600: {
+        // slidesPerView:1.73,
+        // spaceBetween: 5,
+        // },
+        // 1920: {
+        // slidesPerView: 2.08,
+        // spaceBetween: 5,
+        // },
+        // 2560: {
+        // slidesPerView: 2.76,
+        // spaceBetween: 10,
+        // },
+        // 3840: {
+        // slidesPerView: 3.8,
+        // spaceBetween: 30,
+        // },
+        // 4096: {
+        // slidesPerView: 4,
+        // spaceBetween: 30,
+        // },
+      },
+
+      // Події
+      on: {},
+    });
+  }
+
+  if (document.querySelector(".company-atention__slider")) {
+    // Вказуємо склас потрібного слайдера
+    // Створюємо слайдер
+    new Swiper(".company-atention__slider", {
+      // Вказуємо склас потрібного слайдера
+      // Підключаємо модулі слайдера
+      // для конкретного випадку
+      modules: [Navigation, Autoplay],
+      observer: true,
+      observeParents: true,
+      slidesPerView: 3,
+      spaceBetween: 5,
+      autoHeight: true,
+      speed: 800,
+      watchOverflow: true,
+      effect: "fade",
+      //   autoplay: {
+      //     delay: 6000,
+      //     disableOnInteraction: false,
+      //   },
+
+      // touchRatio: 0,
+      // simulateTouch: false,
+      loop: true,
+      // preloadImages: false,
+      // lazy: true,
+
+      /*
+			// Ефекти
+			effect: 'fade',
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+			*/
+
+      // Пагінація
+      /*
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			*/
+
+      // Скроллбар
+      /*
+			scrollbar: {
+				el: '.swiper-scrollbar',
+				draggable: true,
+			},
+			*/
+
+      // Кнопки "вліво/вправо"
+      navigation: {
+        prevEl: ".company-atention__slider-btn-prev",
+        nextEl: ".company-atention__slider-btn-next",
+      },
+
+      // Брейкпоінти
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 3,
+          autoHeight: true,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 5,
+        },
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 5,
+        },
+        1268: {
+          slidesPerView: 3,
+          spaceBetween: 5,
+        },
+        1440: {
+          slidesPerView: 3,
+          spaceBetween: 5,
+        },
+        // 1600: {
+        // slidesPerView:1.73,
+        // spaceBetween: 5,
+        // },
+        // 1920: {
+        // slidesPerView: 2.08,
+        // spaceBetween: 5,
+        // },
+        // 2560: {
+        // slidesPerView: 2.76,
+        // spaceBetween: 10,
+        // },
+        // 3840: {
+        // slidesPerView: 3.8,
+        // spaceBetween: 30,
+        // },
+        // 4096: {
+        // slidesPerView: 4,
+        // spaceBetween: 30,
+        // },
+      },
+
+      // Події
+      on: {},
+    });
+  }
+
+  if (document.querySelector(".documentation__slider")) {
+    // Вказуємо склас потрібного слайдера
+    // Створюємо слайдер
+    new Swiper(".documentation__slider", {
+      // Вказуємо склас потрібного слайдера
+      // Підключаємо модулі слайдера
+      // для конкретного випадку
+      modules: [Navigation, Autoplay],
+      observer: true,
+      observeParents: true,
+      slidesPerView: 3,
+      slidesPerGroup: 1,
+      spaceBetween: 102,
+      autoHeight: true,
+      speed: 800,
+      watchOverflow: true,
+      effect: "fade",
+      //   autoplay: {
+      //     delay: 6000,
+      //     disableOnInteraction: false,
+      //   },
+
+      // touchRatio: 0,
+      // simulateTouch: false,
+      // loop: true,
+      // preloadImages: false,
+      // lazy: true,
+
+      /*
+			// Ефекти
+			effect: 'fade',
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+			*/
+
+      // Пагінація
+      /*
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			*/
+
+      // Скроллбар
+      /*
+			scrollbar: {
+				el: '.swiper-scrollbar',
+				draggable: true,
+			},
+			*/
+
+      // Кнопки "вліво/вправо"
+      navigation: {
+        prevEl: ".documentation__slider-btn-prev",
+        nextEl: ".documentation__slider-btn-next",
+      },
+
+      // Брейкпоінти
+      breakpoints: {
+        // 640: {
+        //   slidesPerView: 1,
+        //   spaceBetween: 0,
+        //   autoHeight: true,
+        // },
+        // 768: {
+        //   slidesPerView: 3,
+        //   spaceBetween: 10,
+        //   autoHeight: true,
+        // },
+        // 992: {
+        //   slidesPerView: 3,
+        //   spaceBetween: 15,
+        //   autoHeight: true,
+        // },
+        // 1268: {
+        //   slidesPerView: 3,
+        //   spaceBetween: 25,
+        //   autoHeight: true,
+        // },
+        // 1440: {
+        // 	slidesPerView: 3,
+        // 	spaceBetween: 5,
+        //   },
         // 1600: {
         // slidesPerView:1.73,
         // spaceBetween: 5,
