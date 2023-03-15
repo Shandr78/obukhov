@@ -9,7 +9,7 @@
   background-position: 0% 50%;
   // object-fit: cover;
   position: relative;
-  margin-top: 70px;
+  // margin-top: 70px;
 
   // .promo__slider
   &__slider {
@@ -32,15 +32,13 @@
   // .promo__slider-list
   &__slider-list {
     padding-left: rem(12);
-   
-
   }
 }
 
 .slider-text li {
   opacity: 0;
   position: absolute;
-  
+
   width: 100%;
   height: 100%;
   transition: all 0.3s ease-in-out 0s;
@@ -60,13 +58,9 @@
 
 //==================================================================================================== PROMO END
 
-
-
-
 //==================================================================================================== ATENTION START
 
 .atention {
-
   // .atention__title
   &__title {
     max-width: rem(825);
@@ -113,9 +107,6 @@
 }
 
 //==================================================================================================== ATENTION END
-
-
-
 
 //==================================================================================================== INFRASTRUCTURE START
 
@@ -188,20 +179,16 @@
     // min-width: 100%;
     height: auto;
     object-fit: cover;
-@include adaptiveValue("margin-top", 30, 240);
+    @include adaptiveValue("margin-top", 30, 240);
     // margin-top: 30px;
   }
 }
 
 //==================================================================================================== INFRASTRUCTURE END
 
-
-
-
 //==================================================================================================== CHARACTERISTICS START
 
 .characteristics {
-
   // .characteristics__wrap
   &__wrap {
     display: flex;
@@ -265,74 +252,84 @@
 
 //==================================================================================================== CHARACTERISTICS END
 
-
-
-
 //==================================================================================================== BUILDINGS START
 
 .buildings {
- 
   // .buildings__image-box
   &__image-box {
-    // background-image: url("@img/home-3d.jpg");
-    // background-repeat: no-repeat;
-    // background-size: contain;
-    // background-position: center;
+    background-image: url("../img/home-3d.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
     max-width: 100%;
     height: auto;
-    object-position: 50% 50%;
-    object-fit: cover;
-    overflow: hidden;
-    position: relative;
-    & img {
-      min-width: 100%;
+    // object-position: 50% 50%;
+    // object-fit: cover;
+    // overflow: hidden;
+    // position: relative;
+    & svg {
+      width: 100%;
       height: auto;
     }
-    & div svg path {
-      fill-opacity: 0;
+    // & div svg path {
+    //   fill-opacity: 0;
+    // }
+    // & div svg:hover path {
+    //   fill-opacity: 0.3;
+    // }
+    & svg .buildings__turn {
+      transition: all 0.6s ease-in-out 0s;
     }
-    & div svg:hover path {
+
+    & svg .buildings__turn:hover {
       fill-opacity: 0.3;
     }
+    & svg .buildings__turn-13,
+    & svg .buildings__turn-12,
+    & svg .buildings__turn-11 {
+      &:hover {
+        fill-opacity: 0.1;
+      }
+    }
   }
 
-  // .buildings__turn-10
-  &__turn-10 {
-    position: absolute;
-    // top: 30.5%;
-    // left: 50.8%;
-    top: 30.5%;
-    left: 50.8%;
-    // scale: 1.325;
-    z-index: 5;
-  }
+  // // .buildings__turn-10
+  // &__turn-10 {
+  //   position: absolute;
+  //   // top: 30.5%;
+  //   // left: 50.8%;
+  //   top: 30.5%;
+  //   left: 50.8%;
+  //   // scale: 1.325;
+  //   z-index: 5;
+  // }
 
-  // .buildings__turn-11
-  &__turn-11 {
-    position: absolute;
-    top: 16.15%;
-    left: 29.2%;
-    // scale: 1.325;
-    z-index: 4;
-  }
+  // // .buildings__turn-11
+  // &__turn-11 {
+  //   position: absolute;
+  //   top: 16.15%;
+  //   left: 29.2%;
+  //   // scale: 1.325;
+  //   z-index: 4;
+  // }
 
-  // .buildings__turn-12
-  &__turn-12 {
-    position: absolute;
-    top: 12.8%;
-    left: 44.36%;
-    // scale: 1.325;
-    z-index: 3;
-  }
+  // // .buildings__turn-12
+  // &__turn-12 {
+  //   position: absolute;
+  //   top: 12.8%;
+  //   left: 44.36%;
+  //   // scale: 1.325;
+  //   z-index: 3;
+  // }
 
-  // .buildings__turn-13
-  &__turn-13 {
-    position: absolute;
-    top: 6.1%;
-    left: 21.4%;
-    // scale: 1.325;
-    z-index: 2;
-  }
+  // // .buildings__turn-13
+  // &__turn-13 {
+  //   position: absolute;
+  //   top: 6.1%;
+  //   left: 21.4%;
+  //   // scale: 1.325;
+  //   z-index: 2;
+  // }
 
   // &__turn-all {
   //   position: absolute;
@@ -340,29 +337,25 @@
   // }
 }
 
-// .turn-pointer__svg
-.turn-pointer {
-  display: inline-block;
-  fill: $color-green;
-  width: 42px;
-  height: 63px;
-  position: relative;
+// // .turn-pointer__svg
+// .turn-pointer {
+//   display: inline-block;
+//   fill: $color-green;
+//   width: 42px;
+//   height: 63px;
+//   position: relative;
 
-  & svg {
-    max-width: 100%;
-    height: 100%;
-  }
-}
+//   & svg {
+//     max-width: 100%;
+//     height: 100%;
+//   }
+// }
 
 //==================================================================================================== BUILDINGS END
-
-
-
 
 //==================================================================================================== APARTMENT START
 
 .apartments {
- 
   // .apartments__search-form
   &__search-form {
     display: flex;
@@ -553,9 +546,6 @@
 
 //==================================================================================================== APARTMENT END
 
-
-
-
 //==================================================================================================== BENEFITS START
 
 .benefits {
@@ -598,13 +588,9 @@
 
 //==================================================================================================== BENEFITS END
 
-
-
-
 //==================================================================================================== LOCATION START
 
 .location {
- 
   // .location__map-img
   &__map-img {
     min-width: 100%;
@@ -621,19 +607,14 @@
     max-width: 32%;
     margin: 0 auto;
     padding: rem(8);
-    
   }
 }
 
 //==================================================================================================== LOCATION END
 
-
-
-
 //==================================================================================================== NEWS START
 
 .news {
-
   // .news__slider
   &__slider {
     margin-bottom: rem(70);
@@ -733,9 +714,6 @@
 
 //==================================================================================================== NEWS END
 
-
-
-
 //==================================================================================================== INTEREST START
 
 .interest {
@@ -775,7 +753,3 @@
 }
 
 //==================================================================================================== INTEREST END
-
-
-
-

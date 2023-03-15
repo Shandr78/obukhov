@@ -7,11 +7,11 @@ $color-white-op: rgba(255, 255, 255, 0.3);
 $color-border: rgba(114, 114, 114, 0.3);
 $color-grey: rgba(53, 53, 53, 0.7);
 $color-grey-bg: rgba(114, 114, 114, 0.3);
-$color-orange:#FD8D25;
+$color-orange: #fd8d25;
 
 input[type="text"],
 input[type="email"],
-input[type="tel"]{
+input[type="tel"] {
   background-color: $color-darck;
   width: 100%;
   height: rem(35);
@@ -24,9 +24,9 @@ input[type="tel"]{
   &::placeholder {
     outline: none;
     color: #ffffff; /* изменяем цвет текста на серый */
-    background-color:#353535;
+    background-color: #353535;
   }
-  
+
   &:active,
   &:focus,
   &:hover {
@@ -46,22 +46,36 @@ textarea {
   padding: 10px 0px;
   border-radius: 0;
   border-bottom: 1px dashed #ffffff;
-  overflow-y:auto;
+  overflow-y: auto;
   color: #ffffff; /* изменяем цвет текста на серый */
   &::placeholder {
     color: #ffffff; /* изменяем цвет текста на серый */
-    background-color:#353535;
+    background-color: #353535;
   }
   &:active,
   &:focus,
   &:hover {
-   outline: none; /* убрать стандартный обводку */
-   border-bottom: 1px dashed $color-green; /* установить цвет границы */
+    outline: none; /* убрать стандартный обводку */
+    border-bottom: 1px dashed $color-green; /* установить цвет границы */
   }
-  
-
 }
 
+input[type="checkbox"] {
+  &:disabled {
+    outline: none; /* убрать стандартный обводку */
+    background-color:rgba(114, 114, 114, 0.3);
+    border: 0px;
+    & + label {
+      color: rgba(114, 114, 114, 0.3);
+    }
+    &:active,
+    &:focus,
+    &:hover {
+      background-color:rgba(114, 114, 114, 0.3);
+      border: 1px solid brgba(114, 114, 114, 0.3); /* установить цвет границы */
+    }
+  } 
+}
 .wrap-container {
   // max-width: 1440px;
   max-width: 1530px;
@@ -93,12 +107,7 @@ textarea {
   margin-bottom: 40px;
 }
 
-
-
 //==================================================================================================== TITLE END
-
-
-
 
 //==================================================================================================== BTN START
 // ._icon-arrow
@@ -143,7 +152,6 @@ textarea {
   }
 }
 
-
 // btn dark
 .dark-btn {
   background-color: $color-darck;
@@ -164,10 +172,6 @@ textarea {
   display: inline-block;
   color: $color-green;
 }
-
-
-
-
 
 .visually-hidden {
   position: absolute !important;

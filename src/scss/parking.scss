@@ -1,0 +1,176 @@
+.parking-page {
+  margin-top: rem(37);
+  // .parking-page__container
+
+  &__container {
+  }
+
+  // .parking-page__title
+
+  &__title {
+  }
+
+  // .parking-page__info-title
+
+  &__info-title {
+    margin-bottom: rem(70);
+  }
+
+  // .parking-page__search-form
+
+  &__search-form {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 1.58%;
+    margin-bottom: 70px;
+  }
+
+  &__btn-search,
+  &__spollers-house {
+    flex-basis: 397px;
+    max-width: 397px;
+    text-align: center;
+    flex-grow: 1;
+    border: 1px solid $color-border;
+    // &:focus,
+    // &:hover{
+    //   border: 1px solid $color-darck;
+    // }
+  }
+
+  // .parking-page__spollers-house
+
+  &__spollers-house {
+    
+    
+  }
+
+  // .parking-page__spollers-item
+
+  &__spollers-item {
+    text-align: center;
+    position: relative;
+  }
+
+  // .parking-page__spollers-title
+
+  &__spollers-title {
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: rem(8);
+    transition: all 0.3s ease-in-out 0s;
+    &:focus,
+    &:hover {
+      font-weight: 800;
+    }
+    & span {
+      position: absolute;
+      right: rem(15.2);
+      top: rem(11);
+      transform: rotate(180deg);
+      transition: all 0.3s ease-in-out 0s;
+      &:focus,
+      &:hover {
+        font-weight: 800;
+      }
+    }
+
+    &._spoller-active {
+      font-weight: 800;
+      & span {
+        transform: rotate(0deg);
+        font-weight: 800;
+        // transform: matrix(0, -1, 1, 0, 0, 0);
+      }
+    }
+  }
+
+  // .parking-page__spollers-body
+
+  &__spollers-body {
+    width: inherit;
+    padding: 0 0 1.9375rem 0;
+    border-top: 1px solid $color-border;
+  }
+
+  // .parking-page__spollers-element
+
+  &__spollers-element {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    @include adaptiveValue("padding-left", 135, 5);
+    &:not(:last-child) {
+      padding-bottom: rem(15);
+    }
+    &:first-child {
+      padding-top: rem(31);
+      // border-top: 1px solid $color-darck;
+    }
+    & label {
+      padding-left: rem(18);
+    }
+    & input[type="checkbox"] {
+      appearance: none;
+      width: 1rem;
+      height: 1rem;
+      background-color: transparent;
+      border: 1px solid $color-darck;
+      transition: all 0.3s linear 0s;
+    }
+
+    input[type="checkbox"]:checked {
+      background-color: $color-green;
+      border: 1px solid $color-green;
+    }
+  }
+
+  // .parking-page__btn-search
+
+  &__btn-search {
+    padding: rem(8);
+  }
+
+  // .parking-page__images-box
+
+  &__images-box {
+    max-width: 806px;
+    max-height: 567px;
+    margin: 0 auto;
+    margin-bottom: rem(70);
+  }
+
+  // .parking-page__images
+
+  &__image {
+    background-image: url(../img/planning/parking/plan-parking-10.jpg);
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: auto;
+
+    & svg {
+      width: 100%;
+      height: auto;
+      
+    }
+    // & .parking-bg:focus,
+    & .parking-bg {
+      transition: all 0.3s linear 0s;
+    }
+
+    & .parking-bg:hover {
+      fill-opacity: 1;
+      & + path {
+        fill: #ffffff;
+        pointer-events: none;
+      }
+    }
+  }
+
+  // .parking-page__img
+
+  &__img {
+  }
+}

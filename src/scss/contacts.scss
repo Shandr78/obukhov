@@ -1,15 +1,17 @@
 .contacts {
-  margin-top: 107px;
+  margin-top: rem(37);
 //   margin-bottom: 70px;
 
   // .contacts__info
 
   &__info {
+    justify-content: flex-start;
   }
 
   // .contacts__info-title
 
   &__info-title {
+    margin-right: 28%;
   }
 
   // .contacts__info-column
@@ -19,8 +21,8 @@
     padding: 5px;
     & + .contacts__info-column {
       max-width: rem(311);
-      margin-left: 218px;
-      margin-right: 199px;
+      margin-left: 17.5%;
+      // margin-right: 199px;
     }
   }
 
@@ -73,3 +75,5 @@
     
   }
 }
+
+
