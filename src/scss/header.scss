@@ -45,7 +45,7 @@
     // height: 70px;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-end;
     // margin-top: 1.5625rem;
     padding-bottom: 1.375rem;
@@ -72,8 +72,9 @@
     // .header-top__contacts
 
     &__contacts {
-      //   margin-left: 135px;
-      @include adaptiveValue("margin-left", 135, 35);
+        // margin-left: 208px;
+      @include adaptiveValue("margin-left", 238, 42);
+      
     }
 
     // .header-top__contacts-phone
@@ -95,7 +96,9 @@
 
     &__menu {
       //   margin-left: 100px;
-      @include adaptiveValue("margin-left", 102, 22);
+      // @include adaptiveValue("margin-left", 134, 24);
+      @include adaptiveValue("margin-left", 134, 24);
+      // margin-left: 92px;
     }
 
     // .header-top__menu-list
@@ -125,17 +128,20 @@
 
 ._header-scroll {
   position: fixed;
-  top: -200%;
+  top: 0;
+  opacity: 0.8;
 }
 ._header-show {
-  transition: top 0.3s ease-out 0s;
-  top: 0;
+  transition: opacity 0.3s ease-out 0s;
+  // top: 0;
+  opacity: 0.9;
 }
 
 //====================================================================================================
 //Burger
 .menu__icon{
-  @include adaptiveValue("margin-rigth", 22, 12);
+  // @include adaptiveValue("margin-rigth", 22, 12);
+  margin-left: auto;
 }
 .icon-menu {
   //   display: none;

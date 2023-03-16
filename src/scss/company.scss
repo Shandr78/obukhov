@@ -1,12 +1,14 @@
 //==================================================================================================== COMPANY PROMO START
 
 .company-promo {
-  max-width: 100vw;
+  min-width: 100vw;
   // transition: filter ease 4.5s;
   & img {
-    min-width: 100vw;
+    width: 100%;
     height: calc(100vh - 70px - 37px);
     position: relative;
+    object-fit: cover;
+    object-position: 0% 20%;
     // margin-top: 70px;
     z-index: 1;
     filter: blur(4px);
@@ -29,8 +31,8 @@
     text-transform: uppercase;
     color: #ffffff;
     position: absolute;
-    left: 50%;
     top: rem(287);
+    left: 50%;
     transform: translate(-50%, 0);
     z-index: 2;
     & span {
@@ -53,7 +55,7 @@
     z-index: 2;
     display: flex;
     justify-content: center;
-    gap: rem(32);
+    gap: rem(31);
     left: 50%;
     top: 58%;
     transform: translate(-50%, 0);
@@ -65,8 +67,8 @@
     align-items: center;
     background: rgba(196, 196, 196, 0.05);
     border: 1px solid #ffffff;
-    @include adaptiveValue("width", 397, 243);
-    // width: rem(397);
+    @include adaptiveValue("width", 462, 243);
+    // width: 397px;
     height: rem(140);
     overflow: hidden;
     opacity: 0;
@@ -184,22 +186,40 @@
   // .company-atention__title
 
   &__title {
+    width: 66%;
+    margin-left: auto;
+    margin-bottom: 70px;
   }
 
   // .company-atention__info
 
   &__info {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 70px;
   }
 
   // .company-atention__info-title
 
   &__info-title {
+    min-width: rem(397);
+    width: 31.33%;
+    flex-grow: 1;
+    margin-right: auto;
   }
 
   // .company-atention__info-text
 
   &__info-text {
+    width: 32.33%;
+    min-width: rem(397);
+    flex-grow: 0;
+    text-overflow: ellipsis;
+    padding-right: rem(15);
+   
+  
   }
+  
 
   // .company-atention__slider
 
@@ -240,14 +260,21 @@
   // .company-atention__btn-link
 
   &__btn-link {
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
     // flex-basis: 397px;
+    display: block;
+    text-align: center;
     max-width: 32%;
     margin: 0 auto;
     padding: rem(8);
   }
 }
+
+.company-atention__info-text + .company-atention__info-text{
+  margin-left: 15px;
+}
+
 
 //==================================================================================================== COMPANY ATENTION END
 
@@ -256,31 +283,35 @@
 .social {
   // .social__wrap
 
-  &__wrap {
+  &__cards {
     display: flex;
-    justify-content: space-between;
-    gap: 31px;
+    justify-content: center;
+    gap: 26px;
   }
 
   // .social__card
 
-  &__cards {
+  &__card {
     border: 1px solid $color-border;
-    max-width: rem(379);
+
+    // max-width: rem(379);
   }
 
-  &__card {
+  &__card-info {
     display: flex;
     flex-direction: column;
     // justify-content: space-around;
     // align-content: start;
-    max-width: rem(183);
+    width: 184px;
     @include adaptiveValue("height", 397, 243);
     // min-height: rem(397);
     @include adaptiveValue("margin-top", 140, 70);
-    @include adaptiveValue("margin-right", 97, 47);
     @include adaptiveValue("margin-bottom", 70, 35);
-    @include adaptiveValue("margin-left", 97, 47);
+    @include adaptiveValue("margin-right", 139, 47);
+    @include adaptiveValue("margin-left", 139, 47);
+    // margin-right: 50px;
+    // margin-left: 50px;
+
     // margin: rem(140) rem(97) rem(70) rem(97);
     & p {
       overflow: hidden;
