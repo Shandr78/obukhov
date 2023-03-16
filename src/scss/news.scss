@@ -12,7 +12,7 @@
 
   &__box {
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
     flex-direction: row-reverse;
     border: 1px solid $color-grey-bg;
     margin-bottom: rem(70);
