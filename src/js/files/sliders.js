@@ -203,17 +203,17 @@ function initSliders() {
         },
         768: {
           slidesPerView: 3,
-          spaceBetween: 10,
+          spaceBetween: 31,
           autoHeight: true,
         },
         992: {
           slidesPerView: 3,
-          spaceBetween: 15,
+          spaceBetween: 31,
           autoHeight: true,
         },
         1268: {
           slidesPerView: 3,
-          spaceBetween: 25,
+          spaceBetween: 31,
           autoHeight: true,
         },
         // 1440: {
@@ -425,17 +425,17 @@ function initSliders() {
         },
         768: {
           slidesPerView: 3,
-          spaceBetween: 10,
+          spaceBetween: 31,
           autoHeight: true,
         },
         992: {
           slidesPerView: 3,
-          spaceBetween: 15,
+          spaceBetween: 31,
           autoHeight: true,
         },
         1268: {
           slidesPerView: 3,
-          spaceBetween: 25,
+          spaceBetween: 31,
           autoHeight: true,
         },
         // 1440: {
@@ -697,7 +697,7 @@ function initSliders() {
       observeParents: true,
       slidesPerView: 3,
       slidesPerGroup: 1,
-      spaceBetween: 102,
+      spaceBetween: 31,
       autoHeight: true,
       speed: 800,
       watchOverflow: true,
@@ -746,30 +746,30 @@ function initSliders() {
 
       // Брейкпоінти
       breakpoints: {
-        // 640: {
-        //   slidesPerView: 1,
-        //   spaceBetween: 0,
-        //   autoHeight: true,
-        // },
-        // 768: {
-        //   slidesPerView: 3,
-        //   spaceBetween: 10,
-        //   autoHeight: true,
-        // },
-        // 992: {
-        //   slidesPerView: 3,
-        //   spaceBetween: 15,
-        //   autoHeight: true,
-        // },
-        // 1268: {
-        //   slidesPerView: 3,
-        //   spaceBetween: 25,
-        //   autoHeight: true,
-        // },
-        // 1440: {
-        // 	slidesPerView: 3,
-        // 	spaceBetween: 5,
-        //   },
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+          autoHeight: true,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 31,
+          autoHeight: true,
+        },
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 31,
+          autoHeight: true,
+        },
+        1268: {
+          slidesPerView: 3,
+          spaceBetween: 31,
+          autoHeight: true,
+        },
+        1440: {
+        	slidesPerView: 3,
+        	spaceBetween: 31,
+          },
         // 1600: {
         // slidesPerView:1.73,
         // spaceBetween: 5,
