@@ -27,8 +27,6 @@
   }
 }
 
-
-
 .documentation {
   // .documentation__slider
 
@@ -47,44 +45,44 @@
   // .documentation__slider-btn
 
   &__slider-btn {
-    min-width: 100%;
-    position: absolute;
-    display: flex;
-    top: calc((50%) - (50px));
-    left: 0;
-    z-index: 6;
+    // min-width: 100%;
+    // position: absolute;
+    // display: flex;
+    // top: calc((50%) - (50px));
+    // left: 0;
+    // z-index: 6;
   }
 
   // .documentation__slider-btn-prev
 
   &__slider-btn-prev {
-    transform: rotate(180deg);
-    @include adaptiveValue("width", 50, 30);
-    @include adaptiveValue("height", 50, 30);
-    background-color: $color-green;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &:hover {
-      opacity: 0.7;
-    }
+    // transform: rotate(180deg);
+    // @include adaptiveValue("width", 50, 30);
+    // @include adaptiveValue("height", 50, 30);
+    // background-color: $color-green;
+    // color: #ffffff;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // &:hover {
+    //   opacity: 0.7;
+    // }
   }
 
   // .documentation__slider-btn-next
 
   &__slider-btn-next {
-    @include adaptiveValue("width", 50, 30);
-    @include adaptiveValue("height", 50, 30);
-    background-color: $color-green;
-    color: #ffffff;
-    margin-left: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &:hover {
-      opacity: 0.7;
-    }
+    // @include adaptiveValue("width", 50, 30);
+    // @include adaptiveValue("height", 50, 30);
+    // background-color: $color-green;
+    // color: #ffffff;
+    // margin-left: auto;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // &:hover {
+    //   opacity: 0.7;
+    // }
   }
 
   // .documentation__wrapper
@@ -156,27 +154,22 @@
     letter-spacing: -0.03em;
     // margin-top: 60px;
     margin-bottom: 70px;
-    
   }
   &__arrow {
     margin-left: rem(10);
   }
 
   &__btn-link {
-    display: flex;
-    justify-content: center;
-    max-width: 31%;
-    margin: 0 auto;
+    // display: flex;
+    // justify-content: center;
+    // max-width: 31%;
+    // margin: 0 auto;
+    // padding: rem(8);
     margin-bottom: 70px;
-    padding: rem(8);
   }
 }
 
-
-
 .documentation-all {
-
- 
   // .documentation-all__cards
 
   &__cards {
@@ -184,13 +177,13 @@
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
     justify-items: center;
-    gap: 102px 102px;
-
+    gap: 31px 31px;
   }
 
   // .documentation-all__card
 
   &__card {
+    width: 100%;
   }
 
   // .documentation-all__card-info
@@ -226,5 +219,3 @@
     margin-left: 10px;
   }
 }
-
-

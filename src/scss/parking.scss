@@ -20,11 +20,12 @@
 
   &__search-form {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: nowrap;
     align-items: flex-start;
-    max-width: rem(930);
-    gap: 30px;
+    // max-width: rem(930);
+    max-width: 66%;
+    gap: 31px;
     margin-bottom: 70px;
   }
 
@@ -44,8 +45,6 @@
   // .parking-page__spollers-house
 
   &__spollers-house {
-    
-    
   }
 
   // .parking-page__spollers-item
@@ -148,12 +147,14 @@
   &__image {
     background-image: url(../img/planning/parking/plan-parking-10.jpg);
     background-repeat: no-repeat;
-    max-width: 100%;
+    width: 100%;
     height: auto;
-
+    background-size: cover;
+   
     & svg {
       width: 100%;
       height: auto;
+      object-fit: cover;
       
     }
     // & .parking-bg:focus,

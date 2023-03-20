@@ -63,7 +63,7 @@ textarea {
 input[type="checkbox"] {
   &:disabled {
     outline: none; /* убрать стандартный обводку */
-    background-color:rgba(114, 114, 114, 0.3);
+    background-color: rgba(114, 114, 114, 0.3);
     border: 0px;
     & + label {
       color: rgba(114, 114, 114, 0.3);
@@ -71,11 +71,12 @@ input[type="checkbox"] {
     &:active,
     &:focus,
     &:hover {
-      background-color:rgba(114, 114, 114, 0.3);
+      background-color: rgba(114, 114, 114, 0.3);
       border: 1px solid brgba(114, 114, 114, 0.3); /* установить цвет границы */
     }
-  } 
+  }
 }
+
 .wrap-container {
   // max-width: 1440px;
   max-width: 1530px;
@@ -109,7 +110,50 @@ input[type="checkbox"] {
 
 //==================================================================================================== TITLE END
 
+//==================================================================================================== COLUMN-TEXT START
+
+// .column-text
+
+.column-text {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 70px;
+  & > p + p {
+    padding-right: rem(0);
+    padding-left: rem(20);
+  }
+  // .column-text__main-title
+
+  &__main-title {
+    width: 66.2%;
+    margin-left: auto;
+    margin-bottom: 70px;
+  }
+
+  // .column-text__info-title
+
+  &__info-title {
+    flex-grow: 1;
+    margin-right: auto;
+  }
+
+  // .column-text__info-item
+
+  &__info-item {
+    width: calc(33.33%);
+    flex-grow: 0;
+    text-overflow: ellipsis;
+    padding-right: rem(11);
+    padding-left: rem(10);
+  }
+}
+
+
+
+//==================================================================================================== COLUMN-TEXT END
+
 //==================================================================================================== BTN START
+
 // ._icon-arrow
 
 .details-link-arrow {
@@ -152,6 +196,47 @@ input[type="checkbox"] {
   }
 }
 
+// .slider-btn-acsent
+.slider-btn-acsent{
+    min-width: 100%;
+    position: absolute;
+    display: flex;
+    top: calc((50%) - (50px));
+    left: 0;
+    z-index: 6;
+    cursor: pointer;
+
+  // .slider-btn-acsent__prev
+  &__prev {
+    transform: rotate(180deg);
+    @include adaptiveValue("width", 50, 30);
+    @include adaptiveValue("height", 50, 30);
+    background-color: $color-green;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  // .slider-btn-acsent__next
+  &__next {
+    @include adaptiveValue("width", 50, 30);
+    @include adaptiveValue("height", 50, 30);
+    background-color: $color-green;
+    color: #ffffff;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
 // btn dark
 .dark-btn {
   background-color: $color-darck;
@@ -166,7 +251,136 @@ input[type="checkbox"] {
   }
 }
 
+// btn-center
+.btn-center {
+  display: flex;
+  justify-content: center;
+  max-width: calc(33.33% - rem(18));
+  margin: 0 auto;
+  padding: rem(8);
+}
+
 //==================================================================================================== BTN END
+
+
+//==================================================================================================== APARTMENTS SEARCH START
+
+// .apartments-search
+.apartments-search {
+  // .apartments-search__search-form
+  &__search-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: rem(31);
+    margin-bottom: 70px;
+  }
+
+  // .apartments-search__spollers-quantity
+  // .apartments-search__spollers-house
+  // .apartments-search__btn-search
+  &__btn-search,
+  &__spollers-quantity,
+  &__spollers-house {
+    flex-basis: 33.33%;
+    text-align: center;
+    // flex-grow: 1;
+    border: 1px solid $color-border;
+    // &:focus,
+    // &:hover{
+    //   border: 1px solid $color-darck;
+    // }
+  }
+
+  // .apartments-search__spollers-item
+  &__spollers-item {
+    text-align: center;
+    position: relative;
+  }
+
+  // .apartments-search__spollers-title
+  &__spollers-title {
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: rem(8);
+    transition: all 0.3s ease-in-out 0s;
+    &:focus,
+    &:hover {
+      font-weight: 800;
+    }
+    & span {
+      position: absolute;
+      right: rem(15.2);
+      top: rem(11);
+      transform: rotate(180deg);
+      transition: all 0.3s ease-in-out 0s;
+      &:focus,
+      &:hover {
+        font-weight: 800;
+      }
+    }
+
+    &._spoller-active {
+      font-weight: 800;
+      & span {
+        transform: rotate(0deg);
+        font-weight: 800;
+        // transform: matrix(0, -1, 1, 0, 0, 0);
+      }
+    }
+  }
+
+  // .apartments-search__spollers-body
+  &__spollers-body {
+    width: inherit;
+    padding: 0 0 1.9375rem 0;
+    border-top: 1px solid $color-border;
+  }
+
+  &__spollers-element {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    @include adaptiveValue("padding-left", 135, 5);
+    &:not(:last-child) {
+      padding-bottom: rem(15);
+    }
+    &:first-child {
+      padding-top: rem(31);
+      // border-top: 1px solid $color-darck;
+    }
+    & label {
+      padding-left: rem(18);
+    }
+    & input[type="checkbox"] {
+      appearance: none;
+      width: 1rem;
+      height: 1rem;
+      background-color: transparent;
+      border: 1px solid $color-darck;
+      transition: all 0.3s linear 0s;
+    }
+
+    input[type="checkbox"]:checked {
+      background-color: $color-green;
+      border: 1px solid $color-green;
+    }
+  }
+
+  // .apartments-search__btn-search
+  &__btn-search {
+    padding: rem(8);
+  }
+}
+
+//==================================================================================================== APARTMENTS SEARCH END
+
+
+
+
+
+
 
 ._icon-location {
   display: inline-block;

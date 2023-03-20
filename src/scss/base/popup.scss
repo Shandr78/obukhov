@@ -60,7 +60,7 @@ body::after {
   }
 }
 
-// =======================================
+// =====================================================================================
 .popup {
   // .popup__callback
 
@@ -271,10 +271,11 @@ body::after {
 .popup__form-tel-question {
 }
 
-// ===========================================================
+// =====================================================================================
 
 .popup-video {
   // .popup-video__wrapper
+  
 
  
   // .popup-video__yotube
@@ -288,4 +289,125 @@ body::after {
   }
 }
 
+// =====================================================================================
 
+.burger-popup {
+  
+  // .burger-popup__wrapper
+
+  &__wrapper {
+  }
+
+  // .burger-popup__content
+
+  &__content {
+   
+  }
+
+  // .burger-popup__close
+
+  &__close {
+  }
+
+  // .burger-popup__menu-body
+
+  &__menu-body {
+  }
+
+  // .burger-popup__menu-list
+
+  &__menu-list {
+  }
+
+  // .burger-popup__menu-item
+
+  &__menu-item {
+  }
+
+  // .burger-popup__menu-link
+
+  &__menu-link {
+  }
+
+  // .burger-popup__menu-social
+
+  &__menu-social {
+  }
+
+  // .burger-popup__menu-social-link
+
+  &__menu-social-link {
+  }
+
+  // .burger-popup__menu-logo
+
+  &__menu-logo {
+  }
+
+  // .burger-popup__menu-logo-img
+
+  &__menu-logo-img {
+  }
+}
+.popup {
+
+  // .popup__wrapper
+
+  &__wrapper {
+  }
+
+  // .popup__content
+
+  &__content {
+   
+  }
+
+  // .popup__close
+
+  &__close {
+  }
+}
+.menu {
+
+  // .menu__body
+
+  &__body {
+  }
+
+  // .menu__list
+
+  &__list {
+  }
+
+  // .menu__item
+
+  &__item {
+  }
+
+  // .menu__link
+
+  &__link {
+  }
+}
+.aside {
+
+  // .aside__social
+
+  &__social {
+  }
+
+  // .aside__social-link
+
+  &__social-link {
+  }
+
+  // .aside__logo
+
+  &__logo {
+  }
+
+  // .aside__logo-img
+
+  &__logo-img {
+  }
+}

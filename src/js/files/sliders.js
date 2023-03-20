@@ -747,8 +747,8 @@ function initSliders() {
       // Брейкпоінти
       breakpoints: {
         640: {
-          slidesPerView: 1,
-          spaceBetween: 0,
+          slidesPerView: 3,
+          spaceBetween: 31,
           autoHeight: true,
         },
         768: {
@@ -770,6 +770,118 @@ function initSliders() {
         	slidesPerView: 3,
         	spaceBetween: 31,
           },
+        // 1600: {
+        // slidesPerView:1.73,
+        // spaceBetween: 5,
+        // },
+        // 1920: {
+        // slidesPerView: 2.08,
+        // spaceBetween: 5,
+        // },
+        // 2560: {
+        // slidesPerView: 2.76,
+        // spaceBetween: 10,
+        // },
+        // 3840: {
+        // slidesPerView: 3.8,
+        // spaceBetween: 30,
+        // },
+        // 4096: {
+        // slidesPerView: 4,
+        // spaceBetween: 30,
+        // },
+      },
+
+      // Події
+      on: {},
+    });
+  }
+
+  if (document.querySelector(".news-page__slider")) {
+    // Вказуємо склас потрібного слайдера
+    // Створюємо слайдер
+    new Swiper(".news-page__slider", {
+      // Вказуємо склас потрібного слайдера
+      // Підключаємо модулі слайдера
+      // для конкретного випадку
+      modules: [Navigation, Autoplay],
+      observer: true,
+      observeParents: true,
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 0,
+      autoHeight: true,
+      speed: 800,
+      watchOverflow: true,
+      effect: "fade",
+      //   autoplay: {
+      //     delay: 6000,
+      //     disableOnInteraction: false,
+      //   },
+
+      // touchRatio: 0,
+      // simulateTouch: false,
+      // loop: true,
+      // preloadImages: false,
+      // lazy: true,
+
+      /*
+			// Ефекти
+			effect: 'fade',
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+			*/
+
+      // Пагінація
+      /*
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			*/
+
+      // Скроллбар
+      /*
+			scrollbar: {
+				el: '.swiper-scrollbar',
+				draggable: true,
+			},
+			*/
+
+      // Кнопки "вліво/вправо"
+      navigation: {
+        prevEl: ".news-page__slider-btn-prev",
+        nextEl: ".news-page__slider-btn-next",
+      },
+
+      // Брейкпоінти
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+          autoHeight: true,
+        },
+        768: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+          autoHeight: true,
+        },
+        992: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+          autoHeight: true,
+        },
+        1268: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+          autoHeight: true,
+        },
+        // 1440: {
+        // 	slidesPerView: 3,
+        // 	spaceBetween: 5,
+        //   },
         // 1600: {
         // slidesPerView:1.73,
         // spaceBetween: 5,

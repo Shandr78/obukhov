@@ -5,30 +5,29 @@
   // .contacts__info
 
   &__info {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 70px;
+    // display: flex;
+    // justify-content: flex-end;
+    // margin-bottom: 70px;
   }
 
   // .contacts__info-title
 
   &__info-title {
-    min-width: rem(397);
-    width: 33.33%;
-    margin-right: auto;
-    // flex-grow: 1;
+    // min-width: rem(397);
+    // width: 33.33%;
+    // margin-right: auto;
   }
 
   // .contacts__info-column
 
   &__info-column {
-    min-width: rem(397);
-    width: 31.8%;
-    flex-grow: 0;
-    text-overflow: ellipsis;
-    padding: 5px;
+    // min-width: rem(397);
+    // width: 31.8%;
+    // flex-grow: 0;
+    // text-overflow: ellipsis;
+    // padding: 5px;
     & + .contacts__info-column {
-      margin-left: 5px;
+      padding-left: 20px;
     }
   }
 

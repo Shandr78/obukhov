@@ -17,23 +17,24 @@
 						Мікрорайон Обухівський Ключ, 1-А</address>
 				</dd>
 				<!-- //////////////////////////////////////////////////////// -->
-				<a class="footer__copyright" href="tel:#">© 2023 zearchitects</a>
+				<dt class="footer__copyright-hour">© 2023</dt>
+				<dd class="footer__copyright-webstudio" ><a href="tel:#"></a>zearchitects</dd>
 			</dl>
 
 			<div class="callback">
 				<form class="callback__form" action="/submit-form" method="post">
 					<p class="callback__form-title">Форма Зворотного зв'язку</p>
 					<div class="callback__form-name">
-						<label for="name"><span></span></label>
-						<input class="input" type="text" id="name" name="name" data-required  data-error="Введіть ім’я" placeholder="Ім’я" required>
+						<label for="user-name"><span></span></label>
+						<input class="input" type="text" id="user-name" name="name" data-required  data-error="Введіть ім’я" placeholder="Ім’я" required>
 					</div>
 					<div class="callback__form-email">
-						<label for="email"><span></span></label>
-						<input class="input" type="email" id="email" name="email" data-required="email" data-error="Введено не вірний E-mail" placeholder="E-mail" required>
+						<label for="user-email"><span></span></label>
+						<input class="input" type="email" id="user-email" name="email" data-required="email" data-error="Введено не вірний E-mail" placeholder="E-mail" required>
 					</div>
 					<div class="callback__form-question">
-						<label for="question"></label>
-						<textarea id="question" class="input" name="question" placeholder="Ваше питання" spellcheck="true" required></textarea>
+						<label for="user-question"></label>
+						<textarea id="user-question" class="input" name="question" placeholder="Ваше питання" spellcheck="true" required></textarea>
 					</div>
 					<button class="callback__form-btn dark-btn" type="submit">Відправити</button>
 				</form>

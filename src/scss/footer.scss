@@ -55,12 +55,13 @@
 
   &__contacts-address {
     margin-bottom: 51px;
-    
   }
 
   // .footer__copyright
 
-  &__copyright {
+  &__copyright-hour,
+  &__copyright-webstudio {
+    display: inline-block;
     font-size: 12px;
     color: $color-white-op;
     text-transform: lowercase;
@@ -120,7 +121,7 @@
   min-width: rem(397);
   width: 33.33%;
   // @include adaptiveValue("margin-right", 124px, 34px);
-  
+
   // .callback__form
 
   &__form {
@@ -139,7 +140,7 @@
 
   &__form-name {
     position: relative;
-    
+
     &::before {
       content: "*";
       font-weight: 800;

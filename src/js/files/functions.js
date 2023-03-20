@@ -427,6 +427,10 @@ export function menuInit() {
 				bodyLockToggle();
 				document.documentElement.classList.toggle("menu-open");
 				menuBody.classList.toggle("_active");
+			} else if ( menuBody.classList.contains('_active') && !menuBody.contains(e.target)) {
+				bodyLockToggle();
+				menuBody.classList.remove("_active");
+				document.documentElement.classList.remove("menu-open");
 			}
 		});
 	};
@@ -439,6 +443,9 @@ export function menuClose() {
 	bodyUnlock();
 	document.documentElement.classList.remove("menu-open");
 }
+
+
+
 // Модуль "показати ще" =======================================================================================================================================================================================================================
 export function showMore() {
 	window.addEventListener("load", function (e) {
