@@ -3,7 +3,7 @@
 .promo {
   background-image: url(@img/home-bg.jpg);
   min-width: 100vw;
-  min-height: calc(100vh - 70px - 37px);
+  min-height: calc(100vh - rem(70) - rem(37));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0% 50%;
@@ -28,6 +28,7 @@
     font-weight: 500;
     @include adaptiveValue("font-size", 72, 42);
     // font-size: rem(72);
+    @include adaptiveValue("font-size", 72, 28, 0, 1230, 430);
     line-height: 85%;
     letter-spacing: 0.007em;
     color: #ffffff;
@@ -36,7 +37,7 @@
 
   // .promo__slider-list
   &__slider-list {
-    padding-left: rem(12);
+    padding-left: em(12);
   }
 }
 
@@ -96,12 +97,15 @@
 
   &__slide {
     // padding: 0px 0px 58% 0px;
+    // width: 100%;
+    // height: auto;
     overflow: hidden;
     // position: relative;
   }
 
   &__slide-img {
     width: 100%;
+    // height: auto;
     object-fit: cover;
     // position: absolute;
   }
@@ -171,7 +175,7 @@
   &__spollers-body {
     text-align: left;
     width: 100%;
-    padding: rem(18) rem(10) rem(18) rem(0);
+    padding: rem(9) rem(0) rem(7) rem(0);
     border-bottom: 1px dotted $color-darck;
   }
 
@@ -538,7 +542,8 @@
 
   // .apartments__card
   &__card {
-    max-width: 33.33%;
+    max-width: 31.82%;
+    height: auto;
   }
 
   // .apartments__card-planning
@@ -549,22 +554,23 @@
 
   // .apartments__card-info
   &__card-info {
-    width: 100%;
-    padding: rem(15);
-    background-color: $color-grey-bg;
+    // width: 100%;
+    // // height: auto;
+    // padding: rem(15);
+    // background-color: $color-grey-bg;
     // gap: 5px;
 
-    & tr {
-      &:not(:last-child) {
-        margin-bottom: rem(7);
-      }
-    }
-    & td {
-      &:not(:first-child) {
-        text-align: right;
-        // margin-left: auto;
-      }
-    }
+    // & tr {
+    //   &:not(:last-child) {
+    //     margin-bottom: rem(7);
+    //   }
+    // }
+    // & td {
+    //   &:not(:first-child) {
+    //     text-align: right;
+    //     // margin-left: auto;
+    //   }
+    // }
   }
 
   // .apartments__btn-link

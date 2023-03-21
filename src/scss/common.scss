@@ -86,11 +86,13 @@ input[type="checkbox"] {
 //==================================================================================================== TITLE START
 
 .all-sections {
-  margin-bottom: rem(70);
+  // margin-bottom: rem(70);
+  @include adaptiveValue("margin-bottom", 70, 25, 0, 1230, 430);
 }
 .main-title {
   font-weight: 600;
-  font-size: 48px;
+  // font-size: 48px;
+  @include adaptiveValue("font-size", 48, 16, 0, 1230, 430);
   line-height: 1.1;
   letter-spacing: -0.04em;
   text-transform: uppercase;
@@ -99,13 +101,16 @@ input[type="checkbox"] {
 
 .info-title {
   font-weight: 600;
-  font-size: 24px;
+  // font-size: 24px;
+  @include adaptiveValue("font-size", 24, 12, 0, 1230, 430);
   line-height: 1;
   letter-spacing: -0.03em;
   margin-bottom: 10px;
 }
 .title-info {
-  margin-bottom: 40px;
+  // margin-bottom: 40px;
+  @include adaptiveValue("margin-bottom", 40, 25, 0, 1230, 430);
+
 }
 
 //==================================================================================================== TITLE END
@@ -117,7 +122,8 @@ input[type="checkbox"] {
 .column-text {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 70px;
+  // margin-bottom: 70px;
+  @include adaptiveValue("margin-bottom", 70, 25, 0, 1230, 430);
   & > p + p {
     padding-right: rem(0);
     padding-left: rem(20);
@@ -127,7 +133,8 @@ input[type="checkbox"] {
   &__main-title {
     width: 66.2%;
     margin-left: auto;
-    margin-bottom: 70px;
+    // margin-bottom: 70px;
+    @include adaptiveValue("margin-bottom", 70, 25, 0, 1230, 430);
   }
 
   // .column-text__info-title
@@ -274,7 +281,8 @@ input[type="checkbox"] {
     flex-wrap: nowrap;
     align-items: flex-start;
     gap: rem(31);
-    margin-bottom: 70px;
+    // margin-bottom: 70px;
+    @include adaptiveValue("margin-bottom", 70, 25);
   }
 
   // .apartments-search__spollers-quantity
@@ -342,7 +350,8 @@ input[type="checkbox"] {
     display: flex;
     align-items: center;
     text-align: left;
-    @include adaptiveValue("padding-left", 135, 5);
+    // @include adaptiveValue("padding-left", 135, 5);
+    padding-left: rem(135);
     &:not(:last-child) {
       padding-bottom: rem(15);
     }
@@ -359,6 +368,7 @@ input[type="checkbox"] {
       height: 1rem;
       background-color: transparent;
       border: 1px solid $color-darck;
+      border-radius: 0;
       transition: all 0.3s linear 0s;
     }
 
