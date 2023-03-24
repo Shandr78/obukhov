@@ -94,6 +94,8 @@
     &__contacts-phone {
       font-variant: small-caps;
       padding: 5px;
+      
+      @include adaptiveValue("padding-left", 5, 0, 0, 1230, 780);
     }
 
     // .header-top__contacts-callback
@@ -146,7 +148,7 @@
 ._header-scroll {
   position: fixed;
   top: 0;
-  opacity: 0.8;
+  opacity: 0.96;
 }
 ._header-show {
   transition: opacity 0.3s ease-out 0s;

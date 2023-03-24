@@ -79,6 +79,10 @@
     // margin-bottom: 70px;
   }
 
+  &__info--ipad {
+    display: none;
+  }
+
   // .atention__info-title
   &__info-title {
     // flex-grow: 1;
@@ -87,7 +91,6 @@
 
   // .atention__info-text
   &__info-text {
-  
     // width: calc(33.33%);
     // flex-grow: 0;
     // text-overflow: ellipsis;
@@ -95,19 +98,21 @@
     // padding-left: rem(10);
   }
 
+
+  &__slider-btn {
+    justify-content: flex-end;
+    margin-bottom: rem(25);
+  }
+
   &__slide {
-    // padding: 0px 0px 58% 0px;
-    // width: 100%;
-    // height: auto;
     overflow: hidden;
-    // position: relative;
+    height: auto;
   }
 
   &__slide-img {
-    width: 100%;
-    // height: auto;
+    min-width: 100%;
+    height: auto;
     object-fit: cover;
-    // position: absolute;
   }
 }
 .atention__info-text + .atention__info-text {
@@ -235,7 +240,7 @@
   // .characteristics__video-btn
   &__video-btn {
     max-width: 117px;
-      height: auto;
+    height: auto;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -324,6 +329,9 @@
     }
   }
 
+  &__image-box-mobile {
+    display: none;
+  }
   // // .buildings__turn-10
   // &__turn-10 {
   //   position: absolute;
@@ -497,6 +505,7 @@
   &__slider {
     min-width: 100%;
     margin-bottom: rem(35);
+    @include adaptiveValue("margin-bottom", 35, 25, 0, 1230, 550);
     position: relative;
   }
 
@@ -542,7 +551,7 @@
 
   // .apartments__card
   &__card {
-    max-width: 31.82%;
+    width: 100%;
     height: auto;
   }
 
@@ -599,7 +608,8 @@
     // max-width: rem(825);
     // width: 65%;
     margin-left: 34%;
-    margin-bottom: 70px;
+    // margin-bottom: 70px;
+    @include adaptiveValue("margin-bottom", 70, 25, 0, 1230, 550);
   }
 
   // .benefits__info-title
@@ -633,10 +643,19 @@
 .location {
   // .location__map-img
   &__map-img {
-    min-width: 100%;
+    width: 100%;
     height: auto;
-    object-fit: cover;
-    margin-bottom: 78px;
+    // object-fit: contain;
+    // object-position: right top;
+    // margin-bottom: 78px;
+    @include adaptiveValue("margin-bottom", 78, 25, 0, 1230, 550);
+    overflow: hidden;
+    &:nth-child(2) {
+      display: none;
+    }
+    &:nth-child(3) {
+      display: none;
+    }
   }
 
   // .location__btn-link
@@ -658,7 +677,8 @@
   // .news__slider
   &__slider {
     min-width: 100%;
-    margin-bottom: rem(70);
+    // margin-bottom: rem(70);
+    @include adaptiveValue("margin-bottom", 70, 25, 0, 1230, 550);
     position: relative;
   }
 
@@ -703,7 +723,7 @@
 
   // .news__card
   &__card {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     border: 2px solid $color-border;
     display: flex;
@@ -796,3 +816,13 @@
 }
 
 //==================================================================================================== INTEREST END
+
+//==================================================================================================== footer contacts-callback START
+
+.contacts-callback {
+  display: none;
+}
+
+.contacts-callback__btn {
+  display: none;
+}

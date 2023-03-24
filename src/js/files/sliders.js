@@ -37,20 +37,26 @@ function initSliders() {
       modules: [Navigation, Autoplay],
       observer: true,
       observeParents: true,
-      slidesPerView: 1.55,
+      // slidesPerView: 1.55,
       spaceBetween: 5,
       autoHeight: true,
+      loop: true,
       speed: 1000,
+      grabCursor: true,
       watchOverflow: true,
       effect: "fade",
-      autoplay: {
-        delay: 6000,
-        disableOnInteraction: 1,
+      // autoplay: {
+      //   delay: 6000,
+      //   disableOnInteraction: 1,
+      // },
+      navigation: {
+        prevEl: ".atention__slider-btn-prev",
+        nextEl: ".atention__slider-btn-next",
       },
 
       // touchRatio: 0,
       // simulateTouch: false,
-      loop: true,
+      // loop: true,
       // preloadImages: false,
       // lazy: true,
 
@@ -80,44 +86,36 @@ function initSliders() {
 			*/
 
       // Кнопки "вліво/вправо"
-      navigation: {
-        prevEl: ".atention__slider-btn-prev",
-        nextEl: ".atention__slider-btn-next",
-      },
+      // navigation: {
+      //   prevEl: ".atention__slider-btn-prev",
+      //   nextEl: ".atention__slider-btn-next",
+      // },
 
       // Брейкпоінти
       breakpoints: {
-        640: {
+        550: {
           slidesPerView: 1,
-          spaceBetween: 5,
         },
-        768: {
+        780: {
           slidesPerView: 1,
-          spaceBetween: 5,
         },
         992: {
           slidesPerView: 1.55,
-          spaceBetween: 5,
         },
         1268: {
           slidesPerView: 1.55,
-          spaceBetween: 5,
         },
         1440: {
           slidesPerView: 1.55,
-          spaceBetween: 5,
         },
         1600: {
           slidesPerView: 1.55,
-          spaceBetween: 5,
         },
         1920: {
           slidesPerView: 1.55,
-          spaceBetween: 5,
         },
         2560: {
           slidesPerView: 1.55,
-          spaceBetween: 5,
         },
       },
 
@@ -136,17 +134,17 @@ function initSliders() {
       modules: [Navigation, Autoplay],
       observer: true,
       observeParents: true,
-      slidesPerView: 3,
       slidesPerGroup: 1,
       spaceBetween: 31,
       autoHeight: true,
+      grabCursor: true,
       speed: 800,
       watchOverflow: true,
       effect: "fade",
-      //   autoplay: {
-      //     delay: 6000,
-      //     disableOnInteraction: false,
-      //   },
+      // autoplay: {
+      //   delay: 6000,
+      //   disableOnInteraction: false,
+      // },
 
       // touchRatio: 0,
       // simulateTouch: false,
@@ -187,52 +185,30 @@ function initSliders() {
 
       // Брейкпоінти
       breakpoints: {
-        640: {
-          slidesPerView: 1,
-          
-          
-         
+        550: {
+          slidesPerView: 2,
         },
-        768: {
-          slidesPerView: 1,
-         
-        
-          
+        780: {
+          slidesPerView: 2,
         },
-        // 992: {
-        //   slidesPerView: 3,
-        //   spaceBetween: 31,
-        //   autoHeight: true,
-        // },
-        // 1268: {
-        //   slidesPerView: 3,
-        //   spaceBetween: 31,
-        //   autoHeight: true,
-        // },
-        // 1440: {
-        // 	slidesPerView: 3,
-        // 	spaceBetween: 5,
-        //   },
-        // 1600: {
-        // slidesPerView:1.73,
-        // spaceBetween: 5,
-        // },
-        // 1920: {
-        // slidesPerView: 2.08,
-        // spaceBetween: 5,
-        // },
-        // 2560: {
-        // slidesPerView: 2.76,
-        // spaceBetween: 10,
-        // },
-        // 3840: {
-        // slidesPerView: 3.8,
-        // spaceBetween: 30,
-        // },
-        // 4096: {
-        // slidesPerView: 4,
-        // spaceBetween: 30,
-        // },
+        992: {
+          slidesPerView: 3,
+        },
+        1268: {
+          slidesPerView: 3,
+        },
+        1440: {
+          slidesPerView: 3,
+        },
+        1600: {
+          slidesPerView: 3,
+        },
+        1920: {
+          slidesPerView: 3,
+        },
+        2560: {
+          slidesPerView: 3,
+        },
       },
 
       // Події
@@ -250,16 +226,16 @@ function initSliders() {
       modules: [Navigation, Autoplay],
       observer: true,
       observeParents: true,
-      slidesPerView: 1.55,
       spaceBetween: 5,
       autoHeight: true,
+      grabCursor: true,
       speed: 800,
       watchOverflow: true,
       effect: "slide",
-      //   autoplay: {
-      //     delay: 6000,
-      //     disableOnInteraction: false,
-      //   },
+      // autoplay: {
+      //   delay: 12000,
+      //   disableOnInteraction: false,
+      // },
 
       // touchRatio: 0,
       // simulateTouch: false,
@@ -300,56 +276,37 @@ function initSliders() {
 
       // Брейкпоінти
       breakpoints: {
-        640: {
-          slidesPerView: 1.55,
-          spaceBetween: 3,
-          autoHeight: true,
+        550: {
+          slidesPerView: 1,
         },
-        768: {
-          slidesPerView: 1.55,
-          spaceBetween: 5,
-          autoHeight: true,
+        780: {
+          slidesPerView: 1,
         },
         992: {
           slidesPerView: 1.55,
-          spaceBetween: 5,
-          autoHeight: true,
         },
         1268: {
           slidesPerView: 1.55,
-          spaceBetween: 5,
-          autoHeight: true,
         },
-        // 1440: {
-        // 	slidesPerView: 3,
-        // 	spaceBetween: 5,
-        //   },
-        // 1600: {
-        // slidesPerView:1.73,
-        // spaceBetween: 5,
-        // },
-        // 1920: {
-        // slidesPerView: 2.08,
-        // spaceBetween: 5,
-        // },
-        // 2560: {
-        // slidesPerView: 2.76,
-        // spaceBetween: 10,
-        // },
-        // 3840: {
-        // slidesPerView: 3.8,
-        // spaceBetween: 30,
-        // },
-        // 4096: {
-        // slidesPerView: 4,
-        // spaceBetween: 30,
-        // },
+        1440: {
+          slidesPerView: 1.55,
+        },
+        1600: {
+          slidesPerView: 1.55,
+        },
+        1920: {
+          slidesPerView: 1.55,
+        },
+        2560: {
+          slidesPerView: 1.55,
+        },
       },
 
       // Події
       on: {},
     });
   }
+
   if (document.querySelector(".news__slider")) {
     // Вказуємо склас потрібного слайдера
     // Створюємо слайдер
@@ -360,10 +317,10 @@ function initSliders() {
       modules: [Navigation, Autoplay],
       observer: true,
       observeParents: true,
-      slidesPerView: 3,
       slidesPerGroup: 1,
       spaceBetween: 31,
       autoHeight: true,
+      grabCursor: true,
       speed: 800,
       watchOverflow: true,
       effect: "fade",
@@ -411,50 +368,30 @@ function initSliders() {
 
       // Брейкпоінти
       breakpoints: {
-        640: {
-          slidesPerView: 1,
-          spaceBetween: 0,
-          autoHeight: true,
+        550: {
+          slidesPerView: 2,
         },
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 31,
-          autoHeight: true,
+        780: {
+          slidesPerView: 2,
         },
         992: {
           slidesPerView: 3,
-          spaceBetween: 31,
-          autoHeight: true,
         },
         1268: {
           slidesPerView: 3,
-          spaceBetween: 31,
-          autoHeight: true,
         },
-        // 1440: {
-        // 	slidesPerView: 3,
-        // 	spaceBetween: 5,
-        //   },
-        // 1600: {
-        // slidesPerView:1.73,
-        // spaceBetween: 5,
-        // },
-        // 1920: {
-        // slidesPerView: 2.08,
-        // spaceBetween: 5,
-        // },
-        // 2560: {
-        // slidesPerView: 2.76,
-        // spaceBetween: 10,
-        // },
-        // 3840: {
-        // slidesPerView: 3.8,
-        // spaceBetween: 30,
-        // },
-        // 4096: {
-        // slidesPerView: 4,
-        // spaceBetween: 30,
-        // },
+        1440: {
+          slidesPerView: 3,
+        },
+        1600: {
+          slidesPerView: 3,
+        },
+        1920: {
+          slidesPerView: 3,
+        },
+        2560: {
+          slidesPerView: 3,
+        },
       },
 
       // Події
@@ -472,9 +409,9 @@ function initSliders() {
       modules: [Navigation, Autoplay],
       observer: true,
       observeParents: true,
-      slidesPerView: 1.55,
       spaceBetween: 5,
       autoHeight: true,
+      grabCursor: true,
       speed: 800,
       watchOverflow: true,
       effect: "fade",
@@ -522,47 +459,30 @@ function initSliders() {
 
       // Брейкпоінти
       breakpoints: {
-        640: {
-          slidesPerView: 1.55,
-          spaceBetween: 3,
-          autoHeight: true,
+        550: {
+          slidesPerView: 1,
         },
-        768: {
-          slidesPerView: 1.55,
-          spaceBetween: 5,
+        780: {
+          slidesPerView: 1,
         },
         992: {
           slidesPerView: 1.55,
-          spaceBetween: 5,
         },
         1268: {
           slidesPerView: 1.55,
-          spaceBetween: 5,
         },
         1440: {
           slidesPerView: 1.55,
-          spaceBetween: 5,
         },
-        // 1600: {
-        // slidesPerView:1.73,
-        // spaceBetween: 5,
-        // },
-        // 1920: {
-        // slidesPerView: 2.08,
-        // spaceBetween: 5,
-        // },
-        // 2560: {
-        // slidesPerView: 2.76,
-        // spaceBetween: 10,
-        // },
-        // 3840: {
-        // slidesPerView: 3.8,
-        // spaceBetween: 30,
-        // },
-        // 4096: {
-        // slidesPerView: 4,
-        // spaceBetween: 30,
-        // },
+        1600: {
+          slidesPerView: 1.55,
+        },
+        1920: {
+          slidesPerView: 1.55,
+        },
+        2560: {
+          slidesPerView: 1.55,
+        },
       },
 
       // Події
@@ -583,6 +503,7 @@ function initSliders() {
       slidesPerView: 3,
       spaceBetween: 5,
       autoHeight: true,
+      grabCursor: true,
       speed: 800,
       watchOverflow: true,
       effect: "fade",
@@ -630,47 +551,36 @@ function initSliders() {
 
       // Брейкпоінти
       breakpoints: {
-        640: {
+        550: {
           slidesPerView: 2,
-          spaceBetween: 3,
-          autoHeight: true,
         },
-        768: {
+        780: {
           slidesPerView: 2,
-          spaceBetween: 5,
         },
         992: {
           slidesPerView: 3,
-          spaceBetween: 5,
         },
         1268: {
           slidesPerView: 3,
-          spaceBetween: 5,
         },
         1440: {
           slidesPerView: 3,
-          spaceBetween: 5,
         },
-        // 1600: {
-        // slidesPerView:1.73,
-        // spaceBetween: 5,
-        // },
-        // 1920: {
-        // slidesPerView: 2.08,
-        // spaceBetween: 5,
-        // },
-        // 2560: {
-        // slidesPerView: 2.76,
-        // spaceBetween: 10,
-        // },
-        // 3840: {
-        // slidesPerView: 3.8,
-        // spaceBetween: 30,
-        // },
-        // 4096: {
-        // slidesPerView: 4,
-        // spaceBetween: 30,
-        // },
+        1600: {
+          slidesPerView: 3,
+        },
+        1920: {
+          slidesPerView: 3,
+        },
+        2560: {
+          slidesPerView: 4,
+        },
+        3840: {
+          slidesPerView: 4,
+        },
+        4096: {
+          slidesPerView: 6,
+        },
       },
 
       // Події
@@ -688,10 +598,10 @@ function initSliders() {
       modules: [Navigation, Autoplay],
       observer: true,
       observeParents: true,
-      slidesPerView: 3,
       slidesPerGroup: 1,
       spaceBetween: 31,
       autoHeight: true,
+      grabCursor: true,
       speed: 800,
       watchOverflow: true,
       effect: "fade",
@@ -739,42 +649,30 @@ function initSliders() {
 
       // Брейкпоінти
       breakpoints: {
-        640: {
-          slidesPerView: 3,
-          spaceBetween: 31,
-          autoHeight: true,
+        550: {
+          slidesPerView: 2,
         },
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 31,
-          autoHeight: true,
+        780: {
+          slidesPerView: 2,
         },
         992: {
           slidesPerView: 3,
-          spaceBetween: 31,
-          autoHeight: true,
         },
         1268: {
           slidesPerView: 3,
-          spaceBetween: 31,
-          autoHeight: true,
         },
         1440: {
           slidesPerView: 3,
-          spaceBetween: 31,
         },
-        // 1600: {
-        // slidesPerView:1.73,
-        // spaceBetween: 5,
-        // },
-        // 1920: {
-        // slidesPerView: 2.08,
-        // spaceBetween: 5,
-        // },
-        // 2560: {
-        // slidesPerView: 2.76,
-        // spaceBetween: 10,
-        // },
+        1600: {
+          slidesPerView: 3,
+        },
+        1920: {
+          slidesPerView: 3,
+        },
+        2560: {
+          slidesPerView: 3,
+        },
         // 3840: {
         // slidesPerView: 3.8,
         // spaceBetween: 30,
@@ -804,6 +702,7 @@ function initSliders() {
       slidesPerGroup: 1,
       spaceBetween: 0,
       autoHeight: true,
+      grabCursor: true,
       speed: 800,
       watchOverflow: true,
       effect: "fade",
@@ -851,26 +750,20 @@ function initSliders() {
 
       // Брейкпоінти
       breakpoints: {
-        640: {
-          slidesPerView: 1,
-          spaceBetween: 0,
-          autoHeight: true,
-        },
-        768: {
-          slidesPerView: 1,
-          spaceBetween: 0,
-          autoHeight: true,
-        },
-        992: {
-          slidesPerView: 1,
-          spaceBetween: 0,
-          autoHeight: true,
-        },
-        1268: {
-          slidesPerView: 1,
-          spaceBetween: 0,
-          autoHeight: true,
-        },
+        // 640: {
+        //   slidesPerView: 1,
+        // },
+        // 768: {
+        //   slidesPerView: 1,
+        // },
+        // 992: {
+        //   slidesPerView: 1,
+        //   spaceBetween: 0,
+        //   autoHeight: true,
+        // },
+        // 1268: {
+        //   slidesPerView: 1,
+        // },
         // 1440: {
         // 	slidesPerView: 3,
         // 	spaceBetween: 5,

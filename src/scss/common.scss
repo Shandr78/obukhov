@@ -87,12 +87,12 @@ input[type="checkbox"] {
 
 .all-sections {
   // margin-bottom: rem(70);
-  @include adaptiveValue("margin-bottom", 70, 25, 0, 1230, 430);
+  @include adaptiveValue("margin-bottom", 70, 25, 0, 1230, 550);
 }
 .main-title {
   font-weight: 600;
   // font-size: 48px;
-  @include adaptiveValue("font-size", 48, 16, 0, 1230, 430);
+  @include adaptiveValue("font-size", 48, 16, 0, 1230, 550);
   line-height: 1.1;
   letter-spacing: -0.04em;
   text-transform: uppercase;
@@ -102,14 +102,14 @@ input[type="checkbox"] {
 .info-title {
   font-weight: 600;
   // font-size: 24px;
-  @include adaptiveValue("font-size", 24, 12, 0, 1230, 430);
+  @include adaptiveValue("font-size", 24, 12, 0, 1230, 550);
   line-height: 1;
   letter-spacing: -0.03em;
   margin-bottom: 10px;
 }
 .title-info {
   // margin-bottom: 40px;
-  @include adaptiveValue("margin-bottom", 40, 25, 0, 1230, 430);
+  @include adaptiveValue("margin-bottom", 40, 25, 0, 1230, 550);
 
 }
 
@@ -123,7 +123,7 @@ input[type="checkbox"] {
   display: flex;
   justify-content: flex-end;
   // margin-bottom: 70px;
-  @include adaptiveValue("margin-bottom", 70, 25, 0, 1230, 430);
+  @include adaptiveValue("margin-bottom", 70, 25, 0, 1230, 550);
   & > p + p {
     padding-right: rem(0);
     padding-left: rem(20);
@@ -134,7 +134,7 @@ input[type="checkbox"] {
     width: 66.2%;
     margin-left: auto;
     // margin-bottom: 70px;
-    @include adaptiveValue("margin-bottom", 70, 25, 0, 1230, 430);
+    @include adaptiveValue("margin-bottom", 70, 25, 0, 1230, 550);
   }
 
   // .column-text__info-title
@@ -186,8 +186,8 @@ input[type="checkbox"] {
   display: flex;
   align-items: center;
   margin-left: auto;
-  margin-bottom: em(12);
-  max-width: 5rem;
+  // margin-bottom: em(12);
+  // max-width: 5rem;
   gap: 1.5rem;
 }
 .slider-btn-prev {
