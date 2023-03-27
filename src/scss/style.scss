@@ -154,6 +154,7 @@ body {
 @import "footer";
 
 // Підключення стилів окремих сторінок
+@import "responsive/responsive-common";
 @import "home";
 @import "company";
 @import "documentation";
@@ -166,4 +167,4 @@ body {
 @import "responsive/responsive-footer";
 @import "responsive/responsive-home";
 @import "responsive/responsive-company";
-
+@import "responsive/responsive-documentation";

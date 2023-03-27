@@ -74,49 +74,6 @@
   }
 
   .company-atention {
-    // .company-atention__container
-
-    &__container {
-      padding: 0 rem(20);
-    }
-
-    // .company-atention__title
-
-    &__title {
-      width: 100%;
-      font-size: rem(40);
-      // font-size: calc(10px + 4vw);
-      margin-bottom: rem(60);
-    }
-
-    // .company-atention__info
-
-    &__info {
-    }
-
-    // .company-atention__info-title
-
-    &__info-title {
-      min-width: 52%;
-      flex-shrink: 1;
-      margin: 0;
-    }
-
-    &__info-box--ipad {
-      display: flex;
-      flex-direction: column;
-      font-size: rem(14);
-      & > p:not(:last-child) {
-        margin-bottom: rem(30);
-      }
-    }
-
-    // .company-atention__info-text
-
-    &__info-text {
-      min-width: calc(100% - 0px);
-      padding: 0;
-    }
 
     // .company-atention__slider
 
@@ -125,15 +82,9 @@
     }
 
     &__box {
-      margin-bottom: rem(30);
       & > h3 {
         display: block;
       }
-    }
-    // .company-atention__slider-btn
-
-    &__slider-btn {
-      margin: 0;
     }
 
     // .company-atention__slide
@@ -148,22 +99,9 @@
       max-height: 490px;
     }
 
-    // .company-atention__btn-link
-
-    &__btn-link {
-      min-width: 100%;
-      // margin: 0;
-    }
-  }
-
-  .column-text {
-    margin-bottom: rem(20);
   }
 
   .company-social {
-    &__container {
-      padding: 0 20px;
-    }
 
     // .company-social__info
 
@@ -247,65 +185,11 @@
   }
 
   .company-atention {
-    // .company-atention__title
 
-    &__title {
-      font-size: 16px;
-      margin-bottom: rem(25);
-    }
-
-    // .company-atention__info
-
-    &__info {
-      flex-direction: column;
-      margin-bottom: rem(25);
-    }
-
-    // .company-atention__info-title
-
-    &__info-title {
-    }
-
-    &__info-box--ipad {
-      font-size: rem(12);
-      & > p:not(:last-child) {
-        margin-bottom: rem(15);
-      }
-    }
-
-    // .company-atention__info-text
-
-    &__info-text {
-    }
-  }
-  .column-text__info-title {
-    margin-bottom: rem(25);
   }
 
   .company-social {
-    // .company-social__container
-
-    &__container {
-      padding: 0 20px;
-    }
-
-    // .company-social__info-box
-
-    &__info-box {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    // .company-social__info-title
-
-    &__info-title {
-    }
-
-    // .company-social__info
-
-    &__info {
-      font-size: rem(12);
-    }
+   margin-bottom: rem(5);
 
     // .company-social__card-info
 

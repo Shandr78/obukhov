@@ -11,6 +11,7 @@
   &__title {
   }
 
+
   // .documentation-atention__info
 
   &__info {
@@ -19,11 +20,19 @@
   // .documentation-atention__info-title
 
   &__info-title {
+    min-width: 33.33%;
+    flex-grow: 1;
+  }
+
+  &__info-box--ipad{
+    display: flex;
+    justify-content: space-between;
   }
 
   // .documentation-atention__info-text
 
   &__info-text {
+    width: 50%;
   }
 }
 
@@ -137,14 +146,16 @@
   // .documentation__card-title
 
   &__card-title {
-    width: 183px;
+    width: 182px;
+    min-height: 135px;
     letter-spacing: -0.03em;
     font-weight: 600;
     font-size: 24px;
     line-height: 1.4;
     letter-spacing: -0.03em;
     // flex-grow: 1;
-    // margin-bottom: auto;
+    
+    margin-bottom: 138px;
   }
 
   // .documentation__details-link

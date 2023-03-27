@@ -1,0 +1,147 @@
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1382px) {
+}
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 880px ++++++++++ ipad mini / ipad air
+@media (max-width: 880px) {
+  [class*="__container"] {
+    padding: 0 20px;
+  }
+
+  [class*="__info-box"] {
+  }
+
+  .all-sections {
+    margin-bottom: rem(60);
+  }
+
+  .info-title {
+    font-size: 24px;
+  }
+  // column-text!!!!!!!!!!!!!!
+  .column-text {
+    min-width: 100%;
+
+    &__main-title {
+      width: 100%;
+      font-size: rem(40);
+      margin-bottom: rem(60);
+    }
+    &__info-title {
+      min-width: 50%;
+      margin: 0;
+    }
+    &__info-box--ipad {
+      max-width: calc(50% - 20px);
+      display: flex;
+      flex-direction: column;
+      font-size: rem(14);
+      & > p:not(:last-child) {
+        margin-bottom: rem(30);
+      }
+    }
+    &__info-item {
+      min-width: calc(100% - 0px);
+      padding: 0;
+    }
+  }
+  // column-text!!!!!!!!!!!!!! end
+
+  .slider-btn {
+    // margin-bottom: rem(20);
+  }
+
+  .btn-center {
+    min-width: 100%;
+  }
+
+  .form-search {
+    flex-direction: column;
+    flex-basis: auto;
+    margin-bottom: rem(60);
+    & > div {
+      width: 100%;
+    }
+    & > button {
+      width: 100%;
+    }
+  }
+}
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 550px
+
+@media (max-width: 550px) {
+  [class*="__info-box"] {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .all-sections {
+    margin-bottom: rem(25);
+  }
+
+  .column-text {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: rem(20);
+
+    &__main-title {
+      width: 100%;
+      font-size: 16px;
+      margin-bottom: rem(25);
+    }
+
+    &__info-box--ipad {
+      min-width: 100%;
+      font-size: rem(12);
+      & > p:not(:last-child) {
+        margin-bottom: rem(15);
+      }
+    }
+
+    &__info-title {
+      width: 100%;
+      font-size: 12px;
+      margin-bottom: rem(25);
+    }
+    &__info-item {
+      min-width: 100%;
+      flex-grow: 1;
+      padding: 0;
+    }
+  }
+
+  .main-title {
+    min-width: 100%;
+    margin-bottom: rem(25);
+  }
+
+  .info-title {
+    font-size: rem(12);
+    margin-bottom: rem(25);
+  }
+
+  .slider-btn {
+    margin-bottom: rem(25);
+  }
+
+  ._icon-arrow {
+    padding: 0 5px;
+    font-size: rem(12);
+  }
+
+  .form-search {
+    gap: rem(25);
+    flex-direction: column;
+    margin-bottom: rem(25);
+    & > div {
+      width: 100%;
+    }
+    & > button {
+      width: 100%;
+    }
+  }
+}

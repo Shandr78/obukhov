@@ -122,8 +122,8 @@ input[type="checkbox"] {
 .column-text {
   display: flex;
   justify-content: flex-end;
-  // margin-bottom: 70px;
-  @include adaptiveValue("margin-bottom", 70, 25, 0, 1230, 550);
+  margin-bottom: 70px;
+  // @include adaptiveValue("margin-bottom", 70, 25, 0, 1230, 550);
   & > p + p {
     padding-right: rem(0);
     padding-left: rem(20);
@@ -133,8 +133,8 @@ input[type="checkbox"] {
   &__main-title {
     width: 66.2%;
     margin-left: auto;
-    // margin-bottom: 70px;
-    @include adaptiveValue("margin-bottom", 70, 25, 0, 1230, 550);
+    margin-bottom: 70px;
+    // @include adaptiveValue("margin-bottom", 70, 25, 0, 1230, 550);
   }
 
   // .column-text__info-title
