@@ -56,6 +56,7 @@
     display: flex;
     justify-content: center;
     gap: rem(32);
+    // @include adaptiveValue("gap", 32, 46, 0, 1920, 1440);
     left: 50%;
     top: 58%;
     transform: translate(-50%, 0);
@@ -67,7 +68,8 @@
     align-items: center;
     background: rgba(196, 196, 196, 0.05);
     border: 1px solid #ffffff;
-    @include adaptiveValue("width", 462, 243);
+    // @include adaptiveValue("width", 462, 243);
+    @include adaptiveValue("width", 476, 430, 0, 1920, 1440);
     // width: 397px;
     height: rem(140);
     overflow: hidden;
@@ -203,23 +205,25 @@
 
   &__info-title {
     // min-width: rem(397);
-    // width: 31.33%;
+    min-width: 35.33%;
     // flex-grow: 1;
     // margin-right: auto;
+  }
+
+  &__info-box--ipad {
+    display: flex;
+    justify-content: space-between;
   }
 
   // .company-atention__info-text
 
   &__info-text {
-    // width: 32.5%;
+    width: 50%;
     // min-width: rem(397);
     // flex-grow: 0;
     // text-overflow: ellipsis;
     // padding-right: rem(15);
-   
-  
   }
-  
 
   // .company-atention__slider
 
@@ -227,9 +231,19 @@
     margin-bottom: 70px;
   }
 
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    & > h3 {
+      display: none;
+    }
+  }
+
   // .company-atention__slider-btn
 
   &__slider-btn {
+    justify-content: flex-end;
+    margin-bottom: rem(25);
   }
 
   // .company-atention__slider-btn-prev
@@ -257,39 +271,57 @@
   &__slide-img {
   }
 
+  // .company-atention__wrapper-title
+
+  &__wrapper-title {
+  }
+
+  // .company-atention__slide-title
+
+  &__slide-title {
+    @include adaptiveValue("height", 55, 50, 0, 1920, 880);
+
+    & > h4 {
+      padding-left: 20px;
+      @include adaptiveValue("margin-bottom", 70, 30, 0, 1230, 880);
+    }
+  }
+
   // .company-atention__btn-link
 
   &__btn-link {
     // display: block;
     // text-align: center;
-    // max-width: 32%;
+    max-width: 31.6%;
     // margin: 0 auto;
     // padding: rem(8);
   }
 }
 
-.company-atention__info-text + .company-atention__info-text{
+.company-atention__info-text + .company-atention__info-text {
   // margin-left: 15px;
 }
-
 
 //==================================================================================================== COMPANY ATENTION END
 
 //==================================================================================================== COMPANY SOCIAL START
 
-.social {
-  // .social__wrap
+.company-social {
+  // .company-social__wrap
 
-  &__cards {
-    display: flex;
-    justify-content: center;
-    gap: 26px;
-  }
+  // &__cards {
+  //   display: flex;
+  //   justify-content: center;
+  //   gap: 26px;
+  // }
 
-  // .social__card
+  // .company-social__card
 
   &__card {
     border: 1px solid $color-border;
+    width: 100%;
+    @include adaptiveValue("min-height", 486.66, 298, 0, 1920, 320);
+   
 
     // max-width: rem(379);
   }
@@ -297,39 +329,50 @@
   &__card-info {
     display: flex;
     flex-direction: column;
-    // justify-content: space-around;
-    // align-content: start;
-    width: 184px;
-    @include adaptiveValue("height", 397, 243);
-    // min-height: rem(397);
-    @include adaptiveValue("margin-top", 140, 70);
-    @include adaptiveValue("margin-bottom", 70, 35);
-    @include adaptiveValue("margin-right", 139, 47);
-    @include adaptiveValue("margin-left", 139, 47);
-    // margin-right: 50px;
-    // margin-left: 50px;
-
-    // margin: rem(140) rem(97) rem(70) rem(97);
+    // height: 100%;
+    @include adaptiveValue("min-height", 486.66, 298, 0, 1920, 320);
+    @include adaptiveValue("font-size", 14, 12, 0, 1440, 880);
+    @include adaptiveValue("width", 209, 164, 0, 1920, 550);
+   
+    @include adaptiveValue("margin-top", 140, 70, 0, 1920, 550);
+    
+    @include adaptiveValue("margin-bottom", 70, 25, 0, 1920, 550);
+    margin-left: 31%;
+    // @include adaptiveValue("margin-left", 87, 55, 0, 1920, 550);
     & p {
       overflow: hidden;
       padding: 0px 5px;
+      &:not(:last-child){
+        flex-grow: 1;
+      }
+      
+      &:not(:first-child){
+        @include adaptiveValue("margin-bottom", 70, 25, 0, 1920, 550);
+      }
+      
     }
   }
 
-  // .social__card-title
+  // .company-social__card-title
 
   &__card-title {
-    margin-bottom: rem(35);
+    // margin-bottom: rem(35);
+    @include adaptiveValue("margin-bottom", 35, 25, 0, 1920, 550);
     font-weight: 600;
-    font-size: rem(24);
+    
+    @include adaptiveValue("font-size", 24, 14, 0, 1920, 550);
     letter-spacing: -0.03em;
     padding: 0px 5px;
   }
+
+  &__slider-btn {
+    display: none;
+  }
 }
 
-.social__card p + p {
-  margin-top: auto;
-}
+// .social__card p + p {
+//   margin-top: auto;
+// }
 // .social__cards + .social__cards {
 //   @include adaptiveValue("margin-left", 32, 15);
 // }

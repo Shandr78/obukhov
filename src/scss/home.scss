@@ -642,13 +642,16 @@
 
 .location {
   // .location__map-img
+  &__wrapper{
+    @include adaptiveValue("margin-bottom", 70, 25, 0, 1230, 550);
+  }
   &__map-img {
     width: 100%;
     height: auto;
     // object-fit: contain;
     // object-position: right top;
     // margin-bottom: 78px;
-    @include adaptiveValue("margin-bottom", 78, 25, 0, 1230, 550);
+   
     overflow: hidden;
     &:nth-child(2) {
       display: none;
@@ -819,9 +822,7 @@
 
 //==================================================================================================== footer contacts-callback START
 
-.contacts-callback {
-  display: none;
-}
+
 
 .contacts-callback__btn {
   display: none;

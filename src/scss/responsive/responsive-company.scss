@@ -1,0 +1,316 @@
+@media (max-width: 1440px) {
+  .company-atention__info-title {
+    min-width: 33.33%;
+  }
+}
+
+@media (max-width: 1382px) {
+  .company-promo {
+    &__title {
+      top: calc((243px / 1133px) * 100%);
+    }
+    &__cards {
+      flex-direction: column;
+      top: calc((402px / 1133px) * 100%);
+      gap: 40px;
+    }
+    &__card {
+      width: rem(442);
+      height: auto;
+    }
+    &__card-item {
+      margin-bottom: rem(15);
+    }
+  }
+  .company-social__card-info{
+    margin-left: 20%;
+  }
+}
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 880px ++++++++++ ipad mini / ipad air
+@media (max-width: 880px) {
+  .company-promo {
+    & img {
+      // - 60px
+      height: calc(100vh - 22px);
+      object-position: 65% bottom;
+    }
+
+    // .company-promo__title
+
+    &__title {
+      top: calc((303px / 1133px) * 100%);
+    }
+
+    // .company-promo__cards
+
+    &__cards {
+      flex-direction: column;
+      top: calc((442px / 1133px) * 100%);
+      gap: 60px;
+    }
+
+    // .company-promo__card
+
+    &__card {
+      width: rem(342);
+      height: auto;
+    }
+
+    // .company-promo__card-title
+
+    &__card-title {
+      font-size: rem(62);
+      margin-top: rem(25);
+      margin-bottom: rem(18);
+    }
+
+    // .company-promo__card-item
+
+    &__card-item {
+      font-size: rem(15.5);
+      margin-bottom: rem(15);
+    }
+  }
+
+  .company-atention {
+    // .company-atention__container
+
+    &__container {
+      padding: 0 rem(20);
+    }
+
+    // .company-atention__title
+
+    &__title {
+      width: 100%;
+      font-size: rem(40);
+      // font-size: calc(10px + 4vw);
+      margin-bottom: rem(60);
+    }
+
+    // .company-atention__info
+
+    &__info {
+    }
+
+    // .company-atention__info-title
+
+    &__info-title {
+      min-width: 52%;
+      flex-shrink: 1;
+      margin: 0;
+    }
+
+    &__info-box--ipad {
+      display: flex;
+      flex-direction: column;
+      font-size: rem(14);
+      & > p:not(:last-child) {
+        margin-bottom: rem(30);
+      }
+    }
+
+    // .company-atention__info-text
+
+    &__info-text {
+      min-width: calc(100% - 0px);
+      padding: 0;
+    }
+
+    // .company-atention__slider
+
+    &__slider {
+      margin-bottom: rem(30);
+    }
+
+    &__box {
+      margin-bottom: rem(30);
+      & > h3 {
+        display: block;
+      }
+    }
+    // .company-atention__slider-btn
+
+    &__slider-btn {
+      margin: 0;
+    }
+
+    // .company-atention__slide
+
+    &__slide {
+      max-width: 100vw;
+    }
+
+    // .company-atention__slide-img
+
+    &__slide-img {
+      max-height: 490px;
+    }
+
+    // .company-atention__btn-link
+
+    &__btn-link {
+      min-width: 100%;
+      // margin: 0;
+    }
+  }
+
+  .column-text {
+    margin-bottom: rem(20);
+  }
+
+  .company-social {
+    &__container {
+      padding: 0 20px;
+    }
+
+    // .company-social__info
+
+    &__info {
+      font-size: 14px;
+    }
+
+    // .company-social__slider-btn
+
+    &__slider-btn {
+      display: flex;
+    }
+
+    // .company-social__card-info
+
+    &__card-info {
+      margin-left: 28%;
+      font-size: rem(14);
+    }
+
+    // .company-social__card-title
+
+    &__card-title {
+      font-size: rem(20);
+    }
+  }
+}
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 550px
+
+@media (max-width: 550px) {
+  //================================================================================================================= HOME START
+
+  .company-promo {
+    & img {
+      // - 48px
+      height: calc(100vh - 22px);
+      object-position: 76% bottom;
+    }
+
+    // .company-promo__container
+
+    &__title {
+      top: calc((170px / 568px) * 100%);
+      font-size: 28px;
+      & span {
+        padding-top: 15px;
+        font-size: 16px;
+      }
+    }
+
+    // .company-promo__cards
+
+    &__cards {
+      top: calc((275px / 568px) * 100%);
+      gap: 25px;
+    }
+
+    // .company-promo__card
+
+    &__card {
+      width: rem(151);
+      min-height: rem(65);
+    }
+
+    // .company-promo__card-title
+
+    &__card-title {
+      font-size: 16px;
+      margin-top: rem(6);
+      margin-bottom: rem(10);
+    }
+
+    // .company-promo__card-item
+
+    &__card-item {
+      font-weight: 300;
+      font-size: rem(12);
+      margin-bottom: rem(5);
+    }
+  }
+
+  .company-atention {
+    // .company-atention__title
+
+    &__title {
+      font-size: 16px;
+      margin-bottom: rem(25);
+    }
+
+    // .company-atention__info
+
+    &__info {
+      flex-direction: column;
+      margin-bottom: rem(25);
+    }
+
+    // .company-atention__info-title
+
+    &__info-title {
+    }
+
+    &__info-box--ipad {
+      font-size: rem(12);
+      & > p:not(:last-child) {
+        margin-bottom: rem(15);
+      }
+    }
+
+    // .company-atention__info-text
+
+    &__info-text {
+    }
+  }
+  .column-text__info-title {
+    margin-bottom: rem(25);
+  }
+
+  .company-social {
+    // .company-social__container
+
+    &__container {
+      padding: 0 20px;
+    }
+
+    // .company-social__info-box
+
+    &__info-box {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    // .company-social__info-title
+
+    &__info-title {
+    }
+
+    // .company-social__info
+
+    &__info {
+      font-size: rem(12);
+    }
+
+    // .company-social__card-info
+
+    &__card-info {
+      margin-left: 25%;
+    }
+  }
+}

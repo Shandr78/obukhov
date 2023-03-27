@@ -1,0 +1,147 @@
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 1230px desctop min
+
+@media (max-width: 1230px) {
+  //========================================== HEADER START
+
+  .header .header-top__menu {
+    padding-right: 0;
+  }
+
+  //========================================== HEADER END
+}
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 1200px desctop min
+
+@media (max-width: 1200px) {
+}
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 1120px
+
+@media (max-width: 1120px) {
+  //========================================== HEADER START
+
+  .header-top {
+    justify-content: space-between;
+  }
+
+  .header-top__logo {
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+
+  .header-top__contacts {
+    // width: 35vw;
+    max-width: 280px;
+    align-items: end;
+    margin-right: rem(0);
+    flex-shrink: 0;
+  }
+
+  .header-top__menu {
+    display: none;
+    flex-shrink: 0;
+  }
+
+  //========================================== HEADER END
+}
+
+@media (max-width: 1200px) {
+  .header-top__logo {
+    max-width: 47px;
+    flex-grow: 1;
+    // flex-shrink: 0;
+    & span {
+      display: none;
+    }
+    margin-right: auto;
+  }
+}
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 910px
+@media (max-width: 910px) {
+}
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 780px/880px ++++++++++ ipad mini /  ipad air
+@media (max-width: 880px) {
+  //========================================== HEADER START
+  .header__container {
+    padding: 0px 20px;
+  }
+
+  .header-top__logo {
+  }
+
+  .header-top__contacts {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-weight: 800;
+    font-size: rem(14);
+    flex-grow: 1;
+    // flex-shrink: 1;
+    // max-width: 40vw;
+    min-width: calc(15.4% + 3.5% + 20.4% + 4%);
+    // margin-right: 2.5vw;
+    // margin-right: 3.5%;
+    // margin-right: rem(4);
+    text-align: left;
+    &-phone {
+      // min-width: 15.4%;
+      // margin-right: rem(3);
+    }
+    &-callback {
+      // min-width: 20.4%;
+    }
+  }
+  .menu__icon {
+    padding-right: 0px;
+    flex-shrink: 1;
+  }
+  //========================================== HEADER END
+}
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 780px ++++++++++ ipad mini
+
+// @media (max-width: 780px) {
+//   .header-top__contacts {
+//     min-width: calc(15.4% + 3.5% + 20.4% + 4%);
+
+//   }
+// }
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 720px
+@media (max-width: 720px) {
+  //========================================== HEADER START
+
+  .header-top__contacts-phone {
+    font-weight: 600;
+  }
+
+  .header-top__logo {
+    flex-grow: 0;
+    margin-right: 0;
+  }
+
+  .header-top__contacts {
+    flex-grow: 1;
+    margin: 0 auto;
+  }
+
+  .header-top__contacts-callback {
+    display: none;
+  }
+
+  //========================================== HEADER END
+}
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 430px
+
+@media (max-width: 460px) {
+}
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 330px
+@media (max-width: 330px) {
+  ///========================================== HEADER START
+}
