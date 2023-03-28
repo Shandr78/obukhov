@@ -30,6 +30,7 @@
     margin: 0 auto;
     padding: 0px 0px 0px 20px;
     max-width: rem(493);
+    height: 100%;
   }
 
   // .news-page__content-title
@@ -48,11 +49,15 @@
   &__content-text {
     flex-grow: 1;
     overflow-y: auto;
+    & > p:not(:last-child) {
+      margin-bottom: rem(20);
+    }
   }
 
   // .news-page__content-date
 
   &__content-date {
+    // margin-top: auto;
     margin-bottom: 50px;
     text-align: right;
   }
@@ -74,11 +79,14 @@
     // width: 100%;
     // height: auto;
     // overflow: hidden;
+    // min-height: rem(540);
+    @include adaptiveValue("min-height", 540, 200, 0, 1230, 550);
+    
 
    
     position: relative;
     width: 49%;
-    height: rem(540);
+    // height: rem(540);
   }
 
   // .news-page__content-img
@@ -90,86 +98,24 @@
 
     width: 100%;
     height: auto;
+    
     object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
   }
+  
 }
 
 .news-page {
-  // margin-top: rem(37);
+ &__link{
+  display: flex;
+  justify-content: center;
+ }
+  // .news-page__arrow
 
-  // .news-page__info-title
-
-  &__info-title {
-    // margin-bottom: 60px;
-  }
-
-  // .news-page__box
-
-  &__box {
-    // display: flex;
-    // justify-content: start;
-    // flex-direction: row-reverse;
-    // border: 1px solid $color-grey-bg;
-    // margin-bottom: rem(70);
-  }
-
-  // .news-page__content
-
-  &__content {
-    // flex: 1 1 auto;
-    // display: flex;
-    // flex-direction: column;
-    // margin: 0 auto;
-    // padding: 0px 0px 0px 20px;
-    // max-width: rem(493);
-  }
-
-  // .news-page__content-title
-
-  &__content-title {
-    // font-weight: 600;
-    // font-size: 24px;
-    // line-height: 140%;
-    // letter-spacing: -0.03em;
-    // margin-top: rem(100);
-    // margin-bottom: rem(35);
-  }
-
-  // .news-page__content-text
-
-  &__content-text {
-    //  flex-grow: 1;
-    //  overflow-y: auto;
-  }
-
-  // .news-page__content-__date
-
-  &__content-date {
-    // margin-bottom: 50px;
-    // text-align: right;
-  }
-
-  // .news-page__content-images
-
-  &__content-images {
-    // overflow: hidden;
-    // flex: 0 0 33.333%;
-    // position: relative;
-    // min-width: 49%;
-    // height: rem(540);
-  }
-
-  // .news-page__content-img
-
-  &__content-img {
-    // width: 100%;
-    // min-height: 100%;
-    // object-fit: cover;
-    // position: absolute;
-    // top: 0;
-    // left: 0;
+  &__arrow {
+   padding: 0 10px;
   }
 }
+
