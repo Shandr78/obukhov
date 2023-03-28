@@ -205,20 +205,20 @@
 
   &__info-title {
     // min-width: rem(397);
-    min-width: 33.33%;
+    // min-width: 33.33%;
     // flex-grow: 1;
     // margin-right: auto;
   }
 
   &__info-box--ipad {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   // .company-atention__info-text
 
   &__info-text {
-    width: 100%;
+    // width: 66.66%;
     // min-width: rem(397);
     // flex-grow: 0;
     // text-overflow: ellipsis;
@@ -300,6 +300,8 @@
 
 .company-atention__info-text + .company-atention__info-text {
   // margin-left: 15px;
+  padding-left: 20px;
+  padding-right: 0;
 }
 
 //==================================================================================================== COMPANY ATENTION END

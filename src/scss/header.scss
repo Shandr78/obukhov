@@ -55,7 +55,7 @@
     align-items: flex-end;
     // margin-top: 1.5625rem;
     // padding-bottom: 22px;
-    @include adaptiveValue("padding-bottom", 22, 18, 0, 1230, 430);
+    @include adaptiveValue("padding-bottom", 22, 15, 0, 1230, 550);
     line-height: 0.7;
     // height: 69px;
     @include adaptiveValue("height", 69, 48, 0, 1230, 430);

@@ -142,13 +142,16 @@ input[type="checkbox"] {
   &__info-title {
     flex-grow: 1;
     margin-right: auto;
+    min-width: calc(33.33%);
   }
 
   // .column-text__info-item
 
   &__info-item {
     width: calc(33.33%);
-    flex-grow: 0;
+    // max-width: calc(33.33%);
+    min-width: calc(33.33%);
+    flex-grow: 1;
     text-overflow: ellipsis;
     padding-right: rem(11);
     padding-left: rem(10);
