@@ -1,0 +1,50 @@
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 1382px) {
+ 
+}
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 780px / ipad mini
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 880px / ipad air
+@media (max-width: 880px) {
+  
+    .commerce {
+        margin-top: rem(60);
+        margin-bottom: rem(60);
+
+            // .commerce__cards
+    
+            &__cards {
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+
+            // .commerce__card--one
+    
+            &__card--one {
+                grid-column: 1/2;
+            }
+    }
+    
+  
+}
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 550px
+
+@media (max-width: 550px) {
+    .commerce {
+        margin-top: rem(25);
+    margin-bottom: rem(10);
+
+            // .commerce__cards
+    
+            &__cards {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+    }
+ 
+}

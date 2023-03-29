@@ -56,7 +56,7 @@
   }
 
   .documentation-all {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     // &__container {
     //   padding: 0 20px;
     // }
@@ -65,6 +65,7 @@
 
     &__cards {
       grid-template-columns: 1fr 1fr;
+      gap: 20px;
     }
   }
 }
@@ -128,7 +129,7 @@
   }
 
   .documentation-all {
-    
+    margin-bottom: rem(10);
 
     // .documentation-all__cards
 

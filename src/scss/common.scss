@@ -30,8 +30,9 @@ input[type="tel"] {
   &:active,
   &:focus,
   &:hover {
+    font-weight: 800;
     outline: none; /* убрать стандартный обводку */
-    border-bottom: 1px dashed $color-green; /* установить цвет границы */
+    // border-bottom: 1px dashed $color-green; /* установить цвет границы */
   }
 
   // &:invalid {
@@ -45,10 +46,11 @@ textarea {
   height: rem(71);
   padding: 10px 0px;
   border-radius: 0;
-  border-bottom: 1px dashed #ffffff;
+  border-bottom: 1px dashed $color-white-op;
   overflow-y: auto;
   color: #ffffff; /* изменяем цвет текста на серый */
   &::placeholder {
+    font-weight: 800;
     color: #ffffff; /* изменяем цвет текста на серый */
     background-color: #353535;
   }
@@ -56,7 +58,7 @@ textarea {
   &:focus,
   &:hover {
     outline: none; /* убрать стандартный обводку */
-    border-bottom: 1px dashed $color-green; /* установить цвет границы */
+    // border-bottom: 1px dashed $color-green; /* установить цвет границы */
   }
 }
 

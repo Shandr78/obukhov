@@ -1,0 +1,34 @@
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1382px) {
+}
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 780px / ipad mini
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 880px / ipad air
+@media (max-width: 880px) {
+  .planning {
+    margin-top: rem(60);
+    margin-bottom: rem(60);
+
+    &__cards {
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+  }
+}
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 550px
+
+@media (max-width: 550px) {
+  .planning {
+    margin-top: rem(25);
+    margin-bottom: rem(10);
+
+    &__cards {
+      grid-template-columns: 1fr;
+      gap: 25px;
+    }
+    
+  }
+}
