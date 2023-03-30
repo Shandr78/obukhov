@@ -213,7 +213,7 @@
     span {
       top: calc(50% - rem(1));
     }
-    .menu-open & {
+    .menu-open  & {
       span {
         width: 35px;
         height: 25px;
@@ -252,11 +252,6 @@
 // aside
 
 .aside {
-  // .aside__menu
-
-  &__menu {
-  }
-
   // .aside__social
 
   &__social {
@@ -292,7 +287,7 @@
   &__logo-img {
   }
 }
-// aside menu
+
 .menu {
   // .menu__body
 
@@ -307,7 +302,7 @@
     transform: translate(100%, 0px);
     background-color: $color-darck;
     padding: 6.625rem 1.25rem 1.25rem 2.3125rem;
-    transition: transform 0.2s ease-in-out 0.1s;
+    
     &._active {
       transform: translate(0px, 0px);
     }
@@ -320,7 +315,7 @@
     transition: all 0.2s ease-in-out 0s;
     &:hover {
       & > li {
-        opacity: 0.8;
+        opacity: 0.9;
       }
     }
     & > li {
@@ -350,7 +345,6 @@
   // .menu__link
 
   &__link {
-    
   }
 }
 
