@@ -186,7 +186,7 @@
     &::before,
     &::after {
       content: "";
-      transition: transform 0.2s ease-out 0.2s;
+      // transition: transform 0.2s ease-out 0.2s;
       right: 0;
       position: absolute;
       width: 100%;
@@ -286,6 +286,9 @@
 
   &__logo-img {
   }
+  &__logo-darck-img{
+    display: none;
+  }
 }
 
 .menu {
@@ -302,7 +305,7 @@
     transform: translate(100%, 0px);
     background-color: $color-darck;
     padding: 6.625rem 1.25rem 1.25rem 2.3125rem;
-    
+    transition: all 0.2s ease-in-out 0s;
     &._active {
       transform: translate(0px, 0px);
     }

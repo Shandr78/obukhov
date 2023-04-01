@@ -641,10 +641,11 @@
 //==================================================================================================== LOCATION START
 
 .location {
-  // .location__map-img
+  
   &__wrapper{
     @include adaptiveValue("margin-bottom", 70, 25, 0, 1230, 550);
   }
+  // .location__map-img
   &__map-img {
     width: 100%;
     height: auto;
