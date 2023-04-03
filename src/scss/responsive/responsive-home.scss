@@ -1,3 +1,10 @@
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 1500px
+@media (max-width: 1500px) {
+  .promo {
+    background-position: 50% 50%;
+  }
+}
+
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 1230px desctop min
 
 @media (max-width: 1230px) {
@@ -10,20 +17,6 @@
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 1120px
 
 @media (max-width: 1120px) {
-
-
-  .promo {
-    min-height: calc(100vh - rem(60) - rem(20));
-    padding: 0 rem(20);
-    &__slider {
-      flex-direction: column;
-    }
-    &__slider-list {
-      margin-top: rem(15);
-      padding-left: 0;
-    }
-  }
-
   .location {
     // .location__map-img
     &__map-img {
@@ -39,19 +32,22 @@
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 780px / ipad mini
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 880px / ipad air
+
 @media (max-width: 880px) {
-
-
   .promo {
+    background-image: url(@img/home-bg-ipad.jpg);
     min-height: calc(100vh - rem(60) - rem(26));
 
     &__slider {
       flex-direction: column;
     }
+
+    &__slider-list {
+      padding: 20px 0 0 0;
+    }
   }
 
   .atention {
-
     // .atention__info
 
     &__info {
@@ -158,10 +154,6 @@
     }
   }
 
-  // 0
-  .apartments {
-  }
-
   .benefits {
     // .benefits__title
 
@@ -177,15 +169,11 @@
       margin-bottom: rem(30);
     }
   }
-  // 0
-  .news {
-  }
 }
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 720px
 @media (max-width: 720px) {
   .atention__title {
-    // font-size: calc(18px + 2vw);
     font-size: calc(9px + 3.8vw);
   }
 
@@ -203,15 +191,15 @@
     font-size: rem(12);
   }
   .promo {
+    background-image: url(@img/home-bg-mobile.jpg);
     min-height: calc(100vh - rem(48) - rem(22));
-    &__slider {
-      flex-direction: column;
+    &__slider-list {
+      padding: 15px 0 0 0;
     }
   }
 
   .atention {
-
-    &__title{
+    &__title {
       font-size: 16px;
     }
     // .atention__info
@@ -415,18 +403,6 @@
     margin-bottom: rem(5);
     &__info-title {
       margin-bottom: rem(0);
-    }
-  }
-}
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 430px
-
-@media (max-width: 460px) {
-
-  .promo {
-    min-height: calc(100vh - rem(48) - rem(22));
-    &__slider {
-      flex-direction: column;
     }
   }
 }

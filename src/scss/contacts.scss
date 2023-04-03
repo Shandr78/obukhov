@@ -1,31 +1,9 @@
 .contacts {
   margin-top: rem(37);
-//   margin-bottom: 70px;
-
-  // .contacts__info
-
-  &__info {
-    // display: flex;
-    // justify-content: flex-end;
-    // margin-bottom: 70px;
-  }
-
-  // .contacts__info-title
-
-  &__info-title {
-    // min-width: rem(397);
-    // width: 33.33%;
-    // margin-right: auto;
-  }
 
   // .contacts__info-column
 
   &__info-column {
-    // min-width: rem(397);
-    // width: 31.8%;
-    // flex-grow: 0;
-    // text-overflow: ellipsis;
-    // padding: 5px;
     & + .contacts__info-column {
       padding-left: 20px;
     }
@@ -72,12 +50,6 @@
       color: $color-orange;
       border-bottom: 1px solid $color-orange;
     }
-  }
-
-  // .contacts__google-map
-
-  &__google-map {
-    
   }
 }
 

@@ -70,19 +70,35 @@
 							<div class="atention__slider-btn-next slider-btn-next _icon-arrow"></div>
 						</div>
 					</div>
+					
 					<div class="atention__wrapper swiper-wrapper">
-						<div class="atention__slide swiper-slide">
-							<img src="@img/slider-1/1-1.jpg" alt="Слайд №1-1" class="atention__slide-img">
-						</div>
-						<div class="atention__slide swiper-slide">
-							<img src="@img/slider-1/1-2.jpg" alt="Слайд №1-2" class="atention__slide-img">
-						</div>
-						<div class="atention__slide swiper-slide">
-							<img src="@img/slider-1/1-3.jpg" alt="Слайд №1-3" class="atention__slide-img">
-						</div>
-						<div class="atention__slide swiper-slide">
-							<img src="@img/slider-1/1-4.jpg" alt="Слайд №1-4" class="atention__slide-img">
-						</div>
+						<picture class="atention__slide swiper-slide" >
+							<source media="(min-width: 821px)" srcset="../img/slider-1/desctop/1-1.jpg" type="image/jpeg">
+							<source media="(min-width: 744px)" srcset="../img/slider-1/ipad/1-1.jpg" type="image/jpeg">
+							<source media="(min-width: 320px)" srcset="../img/slider-1/mobile/1-1.jpg" type="image/jpeg">
+							<img  class="lazy" data-src="@img/slider-1/desctop/1-1.jpg" alt="Слайд №1-1" >
+						</picture>
+
+						<picture class="atention__slide swiper-slide">
+							<source media="(min-width: 821px)" srcset="../img/slider-1/desctop/1-2.jpg" type="image/jpeg">
+							<source media="(min-width: 744px)" srcset="../img/slider-1/ipad/1-2.jpg" type="image/jpeg">
+							<source media="(min-width: 320px)" srcset="../img/slider-1/mobile/1-2.jpg" type="image/jpeg">
+							<img  class="lazy" data-src="@img/slider-1/desctop/1-2.jpg" alt="Слайд №1-2" >
+						</picture>
+
+						<picture class="atention__slide swiper-slide">
+							<source media="(min-width: 821px)" data-srcset="../img/slider-1/desctop/1-3.jpg" type="image/jpeg">
+							<source media="(min-width: 744px)" data-srcset="../img/slider-1/ipad/1-3.jpg" type="image/jpeg">
+							<source media="(min-width: 320px)" data-srcset="../img/slider-1/mobile/1-3.jpg" type="image/jpeg">
+							<img  class="lazy" data-src="@img/slider-1/desctop/1-3.jpg" alt="Слайд №1-3" >
+						</picture>
+
+						<picture class="atention__slide swiper-slide">
+							<source media="(min-width: 821px)" data-srcset="../img/slider-1/desctop/1-4.jpg" type="image/jpeg">
+							<source media="(min-width: 744px)" data-srcset="../img/slider-1/ipad/1-4.jpg" type="image/jpeg">
+							<source media="(min-width: 320px)" data-srcset="../img/slider-1/mobile/1-4.jpg" type="image/jpeg">
+							<img  class="lazy" data-src="@img/slider-1/desctop/1-4.jpg" alt="Слайд №1-4" >
+						</picture>
 					</div>
 
 				</div>
@@ -98,7 +114,6 @@
 								<button type="button" data-spoller data-tab="plan"
 									class="infrastructure__spollers-title spollers-title-decor">Генеральний план
 									<span class="_icon-arrow-angle"></span>
-									<!-- <img class="infrastructure__spollers-arrow" src="@img/icons/arrow-ngle.svg" alt=">"> -->
 								</button>
 								<div class="infrastructure__spollers-body">
 									<p class="infrastructure__spollers-info">13 житлових будинків / 3 громадські
@@ -112,7 +127,6 @@
 									class="infrastructure__spollers-title">Пішохідна
 									інфраструктура
 									<span class="_icon-arrow-angle"></span>
-									<!-- <img class="infrastructure__spollers-arrow" src="@img/icons/arrow-ngle.svg" alt=">"> -->
 								</button>
 								<div class="infrastructure__spollers-body">
 									<p class="infrastructure__spollers-info">Бульвар / Променади / Громадські площі
@@ -124,7 +138,6 @@
 								<button type="button" data-spoller data-tab="area"
 									class="infrastructure__spollers-title">Майданчики
 									<span class="_icon-arrow-angle"></span>
-									<!-- <img class="infrastructure__spollers-arrow" src="@img/icons/arrow-ngle.svg" alt=">"> -->
 								</button>
 								<div class="infrastructure__spollers-body">
 									<p class="infrastructure__spollers-info">Дитячі / Спортивні / Громадські
@@ -137,7 +150,6 @@
 									class="infrastructure__spollers-title">Торгівельна
 									інфраструктура
 									<span class="_icon-arrow-angle"></span>
-									<!-- <img class="infrastructure__spollers-arrow" src="@img/icons/arrow-ngle.svg" alt=">"> -->
 								</button>
 								<div class="infrastructure__spollers-body">
 									<p class="infrastructure__spollers-info">Два торгівельних центри /
@@ -149,7 +161,6 @@
 								<button type="button" data-spoller data-tab="parking"
 									class="infrastructure__spollers-title">Паркінг
 									<span class="_icon-arrow-angle"></span>
-									<!-- <img class="infrastructure__spollers-arrow" src="@img/icons/arrow-ngle.svg" alt=">"> -->
 								</button>
 								<div class="infrastructure__spollers-body">
 									<p class="infrastructure__spollers-info">Наземний паркінг / Підземний паркінг
@@ -163,7 +174,6 @@
 									class="infrastructure__spollers-title">Нові черги
 									будівництва
 									<span class="_icon-arrow-angle"></span>
-									<!-- <img class="infrastructure__spollers-arrow" src="@img/icons/arrow-ngle.svg" alt=">"> -->
 								</button>
 
 								<div class="infrastructure__spollers-body">
@@ -177,7 +187,6 @@
 									class="infrastructure__spollers-title">Будинки
 									вже збудовані
 									<span class="_icon-arrow-angle"></span>
-									<!-- <img class="infrastructure__spollers-arrow" src="@img/icons/arrow-ngle.svg" alt=">"> -->
 								</button>
 								<div class="infrastructure__spollers-body">
 									<p class="infrastructure__spollers-info">Житлові будинки 01 - 09 черг /
@@ -188,22 +197,22 @@
 						</div>
 						<div class="infrastructure__spollers-images">
 							<img id="plan" data-tab-img class="infrastructure__spollers-img"
-								src="@img/spollers/infrastructure-1.jpg" alt="Зображення генерального плану">
+								data-src="@img/spollers/infrastructure-1.jpg" alt="Зображення генерального плану">
 							<img id="park" data-tab-img class="infrastructure__spollers-img visually-hidden"
-								src="@img/spollers/infrastructure-2.jpg"
+								data-src="@img/spollers/infrastructure-2.jpg"
 								alt="Зображення пішохідної інфраструктури на плані">
 							<img id="area" data-tab-img class="infrastructure__spollers-img visually-hidden"
-								src="@img/spollers/infrastructure-3.jpg" alt="Зображення майданчиків на плані">
+								data-src="@img/spollers/infrastructure-3.jpg" alt="Зображення майданчиків на плані">
 							<img id="trading" data-tab-img class="infrastructure__spollers-img visually-hidden"
-								src="@img/spollers/infrastructure-4.jpg"
+								data-src="@img/spollers/infrastructure-4.jpg"
 								alt="Зображення торгівельної інфраструктури на плані">
 							<img id="parking" data-tab-img class="infrastructure__spollers-img visually-hidden"
-								src="@img/spollers/infrastructure-5.jpg" alt="Зображення паркінг на плані">
+								data-src="@img/spollers/infrastructure-5.jpg" alt="Зображення паркінг на плані">
 							<img id="start" data-tab-img class="infrastructure__spollers-img visually-hidden"
-								src="@img/spollers/infrastructure-6.jpg"
+								data-src="@img/spollers/infrastructure-6.jpg"
 								alt="Зображення нових черг будівництва на плані">
 							<img id="built" data-tab-img class="infrastructure__spollers-img visually-hidden"
-								src="@img/spollers/infrastructure-7.jpg"
+								data-src="@img/spollers/infrastructure-7.jpg"
 								alt="Зображення вже збудованих будинків на плані">
 						</div>
 					</div>
@@ -251,7 +260,6 @@
 					<h3 class="buildings__info-title info-title">Оберіть квартиру</h3>
 					<p class="buildings__info title-info">Мапа будинків</p>
 				</div>
-				<!-- buildings__wrapper wrap-container -->
 				<div class="buildings__wrapper wrap-container">
 					<div class="buildings__image-box">
 						<svg width="1440" height="539" viewBox="0 0 1440 539" fill="none"
@@ -297,57 +305,6 @@
 								d="M832.734 86V79.136L831.114 80.132V78.332L832.734 77.36H834.402V86H832.734ZM835.964 85.988V84.572L839.588 81.356C839.86 81.116 840.052 80.89 840.164 80.678C840.276 80.466 840.332 80.268 840.332 80.084C840.332 79.82 840.278 79.586 840.17 79.382C840.062 79.174 839.91 79.012 839.714 78.896C839.518 78.776 839.288 78.716 839.024 78.716C838.748 78.716 838.504 78.78 838.292 78.908C838.084 79.032 837.922 79.198 837.806 79.406C837.69 79.61 837.636 79.832 837.644 80.072H835.964C835.964 79.48 836.094 78.968 836.354 78.536C836.614 78.104 836.976 77.77 837.44 77.534C837.904 77.298 838.444 77.18 839.06 77.18C839.624 77.18 840.128 77.304 840.572 77.552C841.02 77.796 841.372 78.138 841.628 78.578C841.884 79.018 842.012 79.528 842.012 80.108C842.012 80.536 841.952 80.892 841.832 81.176C841.712 81.456 841.534 81.716 841.298 81.956C841.062 82.192 840.772 82.46 840.428 82.76L838.088 84.812L837.956 84.452H842.012V85.988H835.964ZM824.746 99V96.9C824.518 97.012 824.266 97.098 823.99 97.158C823.718 97.218 823.434 97.248 823.138 97.248C822.466 97.248 821.932 97.096 821.536 96.792C821.144 96.488 820.89 96.048 820.774 95.472C820.742 95.308 820.718 95.138 820.702 94.962C820.69 94.786 820.682 94.626 820.678 94.482C820.678 94.334 820.678 94.22 820.678 94.14V92.52H822.334V94.14C822.334 94.216 822.338 94.34 822.346 94.512C822.354 94.68 822.378 94.848 822.418 95.016C822.49 95.296 822.612 95.498 822.784 95.622C822.96 95.746 823.21 95.808 823.534 95.808C823.81 95.808 824.046 95.772 824.242 95.7C824.442 95.624 824.61 95.532 824.746 95.424V92.52H826.39V99H824.746ZM830.602 99.18C829.938 99.18 829.352 99.038 828.844 98.754C828.34 98.466 827.944 98.072 827.656 97.572C827.372 97.068 827.23 96.492 827.23 95.844C827.23 95.136 827.37 94.52 827.65 93.996C827.93 93.472 828.316 93.066 828.808 92.778C829.3 92.486 829.866 92.34 830.506 92.34C831.186 92.34 831.764 92.5 832.24 92.82C832.716 93.14 833.068 93.59 833.296 94.17C833.524 94.75 833.604 95.432 833.536 96.216H831.922V95.616C831.922 94.956 831.816 94.482 831.604 94.194C831.396 93.902 831.054 93.756 830.578 93.756C830.022 93.756 829.612 93.926 829.348 94.266C829.088 94.602 828.958 95.1 828.958 95.76C828.958 96.364 829.088 96.832 829.348 97.164C829.612 97.492 829.998 97.656 830.506 97.656C830.826 97.656 831.1 97.586 831.328 97.446C831.556 97.306 831.73 97.104 831.85 96.84L833.482 97.308C833.238 97.9 832.852 98.36 832.324 98.688C831.8 99.016 831.226 99.18 830.602 99.18ZM828.454 96.216V95.004H832.75V96.216H828.454ZM837.59 99.18C836.946 99.18 836.408 99.03 835.976 98.73C835.544 98.43 835.218 98.022 834.998 97.506C834.782 96.99 834.674 96.408 834.674 95.76C834.674 95.112 834.782 94.53 834.998 94.014C835.214 93.498 835.532 93.09 835.952 92.79C836.372 92.49 836.89 92.34 837.506 92.34C838.126 92.34 838.666 92.488 839.126 92.784C839.586 93.08 839.942 93.486 840.194 94.002C840.45 94.514 840.578 95.1 840.578 95.76C840.578 96.408 840.452 96.99 840.2 97.506C839.952 98.022 839.604 98.43 839.156 98.73C838.708 99.03 838.186 99.18 837.59 99.18ZM834.398 101.88V92.52H835.838V96.96H836.042V101.88H834.398ZM837.326 97.728C837.678 97.728 837.966 97.64 838.19 97.464C838.414 97.288 838.58 97.052 838.688 96.756C838.796 96.456 838.85 96.124 838.85 95.76C838.85 95.4 838.794 95.072 838.682 94.776C838.57 94.476 838.396 94.238 838.16 94.062C837.928 93.882 837.63 93.792 837.266 93.792C836.926 93.792 836.65 93.874 836.438 94.038C836.23 94.202 836.078 94.432 835.982 94.728C835.886 95.024 835.838 95.368 835.838 95.76C835.838 96.152 835.886 96.496 835.982 96.792C836.078 97.088 836.234 97.318 836.45 97.482C836.67 97.646 836.962 97.728 837.326 97.728ZM841.419 99V92.52H846.099V94.044H843.051V99H841.419ZM848.446 99.18C847.982 99.18 847.588 99.092 847.264 98.916C846.944 98.736 846.7 98.498 846.532 98.202C846.368 97.902 846.286 97.572 846.286 97.212C846.286 96.912 846.332 96.638 846.424 96.39C846.516 96.142 846.664 95.924 846.868 95.736C847.076 95.544 847.354 95.384 847.702 95.256C847.942 95.168 848.228 95.09 848.56 95.022C848.892 94.954 849.268 94.89 849.688 94.83C850.108 94.766 850.57 94.696 851.074 94.62L850.486 94.944C850.486 94.56 850.394 94.278 850.21 94.098C850.026 93.918 849.718 93.828 849.286 93.828C849.046 93.828 848.796 93.886 848.536 94.002C848.276 94.118 848.094 94.324 847.99 94.62L846.514 94.152C846.678 93.616 846.986 93.18 847.438 92.844C847.89 92.508 848.506 92.34 849.286 92.34C849.858 92.34 850.366 92.428 850.81 92.604C851.254 92.78 851.59 93.084 851.818 93.516C851.946 93.756 852.022 93.996 852.046 94.236C852.07 94.476 852.082 94.744 852.082 95.04V99H850.654V97.668L850.858 97.944C850.542 98.38 850.2 98.696 849.832 98.892C849.468 99.084 849.006 99.18 848.446 99.18ZM848.794 97.896C849.094 97.896 849.346 97.844 849.55 97.74C849.758 97.632 849.922 97.51 850.042 97.374C850.166 97.238 850.25 97.124 850.294 97.032C850.378 96.856 850.426 96.652 850.438 96.42C850.454 96.184 850.462 95.988 850.462 95.832L850.942 95.952C850.458 96.032 850.066 96.1 849.766 96.156C849.466 96.208 849.224 96.256 849.04 96.3C848.856 96.344 848.694 96.392 848.554 96.444C848.394 96.508 848.264 96.578 848.164 96.654C848.068 96.726 847.996 96.806 847.948 96.894C847.904 96.982 847.882 97.08 847.882 97.188C847.882 97.336 847.918 97.464 847.99 97.572C848.066 97.676 848.172 97.756 848.308 97.812C848.444 97.868 848.606 97.896 848.794 97.896Z"
 								fill="white" />
 						</svg>
-
-
-
-
-
-						<!-- <img src="@img/home-3d.jpg" alt="3d мапа будинків">
-						<div class="buildings__turn-10">
-							<svg width="396" height="356" viewBox="0 0 396 356" fill="none"
-								xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M148.5 58L180.5 48L214.5 37.5L215.208 20L235.208 15V11L265.208 2L276.708 6L286.208 4L393.708 41L385.708 102L388.208 102.5L373.708 214.5L371.208 216L369.708 232L124.208 354L5 279V261L2 259.243V254.5L11.5 251L12.5 137L15.5 136V134.5L26.5 131L27.5 77.5L60.5 67.5L83 61V55.5L119.5 45L146.5 55.5V57.5L148.5 58Z"
-									fill="#68AA40" fill-opacity="0.3" stroke="#353535" stroke-width="0" />
-							</svg>
-						</div>
-
-						<div class="buildings__turn-11">
-							<svg width="370" height="334" viewBox="0 0 370 334" fill="none"
-								xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M2 20.5L23 17L22.5 8.5L60 2L69.5 5.5V9L82.5 6.5L369 119V144.5L336 154.5L335 208L324 211.5V213L321 214L320 319.5L286 332L226 295V273.5L204 260.5C202.41 248.341 199.577 243.632 191.5 238.5C184.555 238.249 181.977 239.785 180.5 246.5L163 237L140.5 244.5L16 167L15.5 156L14.5 155.5L13 139.5L2 20.5Z"
-									fill="#68AA40" fill-opacity="0.3" stroke="#353535" stroke-width="0" />
-							</svg>
-						</div>
-
-						<div class="buildings__turn-12">
-							<svg width="280" height="164" viewBox="0 0 280 164" fill="none"
-								xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M71.38 2L278.5 72.3149L274.5 142.315L242.5 152.315L240.5 151.815V149.815L213.5 139.315L177 149.815V155.315L154.5 161.815V136.315L3.5 77.3149L2 12.3149L18.5 9.81494L71.38 2Z"
-									fill="#68AA40" fill-opacity="0.3" stroke="#353535" stroke-width="0" />
-							</svg>
-						</div>
-
-						<div class="buildings__turn-13">
-							<svg width="347" height="198" viewBox="0 0 347 198" fill="none"
-								xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M297.5 2L345 18L345.5 46L329 48.5L330.5 113.5L195 60L182 62.5V59L172.5 55.5L135 62L135.5 70.5L114.5 74L125.5 193L115 196L81.5 175.5C76.6251 161.608 73.2716 154.057 61 143C50.8773 137.846 46.7048 140.339 41 151L18.5 137C14.0558 124.432 10.4249 118.817 3 110L42 108.5L37 44.5L36 44L35.5 38L50 36V34.5L297.5 2Z"
-									fill="#68AA40" fill-opacity="0.3" stroke="#353535" stroke-width="0" />
-							</svg> -->
-						<!-- </div> -->
-
-						<!-- <div class="buildings__turn-all">
-							<svg width="1440" height="539" viewBox="-307 -34 1440 539" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M569.5 189L601.5 179L635.5 168.5L636.208 151L656.208 146V142L686.208 133L697.708 137L707.208 135L814.708 172L806.708 233L809.208 233.5L794.708 345.5L792.208 347L790.708 363L545.208 485L426 410V392L423 390.243V385.5L432.5 382L433.5 268L436.5 267V265.5L447.5 262L448.5 208.5L481.5 198.5L504 192V186.5L540.5 176L567.5 186.5V188.5L569.5 189Z" fill="white" fill-opacity="0.01" stroke="#353535" stroke-width="2"/>
-								<path d="M398.38 38L605.5 108.315L601.5 178.315L569.5 188.315L567.5 187.815V185.815L540.5 175.315L504 185.815V191.315L481.5 197.815V172.315L330.5 113.315L329 48.3149L345.5 45.8149L398.38 38Z" fill="white" fill-opacity="0.01" stroke="#353535" stroke-width="2"/>
-								<path d="M297.5 2L345 18L345.5 46L329 48.5L330.5 113.5L195 60L182 62.5V59L172.5 55.5L135 62L135.5 70.5L114.5 74L125.5 193L115 196L81.5 175.5C76.6251 161.608 73.2716 154.057 61 143C50.8773 137.846 46.7048 140.339 41 151L18.5 137C14.0558 124.432 10.4249 118.817 3 110L42 108.5L37 44.5L36 44L35.5 38L50 36V34.5L297.5 2Z" fill="white" fill-opacity="0.01" stroke="#353535" stroke-width="2"/>
-								<path d="M115 74.5L136 71L135.5 62.5L173 56L182.5 59.5V63L195.5 60.5L482 173V198.5L449 208.5L448 262L437 265.5V267L434 268L433 373.5L399 386L339 349V327.5L317 314.5C315.41 302.341 312.577 297.632 304.5 292.5C297.555 292.249 294.977 293.785 293.5 300.5L276 291L253.5 298.5L129 221L128.5 210L127.5 209.5L126 193.5L115 74.5Z" fill="#68AA40" fill-opacity="0.3" stroke="#353535" stroke-width="2"/>
-								</svg>
-						</div> -->
-
 					</div>
 					<div class="buildings__image-box-mobile">
 						<img src="@img/home-3d-mobile.jpg" alt="home 3d">
@@ -432,176 +389,77 @@
 							</div>
 						</div>
 						<div class="apartments__wrapper swiper-wrapper">
-							<div class="apartments__card swiper-slide">
-								<img class="apartments__card-planning" src="@img/planning/turn-10/10-1-1.jpg"
-									alt="План квартири">
-								<!-- <table class="apartments__card-info">
-									<tr>
-										<td>Будинок: 10</td>
-										<td>№ 1.1.1.1</td>
-									</tr>
-									<tr>
-										<td>Спалень: 1</td>
-										<td>Поверх: 1</td>
-									</tr>
-									<tr>
-										<td>Загальна площа: 48,60 м2</td>
-										<td>Стеля: 3,45</td>
-									</tr>
-								</table> -->
-							</div>
+							<picture class="apartments__card swiper-slide">
+								<source media="(min-width: 821px)" srcset="../img/planning/10/1/1/jpg/desctop/1-1-1-1.jpg" type="image/jpeg">
+								<source media="(min-width: 744px)" srcset="../img/planning/10/1/1/jpg/ipad/1-1-1-1.jpg" type="image/jpeg">
+								<source media="(min-width: 320px)" srcset="../img/planning/10/1/1/jpg/mobile/1-1-1-1.jpg" type="image/jpeg">
+								<img class="lazy" data-src="@img/planning/10/1/1/jpg/desctop/1-1-1-1.jpg" alt="План № 1-1-1-1" >
+							</picture>
 
-							<div class="apartments__card swiper-slide">
-								<img src="@img/planning/turn-10/10-1-1a.jpg" alt="План квартири"
-									class="apartments__card-planning">
-								<!-- <table class="apartments__card-info">
-									<tr>
-										<td>Будинок: 10</td>
-										<td>№ 1.2.1.1</td>
-									</tr>
-									<tr>
-										<td>Спалень: 1</td>
-										<td>Поверх: 1</td>
-									</tr>
-									<tr>
-										<td>Загальна площа: 48,55 м2</td>
-										<td>Стеля: 3,45</td>
-									</tr>
-								</table> -->
-							</div>
+							<picture class="apartments__card swiper-slide">
+								<source media="(min-width: 821px)" srcset="../img/planning/10/2/1/jpg/desctop/1-1-1-2.jpg" type="image/jpeg">
+								<source media="(min-width: 744px)" srcset="../img/planning/10/2/1/jpg/ipad/1-1-1-2.jpg" type="image/jpeg">
+								<source media="(min-width: 320px)" srcset="../img/planning/10/2/1/jpg/mobile/1-1-1-2.jpg" type="image/jpeg">
+								<img class="lazy" data-src="@img/planning/10/2/1/jpg/desctop/1-1-1-2.jpg" alt="План № 1-1-1-2" >
+							</picture>
 
-							<div class="apartments__card swiper-slide">
-								<img src="@img/planning/turn-10/10-1-1b.jpg" alt="План квартири"
-									class="apartments__card-planning">
-								<!-- <table class="apartments__card-info">
-									<tr>
-										<td>Будинок: 10</td>
-										<td>№ 1.2.2.1</td>
-									</tr>
-									<tr>
-										<td>Спалень: 1</td>
-										<td>Поверх: 1</td>
-									</tr>
-									<tr>
-										<td>Загальна площа: 43,27 м2</td>
-										<td>Стеля: 3,45</td>
-									</tr>
-								</table> -->
-							</div>
+							<picture class="apartments__card swiper-slide">
+								<source media="(min-width: 821px)" srcset="../img/planning/10/2/1/jpg/desctop/1-1-2-2.jpg" type="image/jpeg">
+								<source media="(min-width: 744px)" srcset="../img/planning/10/2/1/jpg/ipad/1-1-2-2.jpg" type="image/jpeg">
+								<source media="(min-width: 320px)" srcset="../img/planning/10/2/1/jpg/mobile/1-1-2-2.jpg" type="image/jpeg">
+								<img class="lazy" data-src="@img/planning/10/2/1/jpg/desctop/1-1-2-2.jpg" alt="План № 1-1-2-2" >
+							</picture>
 
-							<div class="apartments__card swiper-slide">
-								<img src="@img/planning/turn-10/10-1-1c.jpg" alt="План квартири"
-									class="apartments__card-planning">
-								<!-- <table class="apartments__card-info">
-									<tr>
-										<td>Будинок: 10</td>
-										<td>№ 1.2.3.1</td>
-									</tr>
-									<tr>
-										<td>Спалень: 1</td>
-										<td>Поверх: 1</td>
-									</tr>
-									<tr>
-										<td>Загальна площа: 48,45 м2</td>
-										<td>Стеля: 3,45</td>
-									</tr>
-								</table> -->
-							</div>
+							<picture class="apartments__card swiper-slide">
+								<source media="(min-width: 821px)" srcset="../img/planning/10/2/1/jpg/desctop/1-1-3-2.jpg" type="image/jpeg">
+								<source media="(min-width: 744px)" srcset="../img/planning/10/2/1/jpg/ipad/1-1-3-2.jpg" type="image/jpeg">
+								<source media="(min-width: 320px)" srcset="../img/planning/10/2/1/jpg/mobile/1-1-3-2.jpg" type="image/jpeg">
+								<img class="lazy" data-src="@img/planning/10/2/1/jpg/desctop/1-1-3-2.jpg" alt="План № 1-1-3-2" >
+							</picture>
 
-							<div class="apartments__card swiper-slide">
-								<img src="@img/planning/turn-10/10-1-1d.jpg" alt="План квартири"
-									class="apartments__card-planning">
-								<!-- <table class="apartments__card-info">
-									<tr>
-										<td>Будинок: 10</td>
-										<td>№ 1.3.2.1</td>
-									</tr>
-									<tr>
-										<td>Спалень: 1</td>
-										<td>Поверх: 1</td>
-									</tr>
-									<tr>
-										<td>Загальна площа: 43,83 м2</td>
-										<td>Стеля: 3,45</td>
-									</tr>
-								</table> -->
-							</div>
+							<picture class="apartments__card swiper-slide">
+								<source media="(min-width: 821px)" srcset="../img/planning/10/1/1/jpg/desctop/1-2-1-1.jpg" type="image/jpeg">
+								<source media="(min-width: 744px)" srcset="../img/planning/10/1/1/jpg/ipad/1-2-1-1.jpg" type="image/jpeg">
+								<source media="(min-width: 320px)" srcset="../img/planning/10/1/1/jpg/mobile/1-2-1-1.jpg" type="image/jpeg">
+								<img class="lazy" data-src="@img/planning/10/1/1/jpg/desctop/1-2-1-1.jpg" alt="План № 1-2-1-1" >
+							</picture>
 
-							<div class="apartments__card swiper-slide">
-								<img src="@img/planning/turn-10/10-1-1e.jpg" alt="План квартири"
-									class="apartments__card-planning">
-								<!-- <table class="apartments__card-info">
-									<tr>
-										<td>Будинок: 10</td>
-										<td>№ 1.5.2.1</td>
-									</tr>
-									<tr>
-										<td>Спалень: 1</td>
-										<td>Поверх: 1</td>
-									</tr>
-									<tr>
-										<td>Загальна площа: 37,99 м2</td>
-										<td>Стеля: 3,45</td>
-									</tr>
-								</table> -->
-							</div>
+							<picture class="apartments__card swiper-slide">
+								<source media="(min-width: 821px)" srcset="../img/planning/10/2/1/jpg/desctop/1-2-1-2.jpg" type="image/jpeg">
+								<source media="(min-width: 744px)" srcset="../img/planning/10/2/1/jpg/ipad/1-2-1-2.jpg" type="image/jpeg">
+								<source media="(min-width: 320px)" srcset="../img/planning/10/2/1/jpg/mobile/1-2-1-2.jpg" type="image/jpeg">
+								<img class="lazy" data-src="@img/planning/10/2/1/jpg/desctop/1-2-1-2.jpg" alt="План № 1-2-1-2" >
+							</picture>
 
-							<div class="apartments__card swiper-slide">
-								<img src="@img/planning/turn-10/10-2-1.jpg" alt="План квартири"
-									class="apartments__card-planning">
-								<!-- <table class="apartments__card-info">
-									<tr>
-										<td>Будинок: 10</td>
-										<td>№ 1.5.2.1</td>
-									</tr>
-									<tr>
-										<td>Спалень: 1</td>
-										<td>Поверх: 1</td>
-									</tr>
-									<tr>
-										<td>Загальна площа: 37,99 м2</td>
-										<td>Стеля: 3,45</td>
-									</tr>
-								</table> -->
-							</div>
+							<picture class="apartments__card swiper-slide">
+								<source media="(min-width: 821px)" srcset="../img/planning/10/1/1/jpg/desctop/1-2-2-1.jpg" type="image/jpeg">
+								<source media="(min-width: 744px)" srcset="../img/planning/10/1/1/jpg/ipad/1-2-2-1.jpg" type="image/jpeg">
+								<source media="(min-width: 320px)" srcset="../img/planning/10/1/1/jpg/mobile/1-2-2-1.jpg" type="image/jpeg">
+								<img class="lazy" data-src="@img/planning/10/1/1/jpg/desctop/1-2-2-1.jpg" alt="План № 1-2-2-1" >
+							</picture>
 
-							<div class="apartments__card swiper-slide">
-								<img src="@img/planning/turn-10/10-2-1a.jpg" alt="План квартири"
-									class="apartments__card-planning">
-								<!-- <table class="apartments__card-info">
-									<tr>
-										<td>Будинок: 10</td>
-										<td>№ 1.5.2.1</td>
-									</tr>
-									<tr>
-										<td>Спалень: 1</td>
-										<td>Поверх: 1</td>
-									</tr>
-									<tr>
-										<td>Загальна площа: 37,99 м2</td>
-										<td>Стеля: 3,45</td>
-									</tr>
-								</table> -->
-							</div>
+							<picture class="apartments__card swiper-slide">
+								<source media="(min-width: 821px)" srcset="../img/planning/10/1/1/jpg/desctop/1-2-3-1.jpg" type="image/jpeg">
+								<source media="(min-width: 744px)" srcset="../img/planning/10/1/1/jpg/ipad/1-2-3-1.jpg" type="image/jpeg">
+								<source media="(min-width: 320px)" srcset="../img/planning/10/1/1/jpg/mobile/1-2-3-1.jpg" type="image/jpeg">
+								<img class="lazy" data-src="@img/planning/10/1/1/jpg/desctop/1-2-3-1.jpg" alt="План № 1-2-3-1" >
+							</picture>
 
-							<div class="apartments__card swiper-slide">
-								<img src="@img/planning/turn-10/10-2-1b.jpg" alt="План квартири"
-									class="apartments__card-planning">
-								<!-- <table class="apartments__card-info">
-									<tr>
-										<td>Будинок: 10</td>
-										<td>№ 1.5.2.1</td>
-									</tr>
-									<tr>
-										<td>Спалень: 1</td>
-										<td>Поверх: 1</td>
-									</tr>
-									<tr>
-										<td>Загальна площа: 37,99 м2</td>
-										<td>Стеля: 3,45</td>
-									</tr>
-								</table> -->
-							</div>
+							<picture class="apartments__card swiper-slide">
+								<source media="(min-width: 821px)" srcset="../img/planning/10/1/1/jpg/desctop/1-3-2-1.jpg" type="image/jpeg">
+								<source media="(min-width: 744px)" srcset="../img/planning/10/1/1/jpg/ipad/1-3-2-1.jpg" type="image/jpeg">
+								<source media="(min-width: 320px)" srcset="../img/planning/10/1/1/jpg/mobile/1-3-2-1.jpg" type="image/jpeg">
+								<img class="lazy" data-src="@img/planning/10/1/1/jpg/desctop/1-3-2-1.jpg" alt="План № 1-3-2-1" >
+							</picture>
+
+							<picture class="apartments__card swiper-slide">
+								<source media="(min-width: 821px)" srcset="../img/planning/10/1/1/jpg/desctop/1-5-2-1.jpg" type="image/jpeg">
+								<source media="(min-width: 744px)" srcset="../img/planning/10/1/1/jpg/ipad/1-5-2-1.jpg" type="image/jpeg">
+								<source media="(min-width: 320px)" srcset="../img/planning/10/1/1/jpg/mobile/1-5-2-1.jpg" type="image/jpeg">
+								<img class="lazy" data-src="@img/planning/10/1/1/jpg/desctop/1-5-2-1.jpg" alt="План № 1-5-2-1" >
+							</picture>
+
+
 						</div>
 					</div>
 					<a class="apartments__btn-link btn-center dark-btn">Дивитись більше</a>
@@ -625,18 +483,35 @@
 						</div>
 					</div>
 					<div class="benefits__wrapper swiper-wrapper">
-						<div class="benefits__slide swiper-slide">
-							<img src="@img/slider-2/2-1.jpg" alt="Слайд №2-1" class="benefits__slide-img">
-						</div>
-						<div class="benefits__slide swiper-slide">
-							<img src="@img/slider-2/2-2.jpg" alt="Слайд №2-2" class="benefits__slide-img">
-						</div>
-						<div class="benefits__slide swiper-slide">
-							<img src="@img/slider-2/2-3.jpg" alt="Слайд №2-3" class="benefits__slide-img">
-						</div>
-						<div class="benefits__slide swiper-slide">
-							<img src="@img/slider-2/2-4.jpg" alt="Слайд №2-4" class="benefits__slide-img">
-						</div>
+
+						<picture class="benefits__slide swiper-slide">
+							<source media="(min-width: 821px)" srcset="../img/slider-2/desctop/2-1.jpg" type="image/jpeg">
+							<source media="(min-width: 744px)" srcset="../img/slider-2/ipad/2-1.jpg" type="image/jpeg">
+							<source media="(min-width: 320px)" srcset="../img/slider-2/mobile/2-1.jpg" type="image/jpeg">
+							<img  class="lazy" data-src="@img/slider-2/desctop/2-1.jpg" alt="Слайд №2-1" >
+						</picture>
+
+						<picture class="benefits__slide swiper-slide">
+							<source media="(min-width: 821px)" srcset="../img/slider-2/desctop/2-2.jpg" type="image/jpeg">
+							<source media="(min-width: 744px)" srcset="../img/slider-2/ipad/2-2.jpg" type="image/jpeg">
+							<source media="(min-width: 320px)" srcset="../img/slider-2/mobile/2-2.jpg" type="image/jpeg">
+							<img  class="lazy" data-src="@img/slider-2/desctop/2-2.jpg" alt="Слайд №2-2" >
+						</picture>
+
+						<picture class="benefits__slide swiper-slide">
+							<source media="(min-width: 821px)" srcset="../img/slider-2/desctop/2-3.jpg" type="image/jpeg">
+							<source media="(min-width: 744px)" srcset="../img/slider-2/ipad/2-3.jpg" type="image/jpeg">
+							<source media="(min-width: 320px)" srcset="../img/slider-2/mobile/2-3.jpg" type="image/jpeg">
+							<img  class="lazy" data-src="@img/slider-2/desctop/2-3.jpg" alt="Слайд №2-3" >
+						</picture>
+
+						<picture class="benefits__slide swiper-slide">
+							<source media="(min-width: 821px)" srcset="../img/slider-2/desctop/2-4.jpg">
+							<source media="(min-width: 744px)" srcset="../img/slider-2/ipad/2-4.jpg">
+							<source media="(min-width: 320px)" srcset="../img/slider-2/mobile/2-4.jpg">
+							<img  class="lazy" data-src="@img/slider-2/desctop/2-4.jpg" alt="Слайд №2-4" >
+						</picture>
+
 					</div>
 				</div>
 			</section>
@@ -650,15 +525,9 @@
 				</div>
 
 				<div class="location__wrapper wrap-container">
-					<!-- <picture class="location__map-img">
-						<source media="min-width: 1024px" srcset="@img/location-map.jpg" type="image/jpeg" alt="Локація на мапі">
-						<source media="min-width: 768px" srcset="@img/location-map-ipad.jpg" type="image/jpeg" alt="Локація на мапі">
-						<source media="min-width: 360px" srcset="@img/location-map-mobile.jpg" type="image/jpeg" alt="Локація на мапі">
-						<img class="location__map-img" src="@img/location-map.jpg" alt="Локація на мапі">
-					</picture> -->
-					<img class="location__map-img" src="@img/location-map.jpg" alt="Локація на мапі">
-					<img class="location__map-img" src="@img/location-map-mobile.jpg" alt="Локація на мапі">
-					<img class="location__map-img" src="@img/location-map-ipad.jpg" alt="Локація на мапі">
+					<img class="location__map-img" data-src="@img/location-map.jpg" alt="Локація на мапі">
+					<img class="location__map-img" data-src="@img/location-map-mobile.jpg" alt="Локація на мапі">
+					<img class="location__map-img" data-src="@img/location-map-ipad.jpg" alt="Локація на мапі">
 				</div>
 				<div class="location__container">
 					<a class="location__btn-link btn-center dark-btn"
@@ -683,7 +552,6 @@
 							<div class="news__card swiper-slide">
 								<article class="news__card-info">
 									<h3 class="news__title">Хід будівництва</h3>
-									<!-- <time datetime="2023-01-14">Січень 2023.</time> -->
 									<h4 class="news__subtitle">Січень 2023.<br>Стан робіт на будівельному майданчику
 									</h4>
 									<a class="news__link details-link-arrow" href="#">
@@ -696,7 +564,6 @@
 							<div class="news__card swiper-slide">
 								<article class="news__card-info">
 									<h3 class="news__title">Відкрилися продажі </h3>
-									<!-- <time datetime="2023-03-14">Березень 2023.</time> -->
 									<h4 class="news__subtitle">Відкрилися продажі квартир в житловому будинку 10 черги
 									</h4>
 									<a class="news__link details-link-arrow" href="#">
@@ -709,7 +576,6 @@
 							<div class="news__card swiper-slide">
 								<article class="news__card-info">
 									<h3 class="news__title">Акції</h3>
-									<!-- <time datetime="2023-01-14">Січень 2023.</time> -->
 									<h4 class="news__subtitle">На території житлового комплексу відкрився новий
 										супермаркет
 										мережі “BOX”</h4>
@@ -723,7 +589,6 @@
 							<div class="news__card swiper-slide">
 								<article class="news__card-info">
 									<h3 class="news__title">Фотозвіт за березень</h3>
-									<!-- <time datetime="2023-01-14">Січень 2023.</time> -->
 									<h4 class="news__subtitle">Встановлено вікна та вітражі в житловому будинку 9-ї
 										черги
 									</h4>
@@ -737,7 +602,6 @@
 							<div class="news__card swiper-slide">
 								<article class="news__card-info">
 									<h3 class="news__title">Відкрилися продажі</h3>
-									<!-- <time datetime="2023-01-14">Січень 2023.</time> -->
 									<h4 class="news__subtitle">Відкрилися продажі квартир в житловому будинку 10 черги
 									</h4>
 									<a class="news__link details-link-arrow" href="#">
@@ -750,7 +614,6 @@
 							<div class="news__card swiper-slide">
 								<article class="news__card-info">
 									<h3 class="news__title">Акції</h3>
-									<!-- <time datetime="2023-01-14">Січень 2023.</time> -->
 									<h4 class="news__subtitle">Знижки 10% на квартири в житловому будинку 9 черги</h4>
 									<a class="news__link details-link-arrow" href="#">
 										<p>деталі</p>
@@ -768,7 +631,7 @@
 				</div>
 			</section>
 
-			<!-- Slider-2 -->
+			<!-- Slider-3 -->
 			<section id="interest" class="interest all-sections">
 				<div class="interest__container">
 					<h3 class="interest__info-title info-title">Побудовано</h3>
@@ -779,27 +642,58 @@
 				</div>
 				<div class="interest__slider swiper">
 					<div class="interest__wrapper swiper-wrapper">
-						<div class="interest__slide swiper-slide">
-							<img src="@img/slider-3/3-1.jpg" alt="Слайд №3-1" class="interest__slide-img">
-						</div>
-						<!-- <div class="interest__slide swiper-slide">
-							<img src="@img/slider-3/3-2.jpg" alt="Слайд №3-2" class="interest__slide-img">
-						</div> -->
-						<div class="interest__slide swiper-slide">
-							<img src="@img/slider-3/3-3.jpg" alt="Слайд №3-3" class="interest__slide-img">
-						</div>
-						<!-- <div class="interest__slide swiper-slide">
-							<img src="@img/slider-3/3-4.jpg" alt="Слайд №3-4" class="interest__slide-img">
-						</div> -->
-						<div class="interest__slide swiper-slide">
-							<img src="@img/slider-3/3-5.jpg" alt="Слайд №3-5" class="interest__slide-img">
-						</div>
-						<!-- <div class="interest__slide swiper-slide">
-							<img src="@img/slider-3/3-6.jpg" alt="Слайд №3-6" class="interest__slide-img">
-						</div> -->
-						<div class="interest__slide swiper-slide">
-							<img src="@img/slider-3/3-7.jpg" alt="Слайд №3-7" class="interest__slide-img">
-						</div>
+						<picture class="interest__slide swiper-slide">
+							<source media="(min-width: 821px)" srcset="../img/slider-3/desctop/3-1.jpg" >
+							<source media="(min-width: 744px)" srcset="../img/slider-3/ipad/3-1.jpg" >
+							<source media="(min-width: 320px)" srcset="../img/slider-3/mobile/3-1.jpg" >
+							<img class="lazy" data-src="@img/slider-3/desctop/3-1.jpg" alt="Слайд №3-1" >
+						</picture>
+
+						<!-- <picture class="interest__slide swiper-slide">
+							<source media="(min-width: 821px)" srcset="../img/slider-3/desctop/3-2.jpg" type="image/jpeg">
+							<source media="(min-width: 744px)" srcset="../img/slider-3/ipad/3-2.jpg" type="image/jpeg">
+							<source media="(min-width: 320px)" srcset="../img/slider-3/mobile/3-2.jpg" type="image/jpeg">
+							<img class="lazy" data-src="@img/slider-3/desctop/3-2.jpg" alt="Слайд №3-2" >
+						</picture> -->
+
+						<picture class="interest__slide swiper-slide">
+							<source media="(min-width: 821px)" srcset="../img/slider-3/desctop/3-3.jpg" type="image/jpeg">
+							<source media="(min-width: 744px)" srcset="../img/slider-3/ipad/3-3.jpg" type="image/jpeg">
+							<source media="(min-width: 320px)" srcset="../img/slider-3/mobile/3-3.jpg" type="image/jpeg">
+							<img class="lazy" data-src="@img/slider-3/desctop/3-3.jpg" alt="Слайд №3-3" >
+						</picture>
+
+						<!-- <picture class="interest__slide swiper-slide">
+							<source media="(min-width: 821px)" srcset="../img/slider-3/desctop/3-4.jpg" type="image/jpeg">
+							<source media="(min-width: 744px)" srcset="../img/slider-3/ipad/3-4.jpg" type="image/jpeg">
+							<source media="(min-width: 320px)" srcset="../img/slider-3/mobile/3-4.jpg" type="image/jpeg">
+							<img class="lazy" data-src="@img/slider-3/desctop/3-4.jpg" alt="Слайд №3-4" >
+						</picture> -->
+
+						<picture class="interest__slide swiper-slide">
+							<source media="(min-width: 821px)" srcset="../img/slider-3/desctop/3-5.jpg" type="image/jpeg">
+							<source media="(min-width: 744px)" srcset="../img/slider-3/ipad/3-5.jpg" type="image/jpeg">
+							<source media="(min-width: 320px)" srcset="../img/slider-3/mobile/3-5.jpg" type="image/jpeg">
+							<img class="lazy" data-src="@img/slider-3/desctop/3-5.jpg" alt="Слайд №3-5" >
+						</picture>
+
+						<!-- <picture class="interest__slide swiper-slide">
+							<source media="(min-width: 821px)" srcset="../img/slider-3/desctop/3-6.jpg" type="image/jpeg">
+							<source media="(min-width: 744px)" srcset="../img/slider-3/ipad/3-6.jpg" type="image/jpeg">
+							<source media="(min-width: 320px)" srcset="../img/slider-3/mobile/3-6.jpg" type="image/jpeg">
+							<img class="lazy" data-src="@img/slider-3/desctop/3-6.jpg" alt="Слайд №3-6" >
+						</picture> -->
+
+						<picture class="interest__slide swiper-slide">
+							<source media="(min-width: 821px)" srcset="../img/slider-3/desctop/3-7.jpg" type="image/jpeg">
+							<source media="(min-width: 744px)" srcset="../img/slider-3/ipad/3-7.jpg" type="image/jpeg">
+							<source media="(min-width: 320px)" srcset="../img/slider-3/mobile/3-7.jpg" type="image/jpeg">
+							<img class="lazy" data-src="@img/slider-3/desctop/3-7.jpg" alt="Слайд №3-7" >
+						</picture>
+
+
+
+
 					</div>
 				</div>
 			</section>

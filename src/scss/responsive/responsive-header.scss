@@ -1,18 +1,10 @@
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 1230px desctop min
 
 @media (max-width: 1230px) {
-  //========================================== HEADER START
-
-  .header .header-top__menu {
+  
+   .header-top__menu {
     padding-right: 0;
   }
-
-  //========================================== HEADER END
-}
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 1200px desctop min
-
-@media (max-width: 1200px) {
 }
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 1120px
@@ -30,7 +22,6 @@
   }
 
   .header-top__contacts {
-    // width: 35vw;
     max-width: 280px;
     align-items: end;
     margin-right: rem(0);
@@ -45,11 +36,12 @@
   //========================================== HEADER END
 }
 
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 1200px
+
 @media (max-width: 1200px) {
   .header-top__logo {
     max-width: 47px;
     flex-grow: 1;
-    // flex-shrink: 0;
     & span {
       display: none;
     }
@@ -57,66 +49,57 @@
   }
 }
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 910px
-@media (max-width: 910px) {
-}
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 780px/880px ++++++++++ ipad mini /  ipad air
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 880px ++++++++++ ipad air
 @media (max-width: 880px) {
-  //========================================== HEADER START
   .header__container {
     padding: 0px 20px;
   }
 
-  .header-top__logo {
-  }
-
   .header-top__contacts {
     display: flex;
-    justify-content: center;
     align-items: baseline;
     font-weight: 800;
     font-size: rem(14);
     flex-grow: 1;
-    // flex-shrink: 1;
-    // max-width: 40vw;
-    min-width: calc(15.4% + 3.5% + 20.4% + 4%);
-    // margin-right: 2.5vw;
-    // margin-right: 3.5%;
-    // margin-right: rem(4);
+    min-width: calc(15.4% + 3.5% + 20.4% + 4.4%);
     text-align: left;
-    &-phone {
-      // min-width: 15.4%;
-      // margin-right: rem(3);
-    }
-    &-callback {
-      // min-width: 20.4%;
-    }
   }
   .menu__icon {
     padding-right: 0px;
     flex-shrink: 1;
   }
-  //========================================== HEADER END
+
 }
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 780px ++++++++++ ipad mini
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 820px
 
-// @media (max-width: 780px) {
-//   .header-top__contacts {
-//     min-width: calc(15.4% + 3.5% + 20.4% + 4%);
+@media (max-width: 820px){
+  .header-top__contacts {
+    min-width: calc(15.4% + 3.5% + 20.4% + 4%);
+   }
+}
 
-//   }
-// }
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 768px
+
+@media (max-width: 768px){
+  .header-top__contacts {
+    min-width: calc(15.4% + 3.5% + 20.4% + 4.6%);
+  }
+}
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 720px
-@media (max-width: 720px) {
-  //========================================== HEADER START
+
+@media (max-width: 720px){
+  .header-top__contacts {
+    min-width: calc(15.4% + 3.5% + 20.4% + 8%);
+  //  margin-right: 0px;
+  }
 }
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 550px
 
 @media (max-width: 550px) {
+
   .icon-menu{
     .menu-open  & {
       span {
@@ -166,6 +149,7 @@
   }
 
   .header-top__contacts {
+    justify-content: center;
     flex-grow: 1;
     margin: 0 auto;
   }
@@ -174,10 +158,12 @@
     display: none;
   }
 
-  //========================================== HEADER END
+
 
   .aside {
+
     // .aside__social
+
     margin-bottom: 22px;
 
     &__social {
@@ -208,15 +194,20 @@
     &__logo-darck-img{
       display: block;
     }
+    &__social {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   .menu {
+
     // .menu__body
 
     &__body {
       width: 100vw;
       padding-top: 68px;
-      background-color: #d9d9d9;
+      background-color: #fff;
       justify-content: center;
       transition: transform 0.4s ease-in-out 0s;
     }
@@ -231,20 +222,8 @@
         color: $color-darck;
       }
     }
-
-    // .menu__item
-
-    &__item {
-    }
-
-    // .menu__link
-
-    &__link {
-    }
   }
 }
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 330px
-@media (max-width: 330px) {
-  ///========================================== HEADER START
-}
+

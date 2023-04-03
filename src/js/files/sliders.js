@@ -58,7 +58,7 @@ function initSliders() {
       // simulateTouch: false,
       // loop: true,
       // preloadImages: false,
-      // lazy: true,
+      lazy: true,
 
       /*
 			// Ефекти
@@ -99,22 +99,7 @@ function initSliders() {
         882: {
           slidesPerView: 1.55,
         },
-        992: {
-          slidesPerView: 1.55,
-        },
-        1268: {
-          slidesPerView: 1.55,
-        },
-        1440: {
-          slidesPerView: 1.55,
-        },
-        1600: {
-          slidesPerView: 1.55,
-        },
         1920: {
-          slidesPerView: 1.55,
-        },
-        2560: {
           slidesPerView: 1.55,
         },
       },
@@ -150,7 +135,7 @@ function initSliders() {
       // simulateTouch: false,
       loop: true,
       // preloadImages: false,
-      // lazy: true,
+      lazy: true,
 
       /*
 			// Ефекти
@@ -241,7 +226,7 @@ function initSliders() {
       // simulateTouch: false,
       loop: true,
       // preloadImages: false,
-      // lazy: true,
+      lazy: true,
 
       /*
 			// Ефекти
@@ -424,7 +409,7 @@ function initSliders() {
       // simulateTouch: false,
       loop: true,
       // preloadImages: false,
-      // lazy: true,
+      lazy: true,
 
       /*
 			// Ефекти
@@ -515,7 +500,7 @@ function initSliders() {
       // simulateTouch: false,
       loop: true,
       // preloadImages: false,
-      // lazy: true,
+      lazy: true,
 
       /*
 			// Ефекти
@@ -582,103 +567,6 @@ function initSliders() {
     });
   }
 
-  if (document.querySelector(".company-atention__slider-title")) {
-    // Вказуємо склас потрібного слайдера
-    // Створюємо слайдер
-    new Swiper(".company-atention__slider-title", {
-      // Вказуємо склас потрібного слайдера
-      // Підключаємо модулі слайдера
-      // для конкретного випадку
-      modules: [Navigation, Autoplay],
-      observer: true,
-      observeParents: true,
-      spaceBetween: 5,
-      autoHeight: true,
-      grabCursor: true,
-      speed: 800,
-      watchOverflow: true,
-      effect: "fade",
-      //   autoplay: {
-      //     delay: 6000,
-      //     disableOnInteraction: false,
-      //   },
-
-      // touchRatio: 0,
-      // simulateTouch: false,
-      loop: true,
-      // preloadImages: false,
-      // lazy: true,
-
-      /*
-			// Ефекти
-			effect: 'fade',
-			autoplay: {
-				delay: 3000,
-				disableOnInteraction: false,
-			},
-			*/
-
-      // Пагінація
-      /*
-			pagination: {
-				el: '.swiper-pagination',
-				clickable: true,
-			},
-			*/
-
-      // Скроллбар
-      /*
-			scrollbar: {
-				el: '.swiper-scrollbar',
-				draggable: true,
-			},
-			*/
-
-      // Кнопки "вліво/вправо"
-      navigation: {
-        prevEl: ".company-atention__slider-btn-prev",
-        nextEl: ".company-atention__slider-btn-next",
-      },
-
-      // Брейкпоінти
-      breakpoints: {
-        552: {
-          slidesPerView: 1,
-        },
-        882: {
-          slidesPerView: 3,
-        },
-        992: {
-          slidesPerView: 3,
-        },
-        1268: {
-          slidesPerView: 3,
-        },
-        1440: {
-          slidesPerView: 3,
-        },
-        1600: {
-          slidesPerView: 3,
-        },
-        1920: {
-          slidesPerView: 3,
-        },
-        2560: {
-          slidesPerView: 4,
-        },
-        3840: {
-          slidesPerView: 4,
-        },
-        4096: {
-          slidesPerView: 6,
-        },
-      },
-
-      // Події
-      on: {},
-    });
-  }
-
   if (document.querySelector(".company-social__slider")) {
     // Вказуємо склас потрібного слайдера
     // Створюємо слайдер
@@ -690,7 +578,7 @@ function initSliders() {
       observer: true,
       observeParents: true,
       slidesPerGroup: 1,
-      spaceBetween: 38,
+      spaceBetween: 20,
       autoHeight: true,
       grabCursor: true,
       speed: 800,

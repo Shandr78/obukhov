@@ -52,18 +52,27 @@
 		/* Блок з лічильником */
 		.fls-preloader__counter{
 			/* font-family: "Manrope"; */
-			font-size: 6rem;
-			color: #353535;
+			font-size: 12rem;
+			color: transparent;
 			/* opacity: 0.7; */
 		}
 		/* Прогресбар */
-		.fls-preloader__line{}
+		.fls-preloader__line{
+			height: 1.4rem;
+			background-color: transparent;
+			position: relative;
+			
+		}
 		/* Лінія прогресбару */
 		.fls-preloader__line span{
 			display: inline-block;
+			position: absolute;
+			transform: translateY(-0.25rem);
+			top: 50%;
 			transition: width 0.2s ease;
-			height: 0.8rem;
-			background-color: #68aa40;
+			height: 0.5rem;
+			background-color: #7b7b7bb5;
+			
 		}
 	</style>
 	<!-- Скріпт прелоадера -->

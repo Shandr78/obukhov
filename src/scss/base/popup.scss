@@ -1,6 +1,6 @@
 body::after {
   content: "";
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.2);
   position: fixed;
   width: 100%;
   height: 100%;
@@ -272,27 +272,22 @@ body::after {
 }
 
 // =====================================================================================
-
 .popup-video {
-  // .popup-video__wrapper
-  
 
- 
   // .popup-video__yotube
 
   &__yotube {
     & iframe {
-      width:1280px;
-      height: 720px;
-      
+      width: 100vw;
+      height: calc((100vw / 16) * 9);
     }
   }
 }
 
+
 // =====================================================================================
 
 .burger-popup {
-  
   // .burger-popup__wrapper
 
   &__wrapper {
@@ -301,7 +296,6 @@ body::after {
   // .burger-popup__content
 
   &__content {
-   
   }
 
   // .burger-popup__close
@@ -349,65 +343,4 @@ body::after {
   &__menu-logo-img {
   }
 }
-.popup {
 
-  // .popup__wrapper
-
-  &__wrapper {
-  }
-
-  // .popup__content
-
-  &__content {
-   
-  }
-
-  // .popup__close
-
-  &__close {
-  }
-}
-.menu {
-
-  // .menu__body
-
-  &__body {
-  }
-
-  // .menu__list
-
-  &__list {
-  }
-
-  // .menu__item
-
-  &__item {
-  }
-
-  // .menu__link
-
-  &__link {
-  }
-}
-.aside {
-
-  // .aside__social
-
-  &__social {
-  }
-
-  // .aside__social-link
-
-  &__social-link {
-  }
-
-  // .aside__logo
-
-  &__logo {
-  }
-
-  // .aside__logo-img
-
-  &__logo-img {
-  }
-}

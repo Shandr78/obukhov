@@ -1,44 +1,17 @@
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 1230px desctop min
 
 @media (max-width: 1230px) {
-  .footer__social{
+  .footer__social {
     // margin-left: rem(20);
   }
-  .footer__social-box{
+  .footer__social-box {
     justify-content: space-between;
-    
   }
- 
 }
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 1200px desctop min
-
-@media (max-width: 1200px) {
-}
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 1120px
-
-@media (max-width: 1120px) {
- 
-}
-
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 910px
-@media (max-width: 910px){
-  // .footer__social-box{
-  //   flex-direction: column;
-  //   align-items: flex-end;
-  //   gap: rem(20);
-  // }
-}
-
-
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 780px/880px ++++++++++ ipad mini/ipad air
 @media (max-width: 880px) {
-
-  
-//========================================== FOOTER START
+  //========================================== FOOTER START
 
   .footer {
     padding: rem(30) 0;
@@ -120,7 +93,7 @@
       flex-grow: 1;
     }
 
- // .footer__ipad-wrap
+    // .footer__ipad-wrap
 
     &__ipad-wrap {
       display: flex;
@@ -153,19 +126,13 @@
       }
     }
   }
-  
+
   //========================================== FOOTER END
 }
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 720px
-@media (max-width: 720px) {
- 
-}
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 550px
 
 @media (max-width: 550px) {
-
-
   .contacts-callback {
     display: block;
     max-width: 100%;
@@ -191,6 +158,7 @@
     // .contacts-callback__form-tel
 
     &__form-tel {
+      margin-top: 15px;
     }
 
     // .contacts-callback__form-tel-title
@@ -198,26 +166,13 @@
     &__form-tel-title {
       font-weight: 700;
       font-size: 12px;
-    }
-
-    // .contacts-callback__form-tel-info
-
-    &__form-tel-info {
-    }
-
-    // .contacts-callback__form-tel-name
-
-    &__form-tel-name {
-    }
-
-    // .contacts-callback__form-tel-phone
-
-    &__form-tel-phone {
+      margin-bottom: 20px;
     }
 
     // .contacts-callback__form-tel-question
 
     &__form-tel-question {
+      margin-bottom: 27px;
     }
 
     // .contacts-callback__bottom
@@ -232,18 +187,15 @@
       // margin-bottom: rem(25);
     }
   }
-  .contacts-callback__info.form-tel-info{
-  margin-bottom: 0;
-}
-
-
-
+  .contacts-callback__info.form-tel-info {
+    margin-bottom: 0;
+  }
 
   //========================================== FOOTER START
 
   .footer {
     position: relative;
-padding: 23px 0 20px;  
+    padding: 23px 0 20px;
     &__container {
       padding: 0 20px;
     }
@@ -274,21 +226,11 @@ padding: 23px 0 20px;
       padding-right: 0px;
     }
 
-    // .footer__contacts-company
-
-    &__contacts-company {
-    }
-
     // .footer__contacts-phone
     // ++
     &__contacts-phone {
       font-weight: 800;
       padding: 10px 0px;
-    }
-
-    // .footer__contacts-address
-
-    &__contacts-address {
     }
 
     // .footer__copyright
@@ -308,14 +250,10 @@ padding: 23px 0 20px;
     // .footer__social
 
     &__social {
-      // flex-basis: 290px;
       width: 100%;
       display: flex;
       justify-content: space-between;
       margin-bottom: rem(15);
-      // align-items: center;
-
-      // flex-shrink: 1;
     }
 
     // .footer__social-box
@@ -325,12 +263,6 @@ padding: 23px 0 20px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      // gap: 54px;
-    }
-
-    // .footer__social-link
-
-    &__social-link {
     }
 
     // .footer__logo
@@ -368,6 +300,4 @@ padding: 23px 0 20px;
     order: 3;
     display: none;
   }
-
 }
-

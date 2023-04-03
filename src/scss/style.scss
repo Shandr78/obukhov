@@ -65,9 +65,12 @@ body {
 		touch-action: none;
 		overscroll-behavior: none;
 	}
-	// Сайт завантажений
-	.loaded & {
-	}
+	// // Сайт завантажений
+	// .loaded & {
+	// }
+	*:focus {
+		outline: none;
+	  }
 	font-weight: 400;
 	font-size: calc(12px + 0.14vw);
 	line-height: 140%;

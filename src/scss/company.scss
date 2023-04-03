@@ -2,21 +2,18 @@
 
 .company-promo {
   min-width: 100vw;
-  // transition: filter ease 4.5s;
   & img {
     width: 100%;
     height: calc(100vh - 70px - 37px);
     position: relative;
     object-fit: cover;
     object-position: 0% 20%;
-    // margin-top: 70px;
     z-index: 1;
     filter: blur(4px);
     animation-name: imgAnimation;
     animation-duration: 4s;
     animation-timing-function: ease;
     animation-iteration-count: 1;
-    // animation-direction: normal;
     animation-delay: 0.5s;
     animation-fill-mode: both;
   }
@@ -56,7 +53,6 @@
     display: flex;
     justify-content: center;
     gap: rem(32);
-    // @include adaptiveValue("gap", 32, 46, 0, 1920, 1440);
     left: 50%;
     top: 58%;
     transform: translate(-50%, 0);
@@ -68,19 +64,15 @@
     align-items: center;
     background: rgba(196, 196, 196, 0.05);
     border: 1px solid #ffffff;
-    // @include adaptiveValue("width", 462, 243);
     @include adaptiveValue("width", 476, 430, 0, 1920, 1440);
-    // width: 397px;
     height: rem(140);
     overflow: hidden;
     opacity: 0;
-    // transition: opacity ease 1.2;
     &:nth-child(1) {
       animation-name: cardAnimation;
       animation-duration: 1.8s;
       animation-timing-function: ease-in-out;
       animation-iteration-count: 1;
-      // animation-direction: normal;
       animation-delay: 1s;
       animation-fill-mode: both;
     }
@@ -89,7 +81,6 @@
       animation-duration: 2.2s;
       animation-timing-function: linear;
       animation-iteration-count: 1;
-      // animation-direction: normal;
       animation-delay: 2.4s;
       animation-fill-mode: both;
     }
@@ -98,7 +89,6 @@
       animation-duration: 2.2s;
       animation-timing-function: linear;
       animation-iteration-count: 1;
-      // animation-direction: normal;
       animation-delay: 3.8s;
       animation-fill-mode: both;
     }
@@ -180,49 +170,10 @@
 //==================================================================================================== COMPANY ATENTION START
 
 .company-atention {
-  // .company-atention__container
-
-  &__container {
-  }
-
-  // .company-atention__title
-
-  &__title {
-    // width: 66.2%;
-    // margin-left: auto;
-    // margin-bottom: 70px;
-  }
-
-  // .company-atention__info
-
-  &__info {
-    // display: flex;
-    // justify-content: flex-end;
-    // margin-bottom: 70px;
-  }
-
-  // .company-atention__info-title
-
-  &__info-title {
-    // min-width: rem(397);
-    // min-width: 33.33%;
-    // flex-grow: 1;
-    // margin-right: auto;
-  }
 
   &__info-box--ipad {
     display: flex;
     justify-content: flex-start;
-  }
-
-  // .company-atention__info-text
-
-  &__info-text {
-    // width: 66.66%;
-    // min-width: rem(397);
-    // flex-grow: 0;
-    // text-overflow: ellipsis;
-    // padding-right: rem(15);
   }
 
   // .company-atention__slider
@@ -246,60 +197,35 @@
     margin-bottom: rem(25);
   }
 
-  // .company-atention__slider-btn-prev
-
-  &__slider-btn-prev {
-  }
-
-  // .company-atention__slider-btn-next
-
-  &__slider-btn-next {
-  }
-
-  // .company-atention__wrapper
-
-  &__wrapper {
-  }
-
   // .company-atention__slide
 
   &__slide {
-  }
-
-  // .company-atention__slide-img
-
-  &__slide-img {
-  }
-
-  // .company-atention__wrapper-title
-
-  &__wrapper-title {
+    height: auto;
+    & picture > img,
+    & picture > source {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
   }
 
   // .company-atention__slide-title
 
   &__slide-title {
-    @include adaptiveValue("height", 55, 50, 0, 1920, 880);
-
     & > h4 {
+      padding-top: 35px;
       padding-left: 20px;
-      @include adaptiveValue("margin-bottom", 70, 30, 0, 1230, 880);
     }
   }
 
   // .company-atention__btn-link
 
   &__btn-link {
-    // display: block;
-    // text-align: center;
     max-width: 31.6%;
-    // margin: 0 auto;
-    // padding: rem(8);
   }
 }
 
 .company-atention__info-text + .company-atention__info-text {
-  // margin-left: 15px;
   padding-left: 20px;
   padding-right: 0;
 }
@@ -309,13 +235,6 @@
 //==================================================================================================== COMPANY SOCIAL START
 
 .company-social {
-  // .company-social__wrap
-
-  // &__cards {
-  //   display: flex;
-  //   justify-content: center;
-  //   gap: 26px;
-  // }
 
   // .company-social__card
 
@@ -331,23 +250,18 @@
   &__card-info {
     display: flex;
     flex-direction: column;
-    // height: 100%;
     @include adaptiveValue("min-height", 486.66, 298, 0, 1920, 320);
     @include adaptiveValue("font-size", 14, 12, 0, 1440, 880);
     @include adaptiveValue("width", 209, 164, 0, 1920, 550);
-   
     @include adaptiveValue("margin-top", 140, 70, 0, 1920, 550);
-    
     @include adaptiveValue("margin-bottom", 70, 25, 0, 1920, 550);
     margin-left: 31%;
-    // @include adaptiveValue("margin-left", 87, 55, 0, 1920, 550);
     & p {
       overflow: hidden;
       padding: 0px 5px;
       &:not(:last-child){
         flex-grow: 1;
       }
-      
       &:not(:first-child){
         @include adaptiveValue("margin-bottom", 70, 25, 0, 1920, 550);
       }
@@ -358,7 +272,6 @@
   // .company-social__card-title
 
   &__card-title {
-    // margin-bottom: rem(35);
     @include adaptiveValue("margin-bottom", 35, 25, 0, 1920, 550);
     font-weight: 600;
     
@@ -371,12 +284,5 @@
     display: none;
   }
 }
-
-// .social__card p + p {
-//   margin-top: auto;
-// }
-// .social__cards + .social__cards {
-//   @include adaptiveValue("margin-left", 32, 15);
-// }
 
 //==================================================================================================== COMPANY SOCIAL END

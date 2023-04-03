@@ -1,8 +1,3 @@
-@media (max-width: 1440px) {
-}
-
-@media (max-width: 1382px) {
-}
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 780px / ipad mini
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 880px / ipad air
@@ -27,24 +22,21 @@
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 550px
 
 @media (max-width: 550px) {
-    .parking-page {
-        
-       margin-bottom: rem(10);
-    
-        // .parking-page__info-title
-    
-        &__info-title {
-          margin-bottom: 25px;
-          
-        }
-    
-        // .parking-page__search-form
-    
-        &__search-form {
-         
-        }
-        &__images-box{
-            margin-bottom: 0;
-        }
-      }
+  .parking-page {
+    margin-bottom: rem(10);
+
+    // .parking-page__info-title
+
+    &__info-title {
+      margin-bottom: 25px;
+    }
+
+    &__images-box {
+      margin-bottom: 0;
+    }
+    &__image {
+      background-position: -3px -1px; 
+     
+    }
+  }
 }

@@ -1,8 +1,3 @@
-@media (max-width: 1440px) {
-}
-
-@media (max-width: 1382px) {
-}
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 780px / ipad mini
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ max-width: 880px / ipad air
@@ -11,25 +6,10 @@
     font-size: rem(14);
   }
   .news-page {
-    // .news-page__info-title
-
-    &__info-title {
-    }
-
     // .news-page__box
 
     &__box {
       margin-bottom: rem(30);
-    }
-
-    // .news-page__content
-
-    &__content {
-    }
-
-    // .news-page__content-colum
-
-    &__content-colum {
     }
 
     // .news-page__content-title
@@ -51,41 +31,6 @@
 
     &__content-date {
       margin-bottom: rem(30);
-    }
-
-    // .news-page__slider
-
-    &__slider {
-    }
-
-    // .news-page__slider-btn
-
-    &__slider-btn {
-    }
-
-    // .news-page__slider-btn-prev
-
-    &__slider-btn-prev {
-    }
-
-    // .news-page__slider-btn-next
-
-    &__slider-btn-next {
-    }
-
-    // .news-page__wrapper
-
-    &__wrapper {
-    }
-
-    // .news-page__slide
-
-    &__slide {
-    }
-
-    // .news-page__content-img
-
-    &__content-img {
     }
   }
   .news-page {
@@ -110,14 +55,10 @@
   }
 
   .news-page {
+    margin-bottom: rem(10);
 
     &__section{
         margin-bottom: rem(0);
-    }
-
-    // .news-page__info-title
-
-    &__info-title {
     }
 
     // .news-page__box
@@ -126,11 +67,6 @@
       flex-direction: column-reverse;
       border: none;
       margin-bottom: rem(25);
-    }
-
-    // .news-page__content
-
-    &__content {
     }
 
     // .news-page__content-colum
@@ -163,40 +99,10 @@
       margin-bottom: rem(0);
     }
 
-    // .news-page__slider
-
-    &__slider {
-    }
-
     // .news-page__slider-btn
 
     &__slider-btn {
         top: calc(50% - 15px);
-    }
-
-    // .news-page__slider-btn-prev
-
-    &__slider-btn-prev {
-    }
-
-    // .news-page__slider-btn-next
-
-    &__slider-btn-next {
-    }
-
-    // .news-page__wrapper
-
-    &__wrapper {
-    }
-
-    // .news-page__slide
-
-    &__slide {
-    }
-
-    // .news-page__content-img
-
-    &__content-img {
     }
   }
   .news-page {
